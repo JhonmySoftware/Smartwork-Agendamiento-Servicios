@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Automatización de Pruebas con Patrón de Diseño Screenplay en Java
 
 Este proyecto utiliza Java, el patrón de diseño Screenplay, Serenity BDD y Gradle para la automatización de pruebas.
@@ -53,3 +54,7 @@ El Reporte automático de pruebas se obtendrá a través de Gradle. Este Reporte
 ## License
 MIT
 **Free Software**
+=======
+# Smartwork-Agendamiento-Servicios
+Proceso de agendamiento en el sistema de información smartwork
+>>>>>>> origin/master
