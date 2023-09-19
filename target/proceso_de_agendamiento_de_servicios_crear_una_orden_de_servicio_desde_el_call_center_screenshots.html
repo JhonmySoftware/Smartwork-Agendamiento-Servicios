@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Automatización Modulo de Autogestión</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="feature_proceso_de_agendamiento_de_servicios.html">Proceso De Agendamiento De Servicios</a></span>
+                > <span class="truncate-60"><a
+                    href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center.html">Crear una orden de servicio desde el call center </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-09-2023 21:15</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Proceso De Agendamiento De Servicios </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="tag_cp001_creacion_ordenservicio.html">CP001 Creacion Ordenservicio
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">Crear una orden de servicio desde el call center
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Dado que en el call center se desea crear una orden de servicio con los siguientes datos<br><table class='embedded'><thead><th>Tipo Identificacion</th><th>Identificacion</th><th>Codigo cliente</th><th>Nombre</th><th>Correo electronico</th><th>Celular</th></thead><tbody><tr><td>&lt;TipoID&gt;</td><td>&lt;Identificacion&gt;</td><td>&lt;CodigoCliente&gt;</td><td>&lt;Nombre&gt;</td><td>&lt;Email&gt;</td><td>&lt;Celular&gt;</td></tr></tbody></table><br>Y se ingresan los siguientes datos del servicio<br><table class='embedded'><thead><th>Codigo del servicio</th><th>Clase servicio</th><th>Tipo Servicio</th><th>Prioridad</th><th>Hora inicio</th><th>Hora fin</th><th>Zonas</th><th>Observacion</th></thead><tbody><tr><td>&lt;CodigoServicio&gt;</td><td>&lt;ClaseServicio&gt;</td><td>&lt;TipoServicio&gt;</td><td>&lt;Prioridad&gt;</td><td>&lt;HoraInicio&gt;</td><td>&lt;HoraFin&gt;</td><td>&lt;Zonas&gt;</td><td>&lt;Observacion&gt;</td></tr></tbody></table><br>Y se ingresan los siguientes datos del producto<br><table class='embedded'><thead><th>Serial</th><th>Productos</th><th>Falla</th></thead><tbody><tr><td>&lt;Serial&gt;</td><td>&lt;Productos&gt;</td><td>&lt;Falla&gt;</td></tr></tbody></table><br>Cuando se crea la orden de servicio<br>Entonces se verifica que la orden de servicio se ha creado correctamente</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: Expected: an element that is visible but: no matching element found by xpath: //span[contains(text(),'Smart Work')]</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.infotrack.smartwork.agendamiento.tasks.tsCrearServicio01.performAs(tsCrearServicio01.java:40)<br />co.com.infotrack.smartwork.agendamiento.definition.MyStepdefs.queEnElCallCenterSeDeseaCrearUnaOrdenDeServicioConLosSiguientesDatos(MyStepdefs.java:42)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource7820087487116263000.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="a98cccc3eec661ac8c573484d17d5222022891ae7fcc034c97b24240c849330e.png" title=" Example: {TipoID=Cedula de ciudadan&iacute;a, Identificacion=1012848484, CodigoCliente=CC-123, Nombre=Juan Perez, Email=juan@example.com, Celular=1234567890, CodigoServicio=SERV-001, ClaseServicio=Clase A, TipoServicio=Tipo A, Prioridad=Alta, HoraInicio=09:00, HoraFin=13:00, Zonas=Zona 1, Observacion=Servicio de prueba, Serial=1234567, Productos=Producto X, Falla=Falla Y}" width="1366"/>
+                <img src="a98cccc3eec661ac8c573484d17d5222022891ae7fcc034c97b24240c849330e.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
+| Tipo Identificacion | Identificacion | Codigo cliente | Nombre | Correo electronico | Celular |
+| Cedula de ciudadan&iacute;a | 1012848484 | CC-123 | Juan Perez | juan@example.com | 1234567890 |" width="1366"/>
+                <img src="a98cccc3eec661ac8c573484d17d5222022891ae7fcc034c97b24240c849330e.png" title=" Automatizador ts crear servicio01" width="1366"/>
+                <img src="a98cccc3eec661ac8c573484d17d5222022891ae7fcc034c97b24240c849330e.png" title=" Automatizador is abrir pagina" width="1366"/>
+                <img src="a98cccc3eec661ac8c573484d17d5222022891ae7fcc034c97b24240c849330e.png" title=" Automatizador opens the Object abrir pagina" width="1366"/>
+                <img src="a98cccc3eec661ac8c573484d17d5222022891ae7fcc034c97b24240c849330e.png" title=" Automatizador is abrir pagina (completed)" width="1366"/>
+                <img src="0d6cb275c91476f8e8a8e7b94e8a136ba1c5884e6a1f1a2682bc623eb3db6ecf.png" title=" Automatizador is login" width="1366"/>
+                <img src="0d6cb275c91476f8e8a8e7b94e8a136ba1c5884e6a1f1a2682bc623eb3db6ecf.png" title=" Automatizador enters 'Automatizador' into Ingrese su usuario" width="1366"/>
+                <img src="4d07a94d42acb20f10fa9db647c8c57d43b57530e71b693ed33e0a580fbd4340.png" title=" Automatizador enters 'Demo123*' into Ingrese su contrasenia" width="1366"/>
+                <img src="6371513250f50b096ec61c558961060af408ffa564c2a4663f53bce9ab7e210e.png" title=" Automatizador clicks on Iniciar Sesi&oacute;n" width="1366"/>
+                <img src="279751f6898b70693c1c8aa98bc21f17eef703960a82c3da0bb13d3265e0071b.png" title=" Then qs login should be a value equal to '1.5.6'" width="1366"/>
+                <img src="279751f6898b70693c1c8aa98bc21f17eef703960a82c3da0bb13d3265e0071b.png" title=" Automatizador is login (completed)" width="1366"/>
+                <img src="fa33dd99c4835315bddf7292e5afedd2e76ae8ba978e9bb2c4707144acb8dc51.png" title=" Automatizador ts crear servicio01 (completed): <span class='failing-color'>FAILURE</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>

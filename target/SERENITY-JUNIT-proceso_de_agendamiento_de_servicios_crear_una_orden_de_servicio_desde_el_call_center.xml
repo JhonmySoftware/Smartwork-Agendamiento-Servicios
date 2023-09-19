@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Proceso de agendamiento de servicios" skipped="0" tests="1" time="77.38" timestamp="2023-09-18 09:15:28"><testcase name="Crear una orden de servicio desde el call center"><failure message="&#10;Expected: an element that is visible&#10;     but: no matching element found by xpath: //span[contains(text(),'Smart Work')]" type="java.lang.AssertionError">
+Expected: an element that is visible
+     but: no matching element found by xpath: //span[contains(text(),'Smart Work')]</failure><system-err>
+Expected: an element that is visible
+     but: no matching element found by xpath: //span[contains(text(),'Smart Work')]&#13;
+co.com.infotrack.smartwork.agendamiento.tasks.tsCrearServicio01.performAs(tsCrearServicio01.java:40)&#13;
+co.com.infotrack.smartwork.agendamiento.definition.MyStepdefs.queEnElCallCenterSeDeseaCrearUnaOrdenDeServicioConLosSiguientesDatos(MyStepdefs.java:42)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>
