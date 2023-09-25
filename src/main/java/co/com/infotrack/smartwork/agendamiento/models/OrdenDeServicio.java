@@ -25,5 +25,7 @@ public class OrdenDeServicio {
     private String serial;
     private String productos;
     private String falla;
+    private String Ubicacion;
+    private String Complemento;
 
 }

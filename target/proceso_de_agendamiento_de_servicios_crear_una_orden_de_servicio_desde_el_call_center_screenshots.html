@@ -132,7 +132,7 @@
             <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-09-2023 21:15</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 25-09-2023 18:55</span>
     <br style="clear:left"/>
 </div>
 
@@ -173,9 +173,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
-                                <span class="failing-color">Crear una orden de servicio desde el call center
+                                <span class="success-color">Crear una orden de servicio desde el call center
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -191,67 +191,63 @@
 
     <div class="story-title">
         <h3>Scenario:</h3>
-        <div class="scenario">Dado que en el call center se desea crear una orden de servicio con los siguientes datos<br><table class='embedded'><thead><th>Tipo Identificacion</th><th>Identificacion</th><th>Codigo cliente</th><th>Nombre</th><th>Correo electronico</th><th>Celular</th></thead><tbody><tr><td>&lt;TipoID&gt;</td><td>&lt;Identificacion&gt;</td><td>&lt;CodigoCliente&gt;</td><td>&lt;Nombre&gt;</td><td>&lt;Email&gt;</td><td>&lt;Celular&gt;</td></tr></tbody></table><br>Y se ingresan los siguientes datos del servicio<br><table class='embedded'><thead><th>Codigo del servicio</th><th>Clase servicio</th><th>Tipo Servicio</th><th>Prioridad</th><th>Hora inicio</th><th>Hora fin</th><th>Zonas</th><th>Observacion</th></thead><tbody><tr><td>&lt;CodigoServicio&gt;</td><td>&lt;ClaseServicio&gt;</td><td>&lt;TipoServicio&gt;</td><td>&lt;Prioridad&gt;</td><td>&lt;HoraInicio&gt;</td><td>&lt;HoraFin&gt;</td><td>&lt;Zonas&gt;</td><td>&lt;Observacion&gt;</td></tr></tbody></table><br>Y se ingresan los siguientes datos del producto<br><table class='embedded'><thead><th>Serial</th><th>Productos</th><th>Falla</th></thead><tbody><tr><td>&lt;Serial&gt;</td><td>&lt;Productos&gt;</td><td>&lt;Falla&gt;</td></tr></tbody></table><br>Cuando se crea la orden de servicio<br>Entonces se verifica que la orden de servicio se ha creado correctamente</div>
+        <div class="scenario">Dado que en el call center se desea crear una orden de servicio con los siguientes datos<br><table class='embedded'><thead><th>Tipo Identificacion</th><th>Identificacion</th><th>Codigo cliente</th><th>Nombre</th><th>Correo electronico</th><th>Celular</th><th>Ubicacion</th><th>Complemento</th></thead><tbody><tr><td>&lt;TipoID&gt;</td><td>&lt;Identificacion&gt;</td><td>&lt;CodigoCliente&gt;</td><td>&lt;Nombre&gt;</td><td>&lt;Email&gt;</td><td>&lt;Celular&gt;</td><td>&lt;Ubicacion&gt;</td><td>&lt;Complemento&gt;</td></tr></tbody></table><br>Y se ingresan los siguientes datos del servicio<br><table class='embedded'><thead><th>Codigo del servicio</th><th>Clase servicio</th><th>Tipo Servicio</th><th>Prioridad</th><th>Hora inicio</th><th>Hora fin</th><th>Zonas</th><th>Observacion</th></thead><tbody><tr><td>&lt;CodigoServicio&gt;</td><td>&lt;ClaseServicio&gt;</td><td>&lt;TipoServicio&gt;</td><td>&lt;Prioridad&gt;</td><td>&lt;HoraInicio&gt;</td><td>&lt;HoraFin&gt;</td><td>&lt;Zonas&gt;</td><td>&lt;Observacion&gt;</td></tr></tbody></table><br>Y se ingresan los siguientes datos del producto<br><table class='embedded'><thead><th>Serial</th><th>Productos</th><th>Falla</th></thead><tbody><tr><td>&lt;Serial&gt;</td><td>&lt;Productos&gt;</td><td>&lt;Falla&gt;</td></tr></tbody></table><br>Cuando se crea la orden de servicio<br>Entonces se verifica que la orden de servicio se ha creado correctamente</div>
     </div>
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
-            <div class="screenshotFailure panel panel-danger">
-
-    <div style="display:block">
-        <div class="table">
-            <div class="row">
-                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Assertion error: Expected: an element that is visible but: no matching element found by xpath: //span[contains(text(),'Smart Work')]</span>
-                </div>
-                <div class="col-sm-2">
-                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
-                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
-                </div>
-             </div>
-        </div>
-    <div>
-
-    <!-- Details Section -->
-    <div class="row stacktrace-details">
-      <div class="col">
-        <div class="collapse multi-collapse" id="stacktraceModal-overall">
-            <div class="card">
-                <div class="card-header">
-                    <h4>java.lang.AssertionError </h4>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <pre>co.com.infotrack.smartwork.agendamiento.tasks.tsCrearServicio01.performAs(tsCrearServicio01.java:40)<br />co.com.infotrack.smartwork.agendamiento.definition.MyStepdefs.queEnElCallCenterSeDeseaCrearUnaOrdenDeServicioConLosSiguientesDatos(MyStepdefs.java:42)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-                <div class="panel-body">
-                    <a href="pagesource7820087487116263000.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
-                </div>
-            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="a98cccc3eec661ac8c573484d17d5222022891ae7fcc034c97b24240c849330e.png" title=" Example: {TipoID=Cedula de ciudadan&iacute;a, Identificacion=1012848484, CodigoCliente=CC-123, Nombre=Juan Perez, Email=juan@example.com, Celular=1234567890, CodigoServicio=SERV-001, ClaseServicio=Clase A, TipoServicio=Tipo A, Prioridad=Alta, HoraInicio=09:00, HoraFin=13:00, Zonas=Zona 1, Observacion=Servicio de prueba, Serial=1234567, Productos=Producto X, Falla=Falla Y}" width="1366"/>
-                <img src="a98cccc3eec661ac8c573484d17d5222022891ae7fcc034c97b24240c849330e.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
-| Tipo Identificacion | Identificacion | Codigo cliente | Nombre | Correo electronico | Celular |
-| Cedula de ciudadan&iacute;a | 1012848484 | CC-123 | Juan Perez | juan@example.com | 1234567890 |" width="1366"/>
-                <img src="a98cccc3eec661ac8c573484d17d5222022891ae7fcc034c97b24240c849330e.png" title=" Automatizador ts crear servicio01" width="1366"/>
-                <img src="a98cccc3eec661ac8c573484d17d5222022891ae7fcc034c97b24240c849330e.png" title=" Automatizador is abrir pagina" width="1366"/>
-                <img src="a98cccc3eec661ac8c573484d17d5222022891ae7fcc034c97b24240c849330e.png" title=" Automatizador opens the Object abrir pagina" width="1366"/>
-                <img src="a98cccc3eec661ac8c573484d17d5222022891ae7fcc034c97b24240c849330e.png" title=" Automatizador is abrir pagina (completed)" width="1366"/>
-                <img src="0d6cb275c91476f8e8a8e7b94e8a136ba1c5884e6a1f1a2682bc623eb3db6ecf.png" title=" Automatizador is login" width="1366"/>
-                <img src="0d6cb275c91476f8e8a8e7b94e8a136ba1c5884e6a1f1a2682bc623eb3db6ecf.png" title=" Automatizador enters 'Automatizador' into Ingrese su usuario" width="1366"/>
+                <img src="7005e6003337734b1bb6dcd77efbeea1357effc929a08290982d8389dd929a88.png" title=" Example: {TipoID=Cedula de ciudadan&iacute;a, Identificacion=1012835836, CodigoCliente=CC-123, Nombre=Juan Perez, Email=juan@example.com, Celular=1234567890, CodigoServicio=SERV-001, ClaseServicio=Clase A, TipoServicio=Tipo A, Prioridad=Alta, HoraInicio=09:00, HoraFin=13:00, Zonas=Zona 1, Observacion=Servicio de prueba, Serial=1234567, Productos=Producto X, Falla=Falla Y, Ubicacion=Cl. 118 #19-52, Complemento=Usaqu&eacute;n, Bogot&aacute;}" width="1366"/>
+                <img src="7005e6003337734b1bb6dcd77efbeea1357effc929a08290982d8389dd929a88.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
+| Tipo Identificacion | Identificacion | Codigo cliente | Nombre | Correo electronico | Celular | Ubicacion | Complemento |
+| Cedula de ciudadan&iacute;a | 1012835836 | CC-123 | Juan Perez | juan@example.com | 1234567890 | Cl. 118 #19-52 | Usaqu&eacute;n, Bogot&aacute; |" width="1366"/>
+                <img src="7005e6003337734b1bb6dcd77efbeea1357effc929a08290982d8389dd929a88.png" title=" Automatizador ts crear servicio01" width="1366"/>
+                <img src="7005e6003337734b1bb6dcd77efbeea1357effc929a08290982d8389dd929a88.png" title=" Automatizador is abrir pagina" width="1366"/>
+                <img src="7005e6003337734b1bb6dcd77efbeea1357effc929a08290982d8389dd929a88.png" title=" Automatizador opens the Object abrir pagina" width="1366"/>
+                <img src="94a3dbbb6b713675798ec92508bfa1b49c6e9c556954ce6128102abab2cd5156.png" title=" Automatizador is abrir pagina (completed)" width="1366"/>
+                <img src="1ee651f4cf949a1ba35f531f59c2a66d98a8ad4bfd4b648850a90e18f0d96974.png" title=" Automatizador is login" width="1366"/>
+                <img src="1ee651f4cf949a1ba35f531f59c2a66d98a8ad4bfd4b648850a90e18f0d96974.png" title=" Automatizador enters 'Automatizador' into Ingrese su usuario" width="1366"/>
                 <img src="4d07a94d42acb20f10fa9db647c8c57d43b57530e71b693ed33e0a580fbd4340.png" title=" Automatizador enters 'Demo123*' into Ingrese su contrasenia" width="1366"/>
-                <img src="6371513250f50b096ec61c558961060af408ffa564c2a4663f53bce9ab7e210e.png" title=" Automatizador clicks on Iniciar Sesi&oacute;n" width="1366"/>
-                <img src="279751f6898b70693c1c8aa98bc21f17eef703960a82c3da0bb13d3265e0071b.png" title=" Then qs login should be a value equal to '1.5.6'" width="1366"/>
-                <img src="279751f6898b70693c1c8aa98bc21f17eef703960a82c3da0bb13d3265e0071b.png" title=" Automatizador is login (completed)" width="1366"/>
-                <img src="fa33dd99c4835315bddf7292e5afedd2e76ae8ba978e9bb2c4707144acb8dc51.png" title=" Automatizador ts crear servicio01 (completed): <span class='failing-color'>FAILURE</span>" width="1366"/>
+                <img src="0ae350b4473c9b7f017dff485b8086feb1839c1a09c4f953920944ac866f50d8.png" title=" Automatizador clicks on Iniciar Sesi&oacute;n" width="1366"/>
+                <img src="11b3a95730d3c08a2206fa5e83a8e02bdf700964c7f2241961cc5d93ad46dbd9.png" title=" Then qs login should be a value equal to '1.5.6'" width="1366"/>
+                <img src="11b3a95730d3c08a2206fa5e83a8e02bdf700964c7f2241961cc5d93ad46dbd9.png" title=" Automatizador is login (completed)" width="1366"/>
+                <img src="223c4d9544bf926aae5a8a52fbac5d24c316bed3c81491ab040fa9064c59a140.png" title=" Automatizador clicks on Modulo principal de Smartwork" width="1366"/>
+                <img src="318870b6a952f238f3f90c7e7d9c95d346cca6a217ba08eb1ad652775ee60efd.png" title=" Automatizador clicks on Sub-Modulo principal de Gesti&oacute;n de servicios" width="1366"/>
+                <img src="7394f92a73f03736dbcd5039a6eb96b8879f117e6b1bd23f597ef06fa373abb7.png" title=" Automatizador clicks on Bot&oacute;n +  de crear el servicio" width="1366"/>
+                <img src="a6952577665367bc2be9579c513cc0538d6162a63da8489d2bbef7566f228756.png" title=" Automatizador clicks on Campo Tipo de Identificaci&oacute;n" width="1366"/>
+                <img src="ec4a94b6800641e052452b89a56ce4c09738f319e5493f5935561ba2126706b3.png" title=" Automatizador clicks on Lista cedula de ciudadania" width="1366"/>
+                <img src="27456deab76b4dffa5b64983a52b251b4b222d5996ccfec4a2a43cee02b9b837.png" title=" Automatizador enters '1012835836' into Campo Identificaci&oacute;n" width="1366"/>
+                <img src="b8ccbfcaea7761aba6f6f05d1627fc5aab457d406b0e800bd85f0ef0c3584d8d.png" title=" Automatizador clicks on Campo de buscar el cliente" width="1366"/>
+                <img src="8c2143ef870aa42104d4e3e686b2cf618d280d3f824b88eccf798051e20bded9.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
+                <img src="04ea0a7f4b31cc7801706c7186e2e01f2a74fa2d5a27626eb62441fc4f35a967.png" title=" Automatizador enters 'CC-123' into Campo C&oacute;digo de Cliente" width="1366"/>
+                <img src="ad778f8c6988134d8434f8873055a44d1981c61ec70ae63e26a61861f76f223b.png" title=" Automatizador enters 'Juan Perez' into Campo Nombre" width="1366"/>
+                <img src="82d4f20c8122914090fa48798acf307ab606c6d20c325eca66071e7db23610f0.png" title=" Automatizador enters 'juan@example.com' into Campo Correo Electr&oacute;nico" width="1366"/>
+                <img src="c3f96b698f2c1c1ebdcbdac7c75d186b139ff72de2b54339d27259b406a2e799.png" title=" Automatizador enters '1234567890' into Campo Celular" width="1366"/>
+                <img src="10a2c2203cd7b6df9c709f999323d01d95e855ca67ae0bbdb65065e2ece4b6e0.png" title=" Automatizador clicks on Campo Check Notificacion Correo" width="1366"/>
+                <img src="d84f8b18c8d47e94d6906864b5748b68ce6dda679991c8635f70c01c213d6a99.png" title=" Automatizador clicks on Campo Check Notificacion Mensaje" width="1366"/>
+                <img src="873eaa055ddc76da23b7feb4d40c3e717f176440e5faf93af85da95f2d6db701.png" title=" Automatizador clicks on Guardar datos del cliente" width="1366"/>
+                <img src="d3c39349f846286018a3bf38e884f1a97f4b34624199a91fd71bcc2ea7f5a2e2.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
+                <img src="a19b1861c1e94c2d2ba9ccfebc19919544accef30937cd1f8250022c79f4ce27.png" title=" Automatizador clicks on Boto + de agregar ubicaciones" width="1366"/>
+                <img src="0d4a382e2611bdf53aab10fe1b5bd5a8bf321d9108aa8dab4c73e40f42585884.png" title=" Automatizador clicks on COnfirmar los mismo datos del usuario registrado" width="1366"/>
+                <img src="607bd05ba6966dca15def50c6090f2f5df5c2d3cb95c3654773d2b1f739a4a03.png" title=" Automatizador enters 'Cl. 118 #19-52' into bt&oacute;n de Ubicaci&oacute;n del cliente" width="1366"/>
+                <img src="cd0e0f5dc584955ab9ac9af8209be25971d5e85be739c25f871271ddb77abaf2.png" title=" Automatizador enters 'Usaqu&eacute;n, Bogot&aacute;' into bt&oacute;n de complemento del cliente" width="1366"/>
+                <img src="3bdbf89977adb30d9981c6fcb0e71add154485a044fc81d0ae8016210d925c28.png" title=" Automatizador clicks on bt&oacute;n de Guardar direccion del cliente" width="1366"/>
+                <img src="59cb7662934f724ec1045440f20b0633f2e84accf3bc495569fff489bd29c0d0.png" title=" Automatizador clicks on bt&oacute;n de Continuar con la  direccion del cliente" width="1366"/>
+                <img src="d2e2bb427cbe42e5dd1ea04777e83285f6ff5884bede642ad744b76b9babef90.png" title=" Automatizador clicks on bt&oacute;n de Volver al formulario del servicio con la  direccion del cliente" width="1366"/>
+                <img src="d2e2bb427cbe42e5dd1ea04777e83285f6ff5884bede642ad744b76b9babef90.png" title=" Automatizador ts crear servicio01 (completed)" width="1366"/>
+                <img src="d2e2bb427cbe42e5dd1ea04777e83285f6ff5884bede642ad744b76b9babef90.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
+| Tipo Identificacion | Identificacion | Codigo cliente | Nombre | Correo electronico | Celular | Ubicacion | Complemento |
+| Cedula de ciudadan&iacute;a | 1012835836 | CC-123 | Juan Perez | juan@example.com | 1234567890 | Cl. 118 #19-52 | Usaqu&eacute;n, Bogot&aacute; | (completed)" width="1366"/>
+                <img src="aa236dee51f2410d88e4e24750b49d47fb8527b237748904132793bf5b030766.png" title=" Y se ingresan los siguientes datos del servicio
+| Codigo del servicio | Clase servicio | Tipo Servicio | Prioridad | Hora inicio | Hora fin | Zonas | Observacion |
+| SERV-001 | Clase A | Tipo A | Alta | 09:00 | 13:00 | Zona 1 | Servicio de prueba |" width="1366"/>
+                <img src="aa236dee51f2410d88e4e24750b49d47fb8527b237748904132793bf5b030766.png" title=" Y se ingresan los siguientes datos del producto
+| Serial | Productos | Falla |
+| 1234567 | Producto X | Falla Y |" width="1366"/>
+                <img src="aa236dee51f2410d88e4e24750b49d47fb8527b237748904132793bf5b030766.png" title=" Cuando se crea la orden de servicio" width="1366"/>
+                <img src="a807634d30971c5627c1f8d0d71af5d11ed9af87bf2e0fb3981eec02f5822d1b.png" title=" Entonces se verifica que la orden de servicio se ha creado correctamente" width="1366"/>
+                <img src="a807634d30971c5627c1f8d0d71af5d11ed9af87bf2e0fb3981eec02f5822d1b.png" title=" Example: {TipoID=Cedula de ciudadan&iacute;a, Identificacion=1012835836, CodigoCliente=CC-123, Nombre=Juan Perez, Email=juan@example.com, Celular=1234567890, CodigoServicio=SERV-001, ClaseServicio=Clase A, TipoServicio=Tipo A, Prioridad=Alta, HoraInicio=09:00, HoraFin=13:00, Zonas=Zona 1, Observacion=Servicio de prueba, Serial=1234567, Productos=Producto X, Falla=Falla Y, Ubicacion=Cl. 118 #19-52, Complemento=Usaqu&eacute;n, Bogot&aacute;} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
             </div>
         </div>
 

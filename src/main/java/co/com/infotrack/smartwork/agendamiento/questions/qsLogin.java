@@ -1,6 +1,6 @@
 package co.com.infotrack.smartwork.agendamiento.questions;
 
-import co.com.infotrack.smartwork.agendamiento.userinterfaces.ObjetcLogin;
+import co.com.infotrack.smartwork.agendamiento.userinterfaces.autenticacion.ObjetcLogin;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;

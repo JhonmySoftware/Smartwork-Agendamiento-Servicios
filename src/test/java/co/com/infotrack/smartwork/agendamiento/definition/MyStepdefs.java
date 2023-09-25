@@ -1,7 +1,8 @@
 package co.com.infotrack.smartwork.agendamiento.definition;
 
+import co.com.infotrack.smartwork.agendamiento.interactions.autenticacion.isCerrarSesion;
 import co.com.infotrack.smartwork.agendamiento.models.OrdenDeServicio;
-import co.com.infotrack.smartwork.agendamiento.tasks.tsCrearServicio01;
+import co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio01;
 import cucumber.api.DataTable;
 import cucumber.api.java.Before;
 import cucumber.api.java.ast.Cuando;
@@ -22,6 +23,8 @@ public class MyStepdefs {
 //        System.setProperty("webdriver.edge.driver", "src/test/resources/driver/msedgedriver.exe");
     }
 
+    isCerrarSesion IsCerrarSesion;
+
     // Crea una nueva orden de servicio y asigna los datos
     OrdenDeServicio ordenDeServicio = new OrdenDeServicio();
     Actor actor = Actor.named("Automatizador");
@@ -36,6 +39,8 @@ public class MyStepdefs {
         ordenDeServicio.setNombre(data.get(0).get("Nombre"));
         ordenDeServicio.setCorreoElectronico(data.get(0).get("Correo electronico"));
         ordenDeServicio.setCelular(data.get(0).get("Celular"));
+        ordenDeServicio.setUbicacion(data.get(0).get("Ubicacion"));
+        ordenDeServicio.setComplemento(data.get(0).get("Complemento"));
 
         // Pasar los datos a la tarea tsCrearServicio01
         OnStage.theActorCalled("Automatizador")
