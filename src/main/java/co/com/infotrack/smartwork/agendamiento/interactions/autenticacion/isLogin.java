@@ -49,6 +49,6 @@ public class isLogin implements Interaction {
          * Validar inicion de sesión y versionamiento del sitio
          * */
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(qsLogin.one(),
-                Matchers.comparesEqualTo("1.5.6")));
+                Matchers.comparesEqualTo("1.5.7")));
     }
 }

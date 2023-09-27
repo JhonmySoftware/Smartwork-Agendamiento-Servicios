@@ -12,8 +12,14 @@ public class qsLogin implements Question {
     }
 
 
+
     @Override
     public Object answeredBy(Actor actor) {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         return Text.of(ObjetcLogin.VersionSitio).viewedBy(actor).asString();
     }
 }

@@ -5,7 +5,6 @@ import co.com.infotrack.smartwork.agendamiento.userinterfaces.crearservicio.Obje
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
-import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Scroll;
@@ -25,7 +24,7 @@ public class AgregarUbicaciones implements Interaction {
         return Instrumented.instanceOf(AgregarUbicaciones.class).withProperties();
     }
 
-    public static Performable conEstosDatos(OrdenDeServicio ordenDeServicio) {
+    public static AgregarUbicaciones conEstosDatos(OrdenDeServicio ordenDeServicio) {
         return new AgregarUbicaciones(ordenDeServicio);
         // return new AgregarUbicaciones(ordenDeServicio);
     }
@@ -33,6 +32,10 @@ public class AgregarUbicaciones implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Scroll.to(ObjectAgregarUbicaciones.AgregarDireccion),
+                Wait.until(
+                        WebElementQuestion.the(ObjectAgregarUbicaciones.AgregarDireccion),
+                        WebElementStateMatchers.isVisible()
+                ).forNoLongerThan(10).seconds(),
                 Click.on(ObjectAgregarUbicaciones.AgregarDireccion),
                 Click.on(ObjectAgregarUbicaciones.Mismosdatosprincipal),
                 Wait.until(

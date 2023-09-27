@@ -6,7 +6,7 @@ REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@7be58f16
 
 1 Scenarios (?[32m1 passed?[0m)
 5 Steps (?[32m5 passed?[0m)
-0m45,251s
+1m0,342s
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 

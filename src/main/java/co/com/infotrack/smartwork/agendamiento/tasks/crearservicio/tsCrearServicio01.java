@@ -39,7 +39,7 @@ public class tsCrearServicio01 implements Task {
         actor.attemptsTo(isLogin.one());
 
         try {
-            Thread.sleep(6000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -49,11 +49,18 @@ public class tsCrearServicio01 implements Task {
                 Wait.until(WebElementQuestion.the(ObjectCrearServicio.Smartwork),
                         WebElementStateMatchers.isClickable()).forNoLongerThan(30).seconds(),
                 Click.on(ObjectCrearServicio.Smartwork),
-                Click.on(ObjectCrearServicio.GestionServicios),
+                Click.on(ObjectCrearServicio.GestionServicios));
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        actor.attemptsTo(
                 Wait.until(WebElementQuestion.the(ObjectCrearServicio.CrearServicio),
                         WebElementStateMatchers.isVisible()).forNoLongerThan(60).seconds(),
-                Click.on(ObjectCrearServicio.CrearServicio)
-        );
+                Click.on(ObjectCrearServicio.CrearServicio));
 
         try {
             Thread.sleep(6000);
