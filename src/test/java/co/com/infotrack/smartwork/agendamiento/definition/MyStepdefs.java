@@ -2,7 +2,8 @@ package co.com.infotrack.smartwork.agendamiento.definition;
 
 import co.com.infotrack.smartwork.agendamiento.interactions.autenticacion.isCerrarSesion;
 import co.com.infotrack.smartwork.agendamiento.models.OrdenDeServicio;
-import co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio01;
+import co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio;
+import co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsIngresarDatosServicio;
 import cucumber.api.DataTable;
 import cucumber.api.java.Before;
 import cucumber.api.java.ast.Cuando;
@@ -44,7 +45,7 @@ public class MyStepdefs {
 
         // Pasar los datos a la tarea tsCrearServicio01
         OnStage.theActorCalled("Automatizador")
-                .wasAbleTo(tsCrearServicio01.conEstosDatos(ordenDeServicio));
+                .wasAbleTo(tsCrearServicio.conEstosDatos(ordenDeServicio));
     }
 
     @Y("^se ingresan los siguientes datos del servicio$")
@@ -58,6 +59,10 @@ public class MyStepdefs {
         ordenDeServicio.setHoraFin(data.get(0).get("Hora fin"));
         ordenDeServicio.setZonas(data.get(0).get("Zonas"));
         ordenDeServicio.setObservacion(data.get(0).get("Observacion"));
+
+        // Pasar los datos a la tarea tsIngresarDatosServicio
+        OnStage.theActorCalled("Automatizador")
+                .wasAbleTo(tsIngresarDatosServicio.conEstosDatos2(ordenDeServicio));
     }
 
     @Y("^se ingresan los siguientes datos del producto$")

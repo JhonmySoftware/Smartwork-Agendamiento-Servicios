@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class ObjectDatosServicio extends PageObject {
 
-    public static Target codigoServicio = Target.the("Código Servicio").located(By.id("codigoServicio"));
+    public static Target codigoServicio = Target.the("Código Servicio").located(By.name("CodigoServicio"));
     public static Target ClaseServicio = Target.the("Clase Servicio").located(By.id("ClaseServicio"));
     public static Target IdTipoServicio = Target.the("Tipo Servicio").located(By.id("IdTipoServicio"));
     public static Target Prioridad = Target.the("Selecscionar Prioridad del  Servicio")

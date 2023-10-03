@@ -14,18 +14,18 @@ import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.questions.WebElementQuestion;
 import net.serenitybdd.screenplay.waits.Wait;
 
-public class tsCrearServicio01 implements Task {
+public class tsCrearServicio implements Task {
 
-    public static tsCrearServicio01 one() {
-        return Tasks.instrumented(tsCrearServicio01.class);
+    public static tsCrearServicio one() {
+        return Tasks.instrumented(tsCrearServicio.class);
     }
     private final OrdenDeServicio ordenDeServicio;
 
-    public tsCrearServicio01(OrdenDeServicio ordenDeServicio) {
+    public tsCrearServicio(OrdenDeServicio ordenDeServicio) {
         this.ordenDeServicio = ordenDeServicio;
     }
-    public static tsCrearServicio01 conEstosDatos(OrdenDeServicio ordenDeServicio) {
-       return Tasks.instrumented(tsCrearServicio01.class, ordenDeServicio);
+    public static tsCrearServicio conEstosDatos(OrdenDeServicio ordenDeServicio) {
+       return Tasks.instrumented(tsCrearServicio.class, ordenDeServicio);
        // return new tsCrearServicio01(ordenDeServicio);
     }
 
@@ -88,6 +88,9 @@ public class tsCrearServicio01 implements Task {
 
         // Diligenciar información de ubicaciones para el cliente.
         actor.attemptsTo(AgregarUbicaciones.conEstosDatos(ordenDeServicio));
+
+
+
 
     }
 }
