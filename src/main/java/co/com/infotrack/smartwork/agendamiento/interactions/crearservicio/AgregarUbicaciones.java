@@ -2,6 +2,7 @@ package co.com.infotrack.smartwork.agendamiento.interactions.crearservicio;
 
 import co.com.infotrack.smartwork.agendamiento.models.OrdenDeServicio;
 import co.com.infotrack.smartwork.agendamiento.userinterfaces.crearservicio.ObjectAgregarUbicaciones;
+import co.com.infotrack.smartwork.agendamiento.userinterfaces.crearservicio.ObjectCrearServicio;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
@@ -51,5 +52,45 @@ public class AgregarUbicaciones implements Interaction {
                         WebElementStateMatchers.isVisible()
                 ).forNoLongerThan(30).seconds(),
                 Click.on(ObjectAgregarUbicaciones.VolverForumlarioServicio));
+
+//        // Limpiar Formulario y buscar de nuevo la cedula
+//        actor.attemptsTo(Wait.until(WebElementQuestion.the(ObjectAgregarUbicaciones.LimpiarFormulario),
+//                WebElementStateMatchers.isVisible()).forNoLongerThan(10).seconds(),
+//                Click.on(ObjectAgregarUbicaciones.LimpiarFormulario));
+//
+//        // Volver al buscar el mismo cliente creado
+//        //Ingresa la información de tipo de identificación e identificación y formulario del cliente
+//        actor.attemptsTo(Click.on(ObjectCrearServicio.TipoIdentificacion));
+//        try {
+//            switch (ordenDeServicio.getTipoIdentificacion()) {
+//                case "Cédula de ciudadanía":
+//                    actor.attemptsTo(Click.on(ObjectCrearServicio.CedulaCiudadania));
+//                    break;
+//                case "Cédula de extranjería":
+//                    actor.attemptsTo(Click.on(ObjectCrearServicio.CedulaExtranjeria));
+//                    break;
+//                case "NIT":
+//                    actor.attemptsTo(Click.on(ObjectCrearServicio.NIT));
+//                    break;
+//                default:
+//                    System.out.println("Tipo de identificación inválido");
+//                    break;
+//            }
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            System.out.println("Ocurrió un error al intentar hacer clic en el elemento: " + e.getMessage());
+//        }
+//
+//        actor.attemptsTo(Enter.theValue(ordenDeServicio.getIdentificacion()).into(ObjectCrearServicio.Identificacion));
+
+        actor.attemptsTo(Wait.until(WebElementQuestion.the(ObjectCrearServicio.BuscarCliente),
+                        WebElementStateMatchers.isVisible()).forNoLongerThan(10).seconds(),
+                Scroll.to(ObjectCrearServicio.BuscarCliente),
+                Click.on(ObjectCrearServicio.BuscarCliente),
+                Click.on(ObjectAgregarUbicaciones.UbicacionesCliente),
+                Click.on(ObjectAgregarUbicaciones.ListaUbicacionesCliente));
+
     }
+
+
 }

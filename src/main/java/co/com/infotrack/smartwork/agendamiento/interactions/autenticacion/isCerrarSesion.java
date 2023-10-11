@@ -12,6 +12,8 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class isCerrarSesion implements Interaction {
 
+
+
     public static isCerrarSesion one() {
         return instrumented(isCerrarSesion.class);
     }

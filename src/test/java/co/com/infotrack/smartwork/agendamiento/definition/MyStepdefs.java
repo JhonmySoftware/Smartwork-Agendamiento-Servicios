@@ -2,8 +2,9 @@ package co.com.infotrack.smartwork.agendamiento.definition;
 
 import co.com.infotrack.smartwork.agendamiento.interactions.autenticacion.isCerrarSesion;
 import co.com.infotrack.smartwork.agendamiento.models.OrdenDeServicio;
-import co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio;
-import co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsIngresarDatosServicio;
+import co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio01;
+import co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsIngresarDatosProducto03;
+import co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsIngresarDatosServicio02;
 import cucumber.api.DataTable;
 import cucumber.api.java.Before;
 import cucumber.api.java.ast.Cuando;
@@ -21,7 +22,7 @@ public class MyStepdefs {
     @Before
     public void IniciarEscenario() {
         OnStage.setTheStage(new OnlineCast());
-//        System.setProperty("webdriver.edge.driver", "src/test/resources/driver/msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver", "src/test/resources/driver/msedgedriver.exe");
     }
 
     isCerrarSesion IsCerrarSesion;
@@ -45,7 +46,7 @@ public class MyStepdefs {
 
         // Pasar los datos a la tarea tsCrearServicio01
         OnStage.theActorCalled("Automatizador")
-                .wasAbleTo(tsCrearServicio.conEstosDatos(ordenDeServicio));
+                .wasAbleTo(tsCrearServicio01.conEstosDatos(ordenDeServicio));
     }
 
     @Y("^se ingresan los siguientes datos del servicio$")
@@ -62,7 +63,7 @@ public class MyStepdefs {
 
         // Pasar los datos a la tarea tsIngresarDatosServicio
         OnStage.theActorCalled("Automatizador")
-                .wasAbleTo(tsIngresarDatosServicio.conEstosDatos2(ordenDeServicio));
+                .wasAbleTo(tsIngresarDatosServicio02.conEstosDatos2(ordenDeServicio));
     }
 
     @Y("^se ingresan los siguientes datos del producto$")
@@ -71,12 +72,14 @@ public class MyStepdefs {
         ordenDeServicio.setSerial(data.get(0).get("Serial"));
         ordenDeServicio.setProductos(data.get(0).get("Productos"));
         ordenDeServicio.setFalla(data.get(0).get("Falla"));
+
+        // Pasar los datos a la tarea tsIngresarDatosProducto
+        OnStage.theActorCalled("Automatizador")
+                .wasAbleTo(tsIngresarDatosProducto03.conEstosDatos3(ordenDeServicio));
     }
 
     @Cuando("^se crea la orden de servicio$")
     public void seCreaLaOrdenDeServicio() {
-        // Aquí puedes implementar la lógica para crear la orden de servicio
-        // Utiliza las variables asignadas en los pasos anteriores
     }
 
     @Entonces("^se verifica que la orden de servicio se ha creado correctamente$")

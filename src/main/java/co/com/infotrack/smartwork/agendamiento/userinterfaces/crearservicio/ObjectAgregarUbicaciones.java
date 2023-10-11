@@ -26,4 +26,15 @@ public class ObjectAgregarUbicaciones extends PageObject {
 
     public static final Target VolverForumlarioServicio = Target.the("btón de Volver al formulario del servicio con la  direccion del cliente")
             .located(By.xpath("//span[contains(text(),'Volver')]"));
+
+    public static final Target UbicacionesCliente = Target.the("Ubicaciones del cliente despues de haber agregado la dirección")
+            .located(By.id("ubicacion-"));
+
+    public static final Target ListaUbicacionesCliente = Target.the("Lista Ubicaciones del cliente despues de haber agregado la dirección")
+            .located(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicaciones Cliente'])[1]/following::li[1]"));
+
+    public static final Target LimpiarFormulario = Target.the("Limpiar Formulario")
+            .located(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Limpiar'])[2]/following::span[1]/.."));
+
+
 }

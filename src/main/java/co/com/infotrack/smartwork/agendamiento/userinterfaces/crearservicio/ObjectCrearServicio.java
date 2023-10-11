@@ -28,6 +28,11 @@ public class ObjectCrearServicio extends PageObject {
     public static Target CedulaCiudadania = Target.the("Lista cedula de ciudadania")
             .located(By.xpath("//li[normalize-space()='Cédula de ciudadanía']"));
 
+    public static Target NIT = Target.the("Lista NIT")
+            .located(By.xpath("//li[normalize-space()='NIT']"));
+
+    public static Target CedulaExtranjeria = Target.the("Lista Cedula de extrajeria")
+            .located(By.xpath("//li[normalize-space()='Cédula de extranjería']"));
 
     public static Target Identificacion = Target.the("Campo Identificación")
             .located(By.name("Identificacion"));
@@ -59,66 +64,5 @@ public class ObjectCrearServicio extends PageObject {
 
     public static Target Guardar = Target.the("Guardar datos del cliente")
             .located(By.xpath("//span[contains(text(),'Guardar')]"));
-
-    public static Target AgregarUbicaciones = Target.the("Agregar Ubicaciones del cliente")
-            .located(By.xpath("//button[@title='Agregar']"));
-
-    public static Target CheckMismosDatosPrincipal = Target.the("Check en el campo mismos datos del principal")
-            .located(By.xpath("(//input[@type='checkbox'])[5]"));
-
-    public static Target Direccion = Target.the("Campo de Dirección")
-            .located(By.name("Direccion"));
-
-    public static Target ComplementoDireccion = Target.the("Complemento de dirección")
-            .located(By.name("Lugar"));
-
-    public static Target Latitud = Target.the("Latitud")
-            .located(By.name("Latitud"));
-
-    public static Target Longitud = Target.the("Latitud")
-            .located(By.name("Longitud"));
-
-    public static Target GuardarUbicacion = Target.the("Guardar Ubicacion ")
-            .located(By.name("Longitud"));
-
-
-    public static Target CodigoServicio = Target.the("Campo Código de Servicio")
-            .located(By.xpath("//div[@class='MuiDialogActions-root MuiDialogActions-spacing']//span[@class='MuiTypography-root MuiTypography-colorInherit'][normalize-space()='Guardar']"));
-
-
-    /**
-     * Diligenciar el formulario para la creación del servicio
-     * */
-    public static Target ClaseServicio = Target.the("Campo Clase de Servicio")
-            .located(By.id("claseServicioId"));
-
-    public static Target TipoServicio = Target.the("Campo Tipo de Servicio")
-            .located(By.id("tipoServicioId"));
-
-    public static Target Prioridad = Target.the("Campo Prioridad")
-            .located(By.id("prioridadId"));
-
-    public static Target HoraInicio = Target.the("Campo Hora de Inicio")
-            .located(By.id("horaInicioId"));
-
-    public static Target HoraFin = Target.the("Campo Hora de Fin")
-            .located(By.id("horaFinId"));
-
-    public static Target Zonas = Target.the("Campo Zonas")
-            .located(By.id("zonasId"));
-
-    public static Target Observacion = Target.the("Campo Observación")
-            .located(By.id("observacionId"));
-
-    public static Target Serial = Target.the("Campo Serial")
-            .located(By.id("serialId"));
-
-    public static Target Productos = Target.the("Campo Productos")
-            .located(By.id("productosId"));
-
-    public static Target Falla = Target.the("Campo Falla")
-            .located(By.id("fallaId"));
-
-
 
 }

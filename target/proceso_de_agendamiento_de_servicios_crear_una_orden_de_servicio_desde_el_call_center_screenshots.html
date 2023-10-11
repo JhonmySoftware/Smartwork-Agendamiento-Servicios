@@ -132,7 +132,7 @@
             <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-10-2023 18:12</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-10-2023 20:32</span>
     <br style="clear:left"/>
 </div>
 
@@ -173,9 +173,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Crear una orden de servicio desde el call center
+                                <span class="error-color">Crear una orden de servicio desde el call center
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -196,62 +196,412 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Stale element reference exception: stale element reference: stale element not found</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.StaleElementReferenceException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.infotrack.smartwork.agendamiento.interactions.crearservicio.AgregarUbicaciones.performAs(AgregarUbicaciones.java:35)<br />co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio01.performAs(tsCrearServicio01.java:109)<br />co.com.infotrack.smartwork.agendamiento.definition.MyStepdefs.queEnElCallCenterSeDeseaCrearUnaOrdenDeServicioConLosSiguientesDatos(MyStepdefs.java:49)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource4815492461174919897.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="f0e3a9f55690b5a72300bb0b7141a662e238dc040944e9b93986d877bf9b4562.png" title=" Example: {TipoID=Cedula de ciudadan&iacute;a, Identificacion=1012835816, CodigoCliente=CC-123, Nombre=Juan Perez, Email=juan@example.com, Celular=1234567890, CodigoServicio=SERV-001, ClaseServicio=Clase A, TipoServicio=Tipo A, Prioridad=Alta, HoraInicio=09:00, HoraFin=13:00, Zonas=Zona 1, Observacion=Servicio de prueba, Serial=1234567, Productos=Producto X, Falla=Falla Y, Ubicacion=Cl. 118 #19-52, Complemento=Usaqu&eacute;n, Bogot&aacute;}" width="1366"/>
-                <img src="f0e3a9f55690b5a72300bb0b7141a662e238dc040944e9b93986d877bf9b4562.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
+                <img src="4c06a4068465e48be0d54b583bf8bb8521c679632536c2eefa046d82a639a802.png" title=" Example: {TipoID=C&eacute;dula de ciudadan&iacute;a, Identificacion=2869845399, CodigoCliente=CC-123, Nombre=R. Automotion 1, Email=jhon.quinones@infotrack.com.co, Celular=1234567890, CodigoServicio=01, ClaseServicio=Domicilio, TipoServicio=Mantenimiento, Prioridad=Alta, HoraInicio=07:00 AM, HoraFin=05:00 PM, Zonas=X, Observacion=Servicio de prueba, Serial=4800356789212, Productos=Ascensor de Carga 1000Kg, Falla=Desnivelaci&oacute;n, Ubicacion=Cl. 118 #19-52, Complemento=Complemento}" width="1366"/>
+                <img src="4c06a4068465e48be0d54b583bf8bb8521c679632536c2eefa046d82a639a802.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
 | Tipo Identificacion | Identificacion | Codigo cliente | Nombre | Correo electronico | Celular | Ubicacion | Complemento |
-| Cedula de ciudadan&iacute;a | 1012835816 | CC-123 | Juan Perez | juan@example.com | 1234567890 | Cl. 118 #19-52 | Usaqu&eacute;n, Bogot&aacute; |" width="1366"/>
-                <img src="f0e3a9f55690b5a72300bb0b7141a662e238dc040944e9b93986d877bf9b4562.png" title=" Automatizador ts crear servicio" width="1366"/>
-                <img src="f0e3a9f55690b5a72300bb0b7141a662e238dc040944e9b93986d877bf9b4562.png" title=" Automatizador is abrir pagina" width="1366"/>
-                <img src="f0e3a9f55690b5a72300bb0b7141a662e238dc040944e9b93986d877bf9b4562.png" title=" Automatizador opens the Object abrir pagina" width="1366"/>
-                <img src="b573e87b4be6997b76253c91835d2987c40f6bfc3b89c58c07e539d5ac7915a8.png" title=" Automatizador is abrir pagina (completed)" width="1366"/>
-                <img src="e5539854ec5856c2d62fee2c2370aedba7174fa1ea306edccb3a755daf0edfd7.png" title=" Automatizador is login" width="1366"/>
-                <img src="e5539854ec5856c2d62fee2c2370aedba7174fa1ea306edccb3a755daf0edfd7.png" title=" Automatizador enters 'Automatizador' into Ingrese su usuario" width="1366"/>
-                <img src="b7f7a0fc9889554b59224e12685b98c3d385983a87031622a567f0128161d063.png" title=" Automatizador enters 'Demo123*' into Ingrese su contrasenia" width="1366"/>
-                <img src="a3661b257aecd87914cd46cefe3f7fddd1ada6d254bd590ae955e8d6d144e295.png" title=" Automatizador clicks on Iniciar Sesi&oacute;n" width="1366"/>
-                <img src="c64c36c1f6ec32c5fda90fcd15082b28f2c7d04d33ebbc8241e770c211ea9c40.png" title=" Then qs login should be a value equal to '1.5.7'" width="1366"/>
-                <img src="c64c36c1f6ec32c5fda90fcd15082b28f2c7d04d33ebbc8241e770c211ea9c40.png" title=" Automatizador is login (completed)" width="1366"/>
-                <img src="8b633d717a7cacf5d41fdf852cce17ca896ce456f36ce28bb59f02d948755d13.png" title=" Automatizador clicks on Modulo principal de Smartwork" width="1366"/>
-                <img src="93f79ccae092a50921246e2ed83f3fe65405580ea372550c5deabe4d226bc5e0.png" title=" Automatizador clicks on Sub-Modulo principal de Gesti&oacute;n de servicios" width="1366"/>
-                <img src="456af3ebd6a8a91918fd4d2eb425f2895b087bf526ac318c619988ac37fb5355.png" title=" Automatizador clicks on Bot&oacute;n +  de crear el servicio" width="1366"/>
-                <img src="8919e6229d4a7d2ef6324956d8352cb0e6dc7569feef8afeed0250560c4330dc.png" title=" Automatizador clicks on Campo Tipo de Identificaci&oacute;n" width="1366"/>
-                <img src="53785cbb590655560d31c366b888ba39c8b6d410560f26d32d01a81939e70bac.png" title=" Automatizador clicks on Lista cedula de ciudadania" width="1366"/>
-                <img src="e8a688c9a5048ef4cc8ed3b2b5885fbe52d65f85c72df527add8fc74ad0982dd.png" title=" Automatizador enters '1012835816' into Campo Identificaci&oacute;n" width="1366"/>
-                <img src="dc393040766eea0da61c1bb246b7b8617473ae87537bb81562daee4ee77fad85.png" title=" Automatizador clicks on Campo de buscar el cliente" width="1366"/>
-                <img src="093d45d0ca2de7463454f77c5c2d0fd88b327a50e7e12538ddd442f150d2451b.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
-                <img src="b1eb688c817c31c0437cae16432e01f0383c2f52cf26bcd74e30d0fc749cb418.png" title=" Automatizador enters 'CC-123' into Campo C&oacute;digo de Cliente" width="1366"/>
-                <img src="19db127838a0388d5091b923c0794756e19d1345ca3ab4aa65cc881387b369e5.png" title=" Automatizador enters 'Juan Perez' into Campo Nombre" width="1366"/>
-                <img src="6128fe0781ec830ccf5360bc0a8228e2d3e2934a811750684e90ef0c4754b21a.png" title=" Automatizador enters 'juan@example.com' into Campo Correo Electr&oacute;nico" width="1366"/>
-                <img src="43c062dfc52b3b6948d8be7055c3bdfb21ae6b8bf466f3d2bf390090541ea963.png" title=" Automatizador enters '1234567890' into Campo Celular" width="1366"/>
-                <img src="11cf8857e5d75ae75fc37c0e83827e782f315064ac70c3e960aa8a4fbd4bf1e5.png" title=" Automatizador clicks on Campo Check Notificacion Correo" width="1366"/>
-                <img src="0c828d48fb1fa3a1ba7114ef8338fa0084debdc92ab495899cb453a9f71feca8.png" title=" Automatizador clicks on Campo Check Notificacion Mensaje" width="1366"/>
-                <img src="b1adc7fa7d3c0011bd1048a142c3319b737e03e3dd04d50b7e83a6e3d5035b8b.png" title=" Automatizador clicks on Guardar datos del cliente" width="1366"/>
-                <img src="9653a93fd740c5d82b5a16a5b4b17ee02c307a4c3c45c16e97e36f251303240f.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
-                <img src="f65143d4c78e29d2270fe6131146b5c1bc2de6919eb0dc806e80ceb2eddf74be.png" title=" Automatizador clicks on Boto + de agregar ubicaciones" width="1366"/>
-                <img src="be709dcae4f921ec72dcd6bf818f87551b154e469a623db1e7422cd2f4f69a81.png" title=" Automatizador clicks on COnfirmar los mismo datos del usuario registrado" width="1366"/>
-                <img src="6c3ac740fdbe185a72768d91888f902e018476fb6f6f3f32a79094fdc4851f6b.png" title=" Automatizador enters 'Cl. 118 #19-52' into bt&oacute;n de Ubicaci&oacute;n del cliente" width="1366"/>
-                <img src="dd30347315642980d941cc1661781eabb9cd36d44f5846e3e50ee91606690df9.png" title=" Automatizador enters 'Usaqu&eacute;n, Bogot&aacute;' into bt&oacute;n de complemento del cliente" width="1366"/>
-                <img src="122871c6a3151bafba83f986922554e763f7cd2b4d9d189300ce2fdd4c682fec.png" title=" Automatizador clicks on bt&oacute;n de Guardar direccion del cliente" width="1366"/>
-                <img src="df1cb21d84696bcd949ab0997d6338334032f7baf9e294373693cf134fdbcea9.png" title=" Automatizador clicks on bt&oacute;n de Continuar con la  direccion del cliente" width="1366"/>
-                <img src="28967ca318720b36956bb95912131afff86e968bcba91f805ca368925fc6e2e5.png" title=" Automatizador clicks on bt&oacute;n de Volver al formulario del servicio con la  direccion del cliente" width="1366"/>
-                <img src="28967ca318720b36956bb95912131afff86e968bcba91f805ca368925fc6e2e5.png" title=" Automatizador ts crear servicio (completed)" width="1366"/>
-                <img src="28967ca318720b36956bb95912131afff86e968bcba91f805ca368925fc6e2e5.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
+| C&eacute;dula de ciudadan&iacute;a | 2869845399 | CC-123 | R. Automotion 1 | jhon.quinones@infotrack.com.co | 1234567890 | Cl. 118 #19-52 | Complemento |" width="1366"/>
+                <img src="4c06a4068465e48be0d54b583bf8bb8521c679632536c2eefa046d82a639a802.png" title=" Automatizador ts crear servicio01" width="1366"/>
+                <img src="4c06a4068465e48be0d54b583bf8bb8521c679632536c2eefa046d82a639a802.png" title=" Automatizador is abrir pagina" width="1366"/>
+                <img src="4c06a4068465e48be0d54b583bf8bb8521c679632536c2eefa046d82a639a802.png" title=" Automatizador opens the Object abrir pagina" width="1366"/>
+                <img src="42f86bd2dd6441362e63d54d9dfcac5f86953fbea2dc722825e02094491c6cfe.png" title=" Automatizador is abrir pagina (completed)" width="1366"/>
+                <img src="e3a25dc1a5c5cb63268c8637c331b08618e97a49360467be0c4dad271b8b3e81.png" title=" Automatizador is login" width="1366"/>
+                <img src="e3a25dc1a5c5cb63268c8637c331b08618e97a49360467be0c4dad271b8b3e81.png" title=" Automatizador enters 'Automatizador' into Ingrese su usuario" width="1366"/>
+                <img src="24b4684b21c0b466e932de7f28156d6f2d2f109bc55c237ef0712edbff8f44f6.png" title=" Automatizador enters 'Demo123*' into Ingrese su contrasenia" width="1366"/>
+                <img src="7854930e7fae9beffb34876e77beee31f92cbb1c10f4066cfd0c643807ff3283.png" title=" Automatizador clicks on Iniciar Sesi&oacute;n" width="1366"/>
+                <img src="7a7596d8dcf8dd4e167987065f450e1884303e23bd66b2c06e779e23802657f9.png" title=" Then qs login should be a value equal to '1.5.7'" width="1366"/>
+                <img src="7a7596d8dcf8dd4e167987065f450e1884303e23bd66b2c06e779e23802657f9.png" title=" Automatizador is login (completed)" width="1366"/>
+                <img src="53b9c147bd2fdd1f01da7bfb7826e10d98cd042e4ee7b50bd4e842111f9e8227.png" title=" Automatizador clicks on Modulo principal de Smartwork" width="1366"/>
+                <img src="1acaf55df29d6b4ad395dbf305c31b63ee9e59abe9c111384dad043ac79ae3b5.png" title=" Automatizador clicks on Sub-Modulo principal de Gesti&oacute;n de servicios" width="1366"/>
+                <img src="71dea20126c69b7bc1ce6348d29e065848beeae8d1dc8bf0200deac0b7fdece3.png" title=" Automatizador clicks on Bot&oacute;n +  de crear el servicio" width="1366"/>
+                <img src="46cc88ebb2f7f43347a8013a7510067a3622573c72f65427b334583ebf6f6414.png" title=" Automatizador clicks on Campo Tipo de Identificaci&oacute;n" width="1366"/>
+                <img src="3ab5d9facee991fb95a46140520c3e5443659affb99b80f011da31614271de7d.png" title=" Automatizador clicks on Lista cedula de ciudadania" width="1366"/>
+                <img src="f1e0b237466378d8358257b053efbd7c0eb5e3cdf4571f46a8670284d28a21f2.png" title=" Automatizador enters '2869845399' into Campo Identificaci&oacute;n" width="1366"/>
+                <img src="8a2bfdf0792232c3b000d40b919c6c1afecd600a5805cec96cc829282134a1de.png" title=" Automatizador clicks on Campo de buscar el cliente" width="1366"/>
+                <img src="7464bf87d9507a119fbcae38ef1fd00c8b2783aed224a1fc79bbcb0de5d5aa62.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
+                <img src="32c3ac8e96d94d2267fb2fd47584dd6fb32922fc3df0857876f83ffbb05e11d4.png" title=" Automatizador enters 'CC-123' into Campo C&oacute;digo de Cliente" width="1366"/>
+                <img src="4edb20a5c7a056aa352da2c0c6e986c68e3fa9a6c40a5cd91b42d90a29a7afac.png" title=" Automatizador enters 'R. Automotion 1' into Campo Nombre" width="1366"/>
+                <img src="d2aa2b61c3a9a9772928c55be9bf08a5392073547544ef23e20506d4a6c59c01.png" title=" Automatizador enters 'jhon.quinones@infotrack.com.co' into Campo Correo Electr&oacute;nico" width="1366"/>
+                <img src="afe318d49d7ec54715a03e1ce29b9af5f9b6c528778ad4747eab86fa32237e3c.png" title=" Automatizador enters '1234567890' into Campo Celular" width="1366"/>
+                <img src="258e81dcd068e9d48780dcb3bb0685196035465bbeece1c3ba324bec0c57c033.png" title=" Automatizador clicks on Campo Check Notificacion Correo" width="1366"/>
+                <img src="cebdf3833f11f9037e7e50d39afc362b8b4f044507aa3fc187f8b531200191b0.png" title=" Automatizador clicks on Campo Check Notificacion Mensaje" width="1366"/>
+                <img src="11973709715708376725ddfe10876f426953f8d6088950c0816b87e7ab32be50.png" title=" Automatizador clicks on Guardar datos del cliente" width="1366"/>
+                <img src="f8da61392f987924d616d17b21a20dc0d5b752ff84ccec06990501b30c4253c8.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
+                <img src="826c7f53659478e62c6fa085a849495cc5d98d4f1f8c74640b56c92ccecb8f79.png" title=" Automatizador clicks on Boto + de agregar ubicaciones" width="1366"/>
+                <img src="7c9878e221ef8f09f104b17fbdb205693414bce3aaffd9f269e76b3d69a54e21.png" title=" Automatizador clicks on COnfirmar los mismo datos del usuario registrado" width="1366"/>
+                <img src="d22882dfc7c055a10cb6fb9aa8ada990eab9d4689fa8296b332dd492bfbdfc32.png" title=" Automatizador enters 'Cl. 118 #19-52' into bt&oacute;n de Ubicaci&oacute;n del cliente" width="1366"/>
+                <img src="fbec04961d2524672c79be85852468e9d0decb51783b7e4e92a23ce132ba7dc7.png" title=" Automatizador enters 'Complemento' into bt&oacute;n de complemento del cliente" width="1366"/>
+                <img src="62bc3ea8dcfb323d28e529440119cde8e077edbdd341764eaba33f98f027394c.png" title=" Automatizador clicks on bt&oacute;n de Guardar direccion del cliente" width="1366"/>
+                <img src="72efd964edaf2ce190a5b40b371116048d2bfddc5299f46e6d6b22a7d1befbea.png" title=" Automatizador clicks on bt&oacute;n de Continuar con la  direccion del cliente" width="1366"/>
+                <img src="0af5c9885cbbc27f46cdb1a4b5d4405e1b28424aadbd7c1c3393b980a3140009.png" title=" Automatizador clicks on bt&oacute;n de Volver al formulario del servicio con la  direccion del cliente" width="1366"/>
+                <img src="e575e7e4bee10173961e0b70a8f7fb4d86df120da8e3909634c91c095b13eadf.png" title=" Automatizador clicks on Campo de buscar el cliente" width="1366"/>
+                <img src="8bf82fbc570a3b3ddcaa7449dba9cde5c8bfc122ed7766e29ba7fee11b84063b.png" title=" Automatizador clicks on Ubicaciones del cliente despues de haber agregado la direcci&oacute;n" width="1366"/>
+                <img src="52f3fa8f7b28f515706f99b324105abe7d0bf8924fbc50c2bfecb357a21bfb26.png" title=" Automatizador clicks on Lista Ubicaciones del cliente despues de haber agregado la direcci&oacute;n" width="1366"/>
+                <img src="52f3fa8f7b28f515706f99b324105abe7d0bf8924fbc50c2bfecb357a21bfb26.png" title=" Automatizador ts crear servicio01 (completed)" width="1366"/>
+                <img src="52f3fa8f7b28f515706f99b324105abe7d0bf8924fbc50c2bfecb357a21bfb26.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
 | Tipo Identificacion | Identificacion | Codigo cliente | Nombre | Correo electronico | Celular | Ubicacion | Complemento |
-| Cedula de ciudadan&iacute;a | 1012835816 | CC-123 | Juan Perez | juan@example.com | 1234567890 | Cl. 118 #19-52 | Usaqu&eacute;n, Bogot&aacute; | (completed)" width="1366"/>
-                <img src="67b76b3fc98a1292f06c192c25581153043d70a5e2b2cd8195ca2bcade7a7bbd.png" title=" Y se ingresan los siguientes datos del servicio
+| C&eacute;dula de ciudadan&iacute;a | 2869845399 | CC-123 | R. Automotion 1 | jhon.quinones@infotrack.com.co | 1234567890 | Cl. 118 #19-52 | Complemento | (completed)" width="1366"/>
+                <img src="3d535ac7d2a83a17f39401a39400232eaaab168d5fc5da507705540bd7aecd1c.png" title=" Y se ingresan los siguientes datos del servicio
 | Codigo del servicio | Clase servicio | Tipo Servicio | Prioridad | Hora inicio | Hora fin | Zonas | Observacion |
-| SERV-001 | Clase A | Tipo A | Alta | 09:00 | 13:00 | Zona 1 | Servicio de prueba |" width="1366"/>
-                <img src="67b76b3fc98a1292f06c192c25581153043d70a5e2b2cd8195ca2bcade7a7bbd.png" title=" Automatizador enters 'SERV-001' into C&oacute;digo Servicio" width="1366"/>
-                <img src="67b76b3fc98a1292f06c192c25581153043d70a5e2b2cd8195ca2bcade7a7bbd.png" title=" Y se ingresan los siguientes datos del servicio
+| 01 | Domicilio | Mantenimiento | Alta | 07:00 AM | 05:00 PM | X | Servicio de prueba |" width="1366"/>
+                <img src="3d535ac7d2a83a17f39401a39400232eaaab168d5fc5da507705540bd7aecd1c.png" title=" Automatizador enters '01' into C&oacute;digo Servicio" width="1366"/>
+                <img src="45942d103b68fd3397fcc96f4f2608911ce84f6622039164d67e43281ded2d1b.png" title=" Automatizador enters 'Domicilio' into Clase Servicio" width="1366"/>
+                <img src="cda2a98e0bc59292bdfaae7644d2970190d5821f0ea739de5e612237d0da24b0.png" title=" Automatizador clicks on Lista Clase Servicio" width="1366"/>
+                <img src="d39f12903f3db4db9e07de4b408525faefb9a4b1a1dc953d16e56872ef7151df.png" title=" Automatizador enters 'Mantenimiento' into Tipo Servicio" width="1366"/>
+                <img src="dd53ca93e9d6fa51aa0c727fa1a58afae4d17a5447f76a2d6879ec76ff0f1e28.png" title=" Automatizador clicks on Lista Tipo Servicio" width="1366"/>
+                <img src="3a1163b47eeb7937707abce389bff97253614e4d9ea41d0c5e8784f0ab20a779.png" title=" Automatizador enters 'Alta' into Selecscionar Prioridad del  Servicio" width="1366"/>
+                <img src="43be2ac36b903570c8fb19d72a94dcf89442b18cd4f1294c8037a471e145c92b.png" title=" Automatizador clicks on Lista Selecscionar Prioridad del  Servicio" width="1366"/>
+                <img src="c80e9659ec65afdc5cddb01a1243276397f770baed4ec2662f1e467ea0dac992.png" title=" Automatizador enters '07:00 AM' into Hora de Inicio" width="1366"/>
+                <img src="9aa1c563bca22db01941698f32a6fe5ec6ef7bad628146882de484cdc291c14a.png" title=" Automatizador enters '05:00 PM' into Hora de fin" width="1366"/>
+                <img src="05d179ce78d5e6c7f4bbc85fd86092d8b2ddcf2233cc6b948f66656385f38b8a.png" title=" Automatizador enters 'Servicio de prueba' into Observaci&oacute;n" width="1366"/>
+                <img src="05d179ce78d5e6c7f4bbc85fd86092d8b2ddcf2233cc6b948f66656385f38b8a.png" title=" Y se ingresan los siguientes datos del servicio
 | Codigo del servicio | Clase servicio | Tipo Servicio | Prioridad | Hora inicio | Hora fin | Zonas | Observacion |
-| SERV-001 | Clase A | Tipo A | Alta | 09:00 | 13:00 | Zona 1 | Servicio de prueba | (completed)" width="1366"/>
-                <img src="67b76b3fc98a1292f06c192c25581153043d70a5e2b2cd8195ca2bcade7a7bbd.png" title=" Y se ingresan los siguientes datos del producto
+| 01 | Domicilio | Mantenimiento | Alta | 07:00 AM | 05:00 PM | X | Servicio de prueba | (completed)" width="1366"/>
+                <img src="7228e2ac2cec5ab93111bd9fac3388146f92debb9d664a3ba43437886db58d85.png" title=" Y se ingresan los siguientes datos del producto
 | Serial | Productos | Falla |
-| 1234567 | Producto X | Falla Y |" width="1366"/>
-                <img src="67b76b3fc98a1292f06c192c25581153043d70a5e2b2cd8195ca2bcade7a7bbd.png" title=" Cuando se crea la orden de servicio" width="1366"/>
-                <img src="67b76b3fc98a1292f06c192c25581153043d70a5e2b2cd8195ca2bcade7a7bbd.png" title=" Entonces se verifica que la orden de servicio se ha creado correctamente" width="1366"/>
-                <img src="67b76b3fc98a1292f06c192c25581153043d70a5e2b2cd8195ca2bcade7a7bbd.png" title=" Example: {TipoID=Cedula de ciudadan&iacute;a, Identificacion=1012835816, CodigoCliente=CC-123, Nombre=Juan Perez, Email=juan@example.com, Celular=1234567890, CodigoServicio=SERV-001, ClaseServicio=Clase A, TipoServicio=Tipo A, Prioridad=Alta, HoraInicio=09:00, HoraFin=13:00, Zonas=Zona 1, Observacion=Servicio de prueba, Serial=1234567, Productos=Producto X, Falla=Falla Y, Ubicacion=Cl. 118 #19-52, Complemento=Usaqu&eacute;n, Bogot&aacute;} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+| 4800356789212 | Ascensor de Carga 1000Kg | Desnivelaci&oacute;n |" width="1366"/>
+                <img src="7228e2ac2cec5ab93111bd9fac3388146f92debb9d664a3ba43437886db58d85.png" title=" Automatizador enters '4800356789212' into Campo Serial" width="1366"/>
+                <img src="91f03881c6f7e1c66877823df986b4c0296129762537efc1678f512cc89a605d.png" title=" Automatizador clicks on Lista Campo Serial" width="1366"/>
+                <img src="12eb697571a67ea35f3cfa0f57c3b3b4557a89f6228538683465f33e797acc1d.png" title=" Automatizador enters 'Desnivelaci&oacute;n' into Campo Falla" width="1366"/>
+                <img src="9383221c75e494b80f01a1b399332f3433485ad2f70bc44d945725cef35a7a11.png" title=" Automatizador clicks on Lista Campo Falla" width="1366"/>
+                <img src="76def6c269ff066e6d6587d79909188f0045ab34ade499d0ea249df37ed8cab9.png" title=" Automatizador clicks on Bot&oacute;n para guardar el servicio" width="1366"/>
+                <img src="18c4d789923c30f531405db815216ebb6040da99e012ffe2a029c41cc656f682.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
+                <img src="b0ff96237ea3610994a33e0fb17d8977cf206e0d0d38449fb967011cafb66f28.png" title=" Automatizador is cerrar sesion" width="1366"/>
+                <img src="b0ff96237ea3610994a33e0fb17d8977cf206e0d0d38449fb967011cafb66f28.png" title=" Automatizador clicks on icono para ver el perfil de cierre de la sesi&oacute;n" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Automatizador clicks on Modulo para realizar el cierre de la sesi&oacute;n" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Automatizador is cerrar sesion (completed)" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Y se ingresan los siguientes datos del producto
+| Serial | Productos | Falla |
+| 4800356789212 | Ascensor de Carga 1000Kg | Desnivelaci&oacute;n | (completed)" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Cuando se crea la orden de servicio" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Entonces se verifica que la orden de servicio se ha creado correctamente" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Example: {TipoID=C&eacute;dula de ciudadan&iacute;a, Identificacion=2869845399, CodigoCliente=CC-123, Nombre=R. Automotion 1, Email=jhon.quinones@infotrack.com.co, Celular=1234567890, CodigoServicio=01, ClaseServicio=Domicilio, TipoServicio=Mantenimiento, Prioridad=Alta, HoraInicio=07:00 AM, HoraFin=05:00 PM, Zonas=X, Observacion=Servicio de prueba, Serial=4800356789212, Productos=Ascensor de Carga 1000Kg, Falla=Desnivelaci&oacute;n, Ubicacion=Cl. 118 #19-52, Complemento=Complemento} (completed)" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Example: {TipoID=C&eacute;dula de ciudadan&iacute;a, Identificacion=2169835991, CodigoCliente=CC-123, Nombre=R. Automotion 1, Email=jhon.quinones@infotrack.com.co, Celular=1234567891, CodigoServicio=01, ClaseServicio=Domicilio, TipoServicio=Mantenimiento, Prioridad=Alta, HoraInicio=07:00 AM, HoraFin=05:00 PM, Zonas=X, Observacion=Servicio de prueba, Serial=4800356789212, Productos=Ascensor de Carga 1000Kg, Falla=Desnivelaci&oacute;n, Ubicacion=Cl. 118 #19-52, Complemento=Complemento}" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
+| Tipo Identificacion | Identificacion | Codigo cliente | Nombre | Correo electronico | Celular | Ubicacion | Complemento |
+| C&eacute;dula de ciudadan&iacute;a | 2169835991 | CC-123 | R. Automotion 1 | jhon.quinones@infotrack.com.co | 1234567891 | Cl. 118 #19-52 | Complemento |" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Automatizador ts crear servicio01" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Automatizador is abrir pagina" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Automatizador opens the Object abrir pagina" width="1366"/>
+                <img src="42f86bd2dd6441362e63d54d9dfcac5f86953fbea2dc722825e02094491c6cfe.png" title=" Automatizador is abrir pagina (completed)" width="1366"/>
+                <img src="e3a25dc1a5c5cb63268c8637c331b08618e97a49360467be0c4dad271b8b3e81.png" title=" Automatizador is login" width="1366"/>
+                <img src="e3a25dc1a5c5cb63268c8637c331b08618e97a49360467be0c4dad271b8b3e81.png" title=" Automatizador enters 'Automatizador' into Ingrese su usuario" width="1366"/>
+                <img src="3b2c0d2095acb442a4e21467deac8145eaa8dcb6803edf0df4ede89892c26642.png" title=" Automatizador enters 'Demo123*' into Ingrese su contrasenia" width="1366"/>
+                <img src="8a4ca0f885c52b2afd11e326c052ae310b74dc0a11b17dcc78f26e9796cf362b.png" title=" Automatizador clicks on Iniciar Sesi&oacute;n" width="1366"/>
+                <img src="7a7596d8dcf8dd4e167987065f450e1884303e23bd66b2c06e779e23802657f9.png" title=" Then qs login should be a value equal to '1.5.7'" width="1366"/>
+                <img src="7a7596d8dcf8dd4e167987065f450e1884303e23bd66b2c06e779e23802657f9.png" title=" Automatizador is login (completed)" width="1366"/>
+                <img src="1a3f27c25850e57ac8ee9e5a6e35907e86a70d8f62ae61bed2c998d05efc3765.png" title=" Automatizador clicks on Modulo principal de Smartwork" width="1366"/>
+                <img src="72d1d0b45ce8ed598f846162d40b7e41ac831f7361c1c921385d35c2c75b2aac.png" title=" Automatizador clicks on Sub-Modulo principal de Gesti&oacute;n de servicios" width="1366"/>
+                <img src="efea33c2c0b8570399c96b4a97efa2fc1af7ede2153693d5012eb337752c73c8.png" title=" Automatizador clicks on Bot&oacute;n +  de crear el servicio" width="1366"/>
+                <img src="595174f9a2eac99409366684e8fc681bb43f48c428b2e1c0e09ba1b99c1aa55a.png" title=" Automatizador clicks on Campo Tipo de Identificaci&oacute;n" width="1366"/>
+                <img src="69d93c84fc6b914417dddfc0e56780b02ec1b9afb0ac5491654ddf8237b0c744.png" title=" Automatizador clicks on Lista cedula de ciudadania" width="1366"/>
+                <img src="331d9984f8b36da16310d189b38ddde0035fd71c077a2efbae303c48d46e1616.png" title=" Automatizador enters '2169835991' into Campo Identificaci&oacute;n" width="1366"/>
+                <img src="438a8917fada010db5f01802d585529e8c71d08f71c978abd23cb76cb1e82530.png" title=" Automatizador clicks on Campo de buscar el cliente" width="1366"/>
+                <img src="bf430c50e4f15ad2ff226bdc1d85ed47160bc126e80db2956322ba2a3a583137.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
+                <img src="55465eff8680735807bbb8bebc6054912d20803884ea2a6aac41022414f3d1db.png" title=" Automatizador enters 'CC-123' into Campo C&oacute;digo de Cliente" width="1366"/>
+                <img src="5a6bcb28665cc64015785e33e501a236a4ef7b643b26c6d8a41fc0c27db0cfc1.png" title=" Automatizador enters 'R. Automotion 1' into Campo Nombre" width="1366"/>
+                <img src="be7f285d0d49d054ecf5e3a5089ade39d934b0ea815dbd679530dfa39a949a10.png" title=" Automatizador enters 'jhon.quinones@infotrack.com.co' into Campo Correo Electr&oacute;nico" width="1366"/>
+                <img src="26dba48265819305a33b40fb9bd783efaeaed9f6131d107df4628e851744a236.png" title=" Automatizador enters '1234567891' into Campo Celular" width="1366"/>
+                <img src="a985eb967bf0a2d0603ebef2887355a265a6d8bdaaf1200f3e8a4d7697b5f126.png" title=" Automatizador clicks on Campo Check Notificacion Correo" width="1366"/>
+                <img src="4326ff5d2b659eaf8877dd8071c6dcb78d1cc797795832d44ec1ae9ba59913b0.png" title=" Automatizador clicks on Campo Check Notificacion Mensaje" width="1366"/>
+                <img src="cb88a57b7bb2e23aa25c406d79d0272bff6abd0606f4db4eeaa04fbdd1177c89.png" title=" Automatizador clicks on Guardar datos del cliente" width="1366"/>
+                <img src="48250c63d3ef3cbee67ce3d43b41d5eafe9a2b20df4b428b72e4f84f3a99b8c3.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
+                <img src="93ffbeb64b74dd8d6c5365e44d0f8114b39efe307945291ef6b650d8928a1fd6.png" title=" Automatizador clicks on Boto + de agregar ubicaciones" width="1366"/>
+                <img src="4e82a9173ae50e80be40c8cd0c012a0d31357a624ac9b0c228576202c9473a07.png" title=" Automatizador clicks on COnfirmar los mismo datos del usuario registrado" width="1366"/>
+                <img src="2650dc2d0c5db781316b1d848c3ce6079482aac1ceac62342197a435fc90405a.png" title=" Automatizador enters 'Cl. 118 #19-52' into bt&oacute;n de Ubicaci&oacute;n del cliente" width="1366"/>
+                <img src="487dd10e5e9f51a3d1583709f90d5aa40697e0b81556cca5a6e199259aaa8152.png" title=" Automatizador enters 'Complemento' into bt&oacute;n de complemento del cliente" width="1366"/>
+                <img src="c4f36ccb755f439ec08409f0b7c1aeca8acd50a1a3d57ee6cb29c45986b42658.png" title=" Automatizador clicks on bt&oacute;n de Guardar direccion del cliente" width="1366"/>
+                <img src="3d2470e490c568d64a113a03d719ba5bef53db784fd3ee2491bbffcd200d9b8b.png" title=" Automatizador clicks on bt&oacute;n de Continuar con la  direccion del cliente" width="1366"/>
+                <img src="0af5c9885cbbc27f46cdb1a4b5d4405e1b28424aadbd7c1c3393b980a3140009.png" title=" Automatizador clicks on bt&oacute;n de Volver al formulario del servicio con la  direccion del cliente" width="1366"/>
+                <img src="308b697b244925065f575927f9f015e57487044956ad34b9debaa6a3cc1847d7.png" title=" Automatizador clicks on Campo de buscar el cliente" width="1366"/>
+                <img src="cb63f3a3f435db3e31c93303045d42ed7fc13f1e3421594eedb4ba2a47afbceb.png" title=" Automatizador clicks on Ubicaciones del cliente despues de haber agregado la direcci&oacute;n" width="1366"/>
+                <img src="054a8c09238d7aa35a6438be04b10b608ff4600809a22c85caecbf79a7bbb567.png" title=" Automatizador clicks on Lista Ubicaciones del cliente despues de haber agregado la direcci&oacute;n" width="1366"/>
+                <img src="054a8c09238d7aa35a6438be04b10b608ff4600809a22c85caecbf79a7bbb567.png" title=" Automatizador ts crear servicio01 (completed)" width="1366"/>
+                <img src="054a8c09238d7aa35a6438be04b10b608ff4600809a22c85caecbf79a7bbb567.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
+| Tipo Identificacion | Identificacion | Codigo cliente | Nombre | Correo electronico | Celular | Ubicacion | Complemento |
+| C&eacute;dula de ciudadan&iacute;a | 2169835991 | CC-123 | R. Automotion 1 | jhon.quinones@infotrack.com.co | 1234567891 | Cl. 118 #19-52 | Complemento | (completed)" width="1366"/>
+                <img src="f8c7b1f43d24f36fdd1ba3091706a2a00a2e637fdd0fe1124df4b831488538d9.png" title=" Y se ingresan los siguientes datos del servicio
+| Codigo del servicio | Clase servicio | Tipo Servicio | Prioridad | Hora inicio | Hora fin | Zonas | Observacion |
+| 01 | Domicilio | Mantenimiento | Alta | 07:00 AM | 05:00 PM | X | Servicio de prueba |" width="1366"/>
+                <img src="f8c7b1f43d24f36fdd1ba3091706a2a00a2e637fdd0fe1124df4b831488538d9.png" title=" Automatizador enters '01' into C&oacute;digo Servicio" width="1366"/>
+                <img src="8236c1f2a9cbeccbbbe00707108b36f17c4f4b8b6a23fe6d5b9515cb5519118d.png" title=" Automatizador enters 'Domicilio' into Clase Servicio" width="1366"/>
+                <img src="b6477eee8d1ddefd94839d316bc0ccac1f57ebf6a5cf1dd5e10f82c59a36f349.png" title=" Automatizador clicks on Lista Clase Servicio" width="1366"/>
+                <img src="d6300285cb07f4d968cc77d1848c70da7e2f91bf33f2ba3afe908cd11236408d.png" title=" Automatizador enters 'Mantenimiento' into Tipo Servicio" width="1366"/>
+                <img src="91efed83b42166954c185f80d02909ac07db55158e25260e94894b7dffb2914c.png" title=" Automatizador clicks on Lista Tipo Servicio" width="1366"/>
+                <img src="3c32b2fdd22fe9f04069ef6ef319294ec312350fcfb924a205f113c32fd059f4.png" title=" Automatizador enters 'Alta' into Selecscionar Prioridad del  Servicio" width="1366"/>
+                <img src="9678fa60938e76654432f62032b98460699c672a237bd2c5a1619acbae150ad6.png" title=" Automatizador clicks on Lista Selecscionar Prioridad del  Servicio" width="1366"/>
+                <img src="fd59ce553f1dad0092aabf74f264c8749acba3c15e472b0355c3e6291d2db0ba.png" title=" Automatizador enters '07:00 AM' into Hora de Inicio" width="1366"/>
+                <img src="455ae489a6de2b399a9dd7306b0a7fa2caf4c11bd90447e28e38b6bcaf1e3d8b.png" title=" Automatizador enters '05:00 PM' into Hora de fin" width="1366"/>
+                <img src="f790301aeeb676979e0f18c875ce16ae21412678e6df5f1623b351c0d2c81d94.png" title=" Automatizador enters 'Servicio de prueba' into Observaci&oacute;n" width="1366"/>
+                <img src="f790301aeeb676979e0f18c875ce16ae21412678e6df5f1623b351c0d2c81d94.png" title=" Y se ingresan los siguientes datos del servicio
+| Codigo del servicio | Clase servicio | Tipo Servicio | Prioridad | Hora inicio | Hora fin | Zonas | Observacion |
+| 01 | Domicilio | Mantenimiento | Alta | 07:00 AM | 05:00 PM | X | Servicio de prueba | (completed)" width="1366"/>
+                <img src="7228e2ac2cec5ab93111bd9fac3388146f92debb9d664a3ba43437886db58d85.png" title=" Y se ingresan los siguientes datos del producto
+| Serial | Productos | Falla |
+| 4800356789212 | Ascensor de Carga 1000Kg | Desnivelaci&oacute;n |" width="1366"/>
+                <img src="7228e2ac2cec5ab93111bd9fac3388146f92debb9d664a3ba43437886db58d85.png" title=" Automatizador enters '4800356789212' into Campo Serial" width="1366"/>
+                <img src="ec1536f876319e110e607366d8f05528978db3d775dd35d324deb5e3c255f832.png" title=" Automatizador clicks on Lista Campo Serial" width="1366"/>
+                <img src="12eb697571a67ea35f3cfa0f57c3b3b4557a89f6228538683465f33e797acc1d.png" title=" Automatizador enters 'Desnivelaci&oacute;n' into Campo Falla" width="1366"/>
+                <img src="9383221c75e494b80f01a1b399332f3433485ad2f70bc44d945725cef35a7a11.png" title=" Automatizador clicks on Lista Campo Falla" width="1366"/>
+                <img src="0ec19a0cff4088afa96298d977487541962efdb520d251bbfc756249f7857082.png" title=" Automatizador clicks on Bot&oacute;n para guardar el servicio" width="1366"/>
+                <img src="8206c1f0d777c6554a429992e31a552c8063f7ced5676731d5e5c904d9d09629.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
+                <img src="a1b492ddbe3b9479c8d72735316bf61855ed6c45b5df22bd3ffdfb94c9e0a944.png" title=" Automatizador is cerrar sesion" width="1366"/>
+                <img src="a1b492ddbe3b9479c8d72735316bf61855ed6c45b5df22bd3ffdfb94c9e0a944.png" title=" Automatizador clicks on icono para ver el perfil de cierre de la sesi&oacute;n" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Automatizador clicks on Modulo para realizar el cierre de la sesi&oacute;n" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Automatizador is cerrar sesion (completed)" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Y se ingresan los siguientes datos del producto
+| Serial | Productos | Falla |
+| 4800356789212 | Ascensor de Carga 1000Kg | Desnivelaci&oacute;n | (completed)" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Cuando se crea la orden de servicio" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Entonces se verifica que la orden de servicio se ha creado correctamente" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Example: {TipoID=C&eacute;dula de ciudadan&iacute;a, Identificacion=2169835991, CodigoCliente=CC-123, Nombre=R. Automotion 1, Email=jhon.quinones@infotrack.com.co, Celular=1234567891, CodigoServicio=01, ClaseServicio=Domicilio, TipoServicio=Mantenimiento, Prioridad=Alta, HoraInicio=07:00 AM, HoraFin=05:00 PM, Zonas=X, Observacion=Servicio de prueba, Serial=4800356789212, Productos=Ascensor de Carga 1000Kg, Falla=Desnivelaci&oacute;n, Ubicacion=Cl. 118 #19-52, Complemento=Complemento} (completed)" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Example: {TipoID=C&eacute;dula de ciudadan&iacute;a, Identificacion=2169835992, CodigoCliente=CC-124, Nombre=R. Automotion 2, Email=jhon.quinones@infotrack.com.co, Celular=1234567892, CodigoServicio=01, ClaseServicio=Domicilio, TipoServicio=Mantenimiento, Prioridad=Alta, HoraInicio=07:00 AM, HoraFin=05:00 PM, Zonas=X, Observacion=Servicio de prueba, Serial=4800356789212, Productos=Ascensor de Carga 1000Kg, Falla=Desnivelaci&oacute;n, Ubicacion=Cl. 119 #20-53, Complemento=Complemento}" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
+| Tipo Identificacion | Identificacion | Codigo cliente | Nombre | Correo electronico | Celular | Ubicacion | Complemento |
+| C&eacute;dula de ciudadan&iacute;a | 2169835992 | CC-124 | R. Automotion 2 | jhon.quinones@infotrack.com.co | 1234567892 | Cl. 119 #20-53 | Complemento |" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Automatizador ts crear servicio01" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Automatizador is abrir pagina" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Automatizador opens the Object abrir pagina" width="1366"/>
+                <img src="42f86bd2dd6441362e63d54d9dfcac5f86953fbea2dc722825e02094491c6cfe.png" title=" Automatizador is abrir pagina (completed)" width="1366"/>
+                <img src="e3a25dc1a5c5cb63268c8637c331b08618e97a49360467be0c4dad271b8b3e81.png" title=" Automatizador is login" width="1366"/>
+                <img src="e3a25dc1a5c5cb63268c8637c331b08618e97a49360467be0c4dad271b8b3e81.png" title=" Automatizador enters 'Automatizador' into Ingrese su usuario" width="1366"/>
+                <img src="3b2c0d2095acb442a4e21467deac8145eaa8dcb6803edf0df4ede89892c26642.png" title=" Automatizador enters 'Demo123*' into Ingrese su contrasenia" width="1366"/>
+                <img src="7854930e7fae9beffb34876e77beee31f92cbb1c10f4066cfd0c643807ff3283.png" title=" Automatizador clicks on Iniciar Sesi&oacute;n" width="1366"/>
+                <img src="7a7596d8dcf8dd4e167987065f450e1884303e23bd66b2c06e779e23802657f9.png" title=" Then qs login should be a value equal to '1.5.7'" width="1366"/>
+                <img src="7a7596d8dcf8dd4e167987065f450e1884303e23bd66b2c06e779e23802657f9.png" title=" Automatizador is login (completed)" width="1366"/>
+                <img src="ef0b7ee6f471a4437e605259830b0f6c9263ed651801e2a6b4bc201323c9856d.png" title=" Automatizador clicks on Modulo principal de Smartwork" width="1366"/>
+                <img src="f48e7b9e283306646645664f20cc83c65c3af781f7a60df15e208e73964ce0c2.png" title=" Automatizador clicks on Sub-Modulo principal de Gesti&oacute;n de servicios" width="1366"/>
+                <img src="40724a654bbc1808f782c816b0a41f49318d109bddcc943d6f89650a19fb1bd1.png" title=" Automatizador clicks on Bot&oacute;n +  de crear el servicio" width="1366"/>
+                <img src="8076eda21d1f4f95e6cc7d3a6d6a672331db7ac6f673b2d89310c8582686bd80.png" title=" Automatizador clicks on Campo Tipo de Identificaci&oacute;n" width="1366"/>
+                <img src="e23a662f9df360a480ac8bef228252f94a8f22b4d2b9e00fd7d2f199671a5783.png" title=" Automatizador clicks on Lista cedula de ciudadania" width="1366"/>
+                <img src="b96ed6f7b19f106d0492b7059aff49b3d849e497c55eb983a047568a0d5d88e8.png" title=" Automatizador enters '2169835992' into Campo Identificaci&oacute;n" width="1366"/>
+                <img src="d2220b01798c863d04744dd37b9b3c8aaadf1d744483f4ed43690da044a8443a.png" title=" Automatizador clicks on Campo de buscar el cliente" width="1366"/>
+                <img src="f8a2ab5fa194835de2d2e32a77aa10e5403c26a1ccc4131ba1c99258c9d81e98.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
+                <img src="a866bb75897cbc32f0b202f05acfafef3f559dc4980916b996b4bd024955d6ad.png" title=" Automatizador enters 'CC-124' into Campo C&oacute;digo de Cliente" width="1366"/>
+                <img src="3f585e78e4166189b7b479fc435c4a336282b6f77a032184aa0324fdd0582024.png" title=" Automatizador enters 'R. Automotion 2' into Campo Nombre" width="1366"/>
+                <img src="10988a39398e413804fb4b49ea3a63b765642f74983e539a16ff55c5329f11f5.png" title=" Automatizador enters 'jhon.quinones@infotrack.com.co' into Campo Correo Electr&oacute;nico" width="1366"/>
+                <img src="c4825ca2cd45f974ee6a7d1bb92eba6e896a16e1039ff492bee824a41523349f.png" title=" Automatizador enters '1234567892' into Campo Celular" width="1366"/>
+                <img src="581f95d2807bd78f61fa70e2a64f25fce32f7eb1f5c14e773e629b44d3d970cc.png" title=" Automatizador clicks on Campo Check Notificacion Correo" width="1366"/>
+                <img src="3ca2c63c1d3fae771aeddb83f473757fbc5497724c7daa9bbaa37061d44f3bfd.png" title=" Automatizador clicks on Campo Check Notificacion Mensaje" width="1366"/>
+                <img src="70c09f55a5d1f3343a1f94c3c5cfed62682d30978b888e5b195822c6e650d2d1.png" title=" Automatizador clicks on Guardar datos del cliente" width="1366"/>
+                <img src="cc6cddd96fe443bedec3d9fea6fbab506e04773830d8fde350155ce53fac1fa6.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
+                <img src="bcb91193277090857992a17a74f6be123bdaf7395d7edff7486c06b3c3d6941b.png" title=" Automatizador clicks on Boto + de agregar ubicaciones" width="1366"/>
+                <img src="dbbf1067e14f195894d305f8c475a9a00f4d1517d866acf0d8c7ecfdf84e3b62.png" title=" Automatizador clicks on COnfirmar los mismo datos del usuario registrado" width="1366"/>
+                <img src="78440bd6bc0659d2d41cd77a85aaa6da8cf37479ab901f07cf938e04fb4a6158.png" title=" Automatizador enters 'Cl. 119 #20-53' into bt&oacute;n de Ubicaci&oacute;n del cliente" width="1366"/>
+                <img src="a17bfe6c4b0bae146e9e4204a94e3239139772618feb4790f9ed5aae3334a272.png" title=" Automatizador enters 'Complemento' into bt&oacute;n de complemento del cliente" width="1366"/>
+                <img src="6b738a14e444d5f8aed992257f06104582e53500dc43b5ecb452ee5e83b3efed.png" title=" Automatizador clicks on bt&oacute;n de Guardar direccion del cliente" width="1366"/>
+                <img src="c0c63798e96cdc9f2ebf890e17417e1dd937472f99a7c9921523334ce6e3dcc8.png" title=" Automatizador clicks on bt&oacute;n de Continuar con la  direccion del cliente" width="1366"/>
+                <img src="c7d67eb1d7ecd1d966763e9bdba44cabf15ec200a86ea61f9389e463df0cb61d.png" title=" Automatizador clicks on bt&oacute;n de Volver al formulario del servicio con la  direccion del cliente" width="1366"/>
+                <img src="5b0bf651a58722dab730f9078a0d2dd4b4d0bd9df24f0327d531b6b3737651c4.png" title=" Automatizador clicks on Campo de buscar el cliente" width="1366"/>
+                <img src="08ae9c5c19ee5548eedbf206702bf62d242fb0c1660bd9c8aba3bbcb2e7e8ff1.png" title=" Automatizador clicks on Ubicaciones del cliente despues de haber agregado la direcci&oacute;n" width="1366"/>
+                <img src="37911273a80ee04b7f2b83627445def725ae58eac52694b9e1f61559425fa59b.png" title=" Automatizador clicks on Lista Ubicaciones del cliente despues de haber agregado la direcci&oacute;n" width="1366"/>
+                <img src="37911273a80ee04b7f2b83627445def725ae58eac52694b9e1f61559425fa59b.png" title=" Automatizador ts crear servicio01 (completed)" width="1366"/>
+                <img src="37911273a80ee04b7f2b83627445def725ae58eac52694b9e1f61559425fa59b.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
+| Tipo Identificacion | Identificacion | Codigo cliente | Nombre | Correo electronico | Celular | Ubicacion | Complemento |
+| C&eacute;dula de ciudadan&iacute;a | 2169835992 | CC-124 | R. Automotion 2 | jhon.quinones@infotrack.com.co | 1234567892 | Cl. 119 #20-53 | Complemento | (completed)" width="1366"/>
+                <img src="0963a4596e0042930eee23b9cfc1ed209148c153a0f42bbf469da75d177895ea.png" title=" Y se ingresan los siguientes datos del servicio
+| Codigo del servicio | Clase servicio | Tipo Servicio | Prioridad | Hora inicio | Hora fin | Zonas | Observacion |
+| 01 | Domicilio | Mantenimiento | Alta | 07:00 AM | 05:00 PM | X | Servicio de prueba |" width="1366"/>
+                <img src="0963a4596e0042930eee23b9cfc1ed209148c153a0f42bbf469da75d177895ea.png" title=" Automatizador enters '01' into C&oacute;digo Servicio" width="1366"/>
+                <img src="e3d2b33c0a38974652556fb4fdb3302a7fce38c25f17872a2f2c82b2b7cdbe56.png" title=" Automatizador enters 'Domicilio' into Clase Servicio" width="1366"/>
+                <img src="e6da2bc21b0738ccdbfa5c3fd83e1e08a2897e20eaf6550add3b6c5b8a457139.png" title=" Automatizador clicks on Lista Clase Servicio" width="1366"/>
+                <img src="0b1b4bf700f3bfe8f162c511ddc98b83d2e384cd60c7720da2f19fdb77931e08.png" title=" Automatizador enters 'Mantenimiento' into Tipo Servicio" width="1366"/>
+                <img src="82920389d49b861edfc127166f94749853d6eb886ace55e008dfbfe115e90f7c.png" title=" Automatizador clicks on Lista Tipo Servicio" width="1366"/>
+                <img src="d624d1f674f52ad5718628f1c4ba0c4583de88c6cedc80cc81c1d9e25f638a11.png" title=" Automatizador enters 'Alta' into Selecscionar Prioridad del  Servicio" width="1366"/>
+                <img src="aed11e1d07ce8b671074f2b02ac2db9c62f153aefd072b19c871aa8524be7ed9.png" title=" Automatizador clicks on Lista Selecscionar Prioridad del  Servicio" width="1366"/>
+                <img src="1cf25fbbfbf670268e03074c2a7f195350e62dc0d9f0eb665dc86928fb84bc5f.png" title=" Automatizador enters '07:00 AM' into Hora de Inicio" width="1366"/>
+                <img src="2f1cc9948834b418579811be8e4d230a8dfa3dd300a07286cde12f234c493cf8.png" title=" Automatizador enters '05:00 PM' into Hora de fin" width="1366"/>
+                <img src="53496ab82bd863a2e3516d88b520b96ea8cb315db07944715959aeb62c30a4db.png" title=" Automatizador enters 'Servicio de prueba' into Observaci&oacute;n" width="1366"/>
+                <img src="53496ab82bd863a2e3516d88b520b96ea8cb315db07944715959aeb62c30a4db.png" title=" Y se ingresan los siguientes datos del servicio
+| Codigo del servicio | Clase servicio | Tipo Servicio | Prioridad | Hora inicio | Hora fin | Zonas | Observacion |
+| 01 | Domicilio | Mantenimiento | Alta | 07:00 AM | 05:00 PM | X | Servicio de prueba | (completed)" width="1366"/>
+                <img src="0fb62372321c6a8d802e80debcf49c35820fb494e1ecf2880288967b6af4e1d6.png" title=" Y se ingresan los siguientes datos del producto
+| Serial | Productos | Falla |
+| 4800356789212 | Ascensor de Carga 1000Kg | Desnivelaci&oacute;n |" width="1366"/>
+                <img src="0fb62372321c6a8d802e80debcf49c35820fb494e1ecf2880288967b6af4e1d6.png" title=" Automatizador enters '4800356789212' into Campo Serial" width="1366"/>
+                <img src="618b66114b0167d800869e5f05af6a8cd1173e32cce87a32cbd6f7569ec73127.png" title=" Automatizador clicks on Lista Campo Serial" width="1366"/>
+                <img src="c3656f0d6f440a564690c989bdfa3e61ab3b6b7abb6118071844f67ae06eb0f3.png" title=" Automatizador enters 'Desnivelaci&oacute;n' into Campo Falla" width="1366"/>
+                <img src="446a404fb2beaba763d029b94d8889288ea174d58e3b64c5661e33cdc67441f3.png" title=" Automatizador clicks on Lista Campo Falla" width="1366"/>
+                <img src="1646d28436f752eacd182809c1be615323a27764ac4d3cd955e83a765a62980e.png" title=" Automatizador clicks on Bot&oacute;n para guardar el servicio" width="1366"/>
+                <img src="455978970ad6ecd55d5809d02da0503c3c241f7d040b28f795cb92be6b5a8247.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
+                <img src="87ba60519a29cb4c79963ac00bfdebf5a314a369dfaad8e478fdce7c4f2c51d4.png" title=" Automatizador is cerrar sesion" width="1366"/>
+                <img src="87ba60519a29cb4c79963ac00bfdebf5a314a369dfaad8e478fdce7c4f2c51d4.png" title=" Automatizador clicks on icono para ver el perfil de cierre de la sesi&oacute;n" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Automatizador clicks on Modulo para realizar el cierre de la sesi&oacute;n" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Automatizador is cerrar sesion (completed)" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Y se ingresan los siguientes datos del producto
+| Serial | Productos | Falla |
+| 4800356789212 | Ascensor de Carga 1000Kg | Desnivelaci&oacute;n | (completed)" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Cuando se crea la orden de servicio" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Entonces se verifica que la orden de servicio se ha creado correctamente" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Example: {TipoID=C&eacute;dula de ciudadan&iacute;a, Identificacion=2169835992, CodigoCliente=CC-124, Nombre=R. Automotion 2, Email=jhon.quinones@infotrack.com.co, Celular=1234567892, CodigoServicio=01, ClaseServicio=Domicilio, TipoServicio=Mantenimiento, Prioridad=Alta, HoraInicio=07:00 AM, HoraFin=05:00 PM, Zonas=X, Observacion=Servicio de prueba, Serial=4800356789212, Productos=Ascensor de Carga 1000Kg, Falla=Desnivelaci&oacute;n, Ubicacion=Cl. 119 #20-53, Complemento=Complemento} (completed)" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Example: {TipoID=C&eacute;dula de ciudadan&iacute;a, Identificacion=2169835993, CodigoCliente=CC-125, Nombre=R. Automotion 3, Email=jhon.quinones@infotrack.com.co, Celular=1234567893, CodigoServicio=01, ClaseServicio=Domicilio, TipoServicio=Mantenimiento, Prioridad=Alta, HoraInicio=07:00 AM, HoraFin=05:00 PM, Zonas=X, Observacion=Servicio de prueba, Serial=4800356789212, Productos=Ascensor de Carga 1000Kg, Falla=Desnivelaci&oacute;n, Ubicacion=Cl. 120 #21-54, Complemento=Complemento}" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
+| Tipo Identificacion | Identificacion | Codigo cliente | Nombre | Correo electronico | Celular | Ubicacion | Complemento |
+| C&eacute;dula de ciudadan&iacute;a | 2169835993 | CC-125 | R. Automotion 3 | jhon.quinones@infotrack.com.co | 1234567893 | Cl. 120 #21-54 | Complemento |" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Automatizador ts crear servicio01" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Automatizador is abrir pagina" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Automatizador opens the Object abrir pagina" width="1366"/>
+                <img src="42f86bd2dd6441362e63d54d9dfcac5f86953fbea2dc722825e02094491c6cfe.png" title=" Automatizador is abrir pagina (completed)" width="1366"/>
+                <img src="e3a25dc1a5c5cb63268c8637c331b08618e97a49360467be0c4dad271b8b3e81.png" title=" Automatizador is login" width="1366"/>
+                <img src="e3a25dc1a5c5cb63268c8637c331b08618e97a49360467be0c4dad271b8b3e81.png" title=" Automatizador enters 'Automatizador' into Ingrese su usuario" width="1366"/>
+                <img src="3b2c0d2095acb442a4e21467deac8145eaa8dcb6803edf0df4ede89892c26642.png" title=" Automatizador enters 'Demo123*' into Ingrese su contrasenia" width="1366"/>
+                <img src="c65041a01aae1ab18276b4730dec971d94fc44a51c07a6c8c24b64c7b3d7e287.png" title=" Automatizador clicks on Iniciar Sesi&oacute;n" width="1366"/>
+                <img src="7a7596d8dcf8dd4e167987065f450e1884303e23bd66b2c06e779e23802657f9.png" title=" Then qs login should be a value equal to '1.5.7'" width="1366"/>
+                <img src="7a7596d8dcf8dd4e167987065f450e1884303e23bd66b2c06e779e23802657f9.png" title=" Automatizador is login (completed)" width="1366"/>
+                <img src="75f53843b49a2c6b54d60c731aceca1ea0ca13b3613b879d68a0132726b51e0e.png" title=" Automatizador clicks on Modulo principal de Smartwork" width="1366"/>
+                <img src="c13f34f1f50029674569c3c8850e6a9c942f00b2eeb3d246dea1f7d02bf439cf.png" title=" Automatizador clicks on Sub-Modulo principal de Gesti&oacute;n de servicios" width="1366"/>
+                <img src="f6caef899a6c1cde6c3e12ae2492af6fc5ab57bb04c43a01847ac6b0f8818417.png" title=" Automatizador clicks on Bot&oacute;n +  de crear el servicio" width="1366"/>
+                <img src="62494a7331cea7dd643e8021a6f6472e7760c1498279d24b094ac1963297498f.png" title=" Automatizador clicks on Campo Tipo de Identificaci&oacute;n" width="1366"/>
+                <img src="449e5e0676a9872319b73dc6fd10c38d0d98d06d04260915e01986091b818e6b.png" title=" Automatizador clicks on Lista cedula de ciudadania" width="1366"/>
+                <img src="70645f3f13b489e6696479d3b681917d0aa57c6a9a7836e2d7561dc928b9e31e.png" title=" Automatizador enters '2169835993' into Campo Identificaci&oacute;n" width="1366"/>
+                <img src="ce7252a83d88c46bb41fea254da08aaf6dfb3535ba601c629a3149ccf7d5f466.png" title=" Automatizador clicks on Campo de buscar el cliente" width="1366"/>
+                <img src="57012d579b32ca29c6097373d1ac3bdefd1788cfd724f7b7e58316bec869d533.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
+                <img src="36cc6ab4bd348ed966bf404248179d3c132ee058cbc6028a629a176ee548117e.png" title=" Automatizador enters 'CC-125' into Campo C&oacute;digo de Cliente" width="1366"/>
+                <img src="a10485a1fdfab9a9c77547ad240b659748522c2bd644b8ceb82841e646efe62d.png" title=" Automatizador enters 'R. Automotion 3' into Campo Nombre" width="1366"/>
+                <img src="06c83a03b6953f9cb488e9057a875efa54bb16c0d17f2cf6311a8f60aff88966.png" title=" Automatizador enters 'jhon.quinones@infotrack.com.co' into Campo Correo Electr&oacute;nico" width="1366"/>
+                <img src="cc10238f459286e6d11aa37047e2373e0b3c33a442ac6d864b7dc60b4d7b7c61.png" title=" Automatizador enters '1234567893' into Campo Celular" width="1366"/>
+                <img src="7de35a1bfa740a2995940c27d2e7fc6a0abb45ec9a66720795aba7b1200a2a13.png" title=" Automatizador clicks on Campo Check Notificacion Correo" width="1366"/>
+                <img src="23abd8a4afc130be2caac4042a0e252416cb3b18924ed1c59a6b1ec8384b963d.png" title=" Automatizador clicks on Campo Check Notificacion Mensaje" width="1366"/>
+                <img src="d4000ddb729828bde055bd62b76b48cfadef7505505ad65fb44b051836d3cece.png" title=" Automatizador clicks on Guardar datos del cliente" width="1366"/>
+                <img src="b399a9a0e759df3bc3f7c230e442a0ba9af2d6774ffa7ef97dfcc5e43cb8dac9.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
+                <img src="1888d99f3f9f3a3595a17cefad8f0f427874e71b325190106f8e8c4bcab4637f.png" title=" Automatizador clicks on Boto + de agregar ubicaciones" width="1366"/>
+                <img src="5d04d9c69af0ee89d9dba8cad3f32eea39da15ac67558b90d12d64c44f0fa742.png" title=" Automatizador clicks on COnfirmar los mismo datos del usuario registrado" width="1366"/>
+                <img src="80ade2ea800de3ff1a7b27b3c74f0eec89a8770030dc17f527fec11aa6640971.png" title=" Automatizador enters 'Cl. 120 #21-54' into bt&oacute;n de Ubicaci&oacute;n del cliente" width="1366"/>
+                <img src="539ac4b8f8fde417809960a96142723f43d2cef5649c32d0efe6d5486c465457.png" title=" Automatizador enters 'Complemento' into bt&oacute;n de complemento del cliente" width="1366"/>
+                <img src="5ecc61a52074cf613ce2640b52188a1d0468d65b30be8efda322119363fad344.png" title=" Automatizador clicks on bt&oacute;n de Guardar direccion del cliente" width="1366"/>
+                <img src="a471abba63f2166423d1e866ca0b3ba9b893c220b3dac1150670738202ecaa14.png" title=" Automatizador clicks on bt&oacute;n de Continuar con la  direccion del cliente" width="1366"/>
+                <img src="796bb548d0d1fb42911ae5fe4b4a872239d1d535f6d3dec8fdb5c0ad9366cb5c.png" title=" Automatizador clicks on bt&oacute;n de Volver al formulario del servicio con la  direccion del cliente" width="1366"/>
+                <img src="b9d3827058efefb6d14f9097be215c4c6cda0e362e002ccbbdc49105aa61f296.png" title=" Automatizador clicks on Campo de buscar el cliente" width="1366"/>
+                <img src="8784185e14bd578f04e25f634d61a057af0301be7f38621634688f94055e14aa.png" title=" Automatizador clicks on Ubicaciones del cliente despues de haber agregado la direcci&oacute;n" width="1366"/>
+                <img src="b770e31527a3269844e78e35200370619afda82154ba69cae3fb4827c8746515.png" title=" Automatizador clicks on Lista Ubicaciones del cliente despues de haber agregado la direcci&oacute;n" width="1366"/>
+                <img src="b770e31527a3269844e78e35200370619afda82154ba69cae3fb4827c8746515.png" title=" Automatizador ts crear servicio01 (completed)" width="1366"/>
+                <img src="b770e31527a3269844e78e35200370619afda82154ba69cae3fb4827c8746515.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
+| Tipo Identificacion | Identificacion | Codigo cliente | Nombre | Correo electronico | Celular | Ubicacion | Complemento |
+| C&eacute;dula de ciudadan&iacute;a | 2169835993 | CC-125 | R. Automotion 3 | jhon.quinones@infotrack.com.co | 1234567893 | Cl. 120 #21-54 | Complemento | (completed)" width="1366"/>
+                <img src="46d345052921459d3513fc1b8b949361b6471d4deec5235695561807e95458f2.png" title=" Y se ingresan los siguientes datos del servicio
+| Codigo del servicio | Clase servicio | Tipo Servicio | Prioridad | Hora inicio | Hora fin | Zonas | Observacion |
+| 01 | Domicilio | Mantenimiento | Alta | 07:00 AM | 05:00 PM | X | Servicio de prueba |" width="1366"/>
+                <img src="46d345052921459d3513fc1b8b949361b6471d4deec5235695561807e95458f2.png" title=" Automatizador enters '01' into C&oacute;digo Servicio" width="1366"/>
+                <img src="a1c228c629a3e424b38403c0c5d63a359947c5b21065cf64d7b024d05f7b552c.png" title=" Automatizador enters 'Domicilio' into Clase Servicio" width="1366"/>
+                <img src="ec78fb18f8e5ebbf468473bb9657297b688a98c53bdd6194f8a195a4e023e443.png" title=" Automatizador clicks on Lista Clase Servicio" width="1366"/>
+                <img src="ec71eceb5d22a7d421355dbb77b9781368fd03bcfde36759befe3e6bcba59482.png" title=" Automatizador enters 'Mantenimiento' into Tipo Servicio" width="1366"/>
+                <img src="36e48c420d42428eef153c31236ac1050c67e6b487628db4136ef4a1f4287856.png" title=" Automatizador clicks on Lista Tipo Servicio" width="1366"/>
+                <img src="e3972aeab9a4c4b72985e3abcc68ea4b7d70fa1ca2a75dbed68bd424bf0f6e31.png" title=" Automatizador enters 'Alta' into Selecscionar Prioridad del  Servicio" width="1366"/>
+                <img src="2b9cc14e1dec5fe4fa13feb90d58a675852847235a69c01d4c24766ac2ce85e0.png" title=" Automatizador clicks on Lista Selecscionar Prioridad del  Servicio" width="1366"/>
+                <img src="d4e9f1ba354ec02573cfe52d6cdb6c6832fe80921e9ce0d93a70c427eb1a0a73.png" title=" Automatizador enters '07:00 AM' into Hora de Inicio" width="1366"/>
+                <img src="c62ba5e9c13aae77583322229feabcefc0bc5e0ede8479f5e240e5cca0483816.png" title=" Automatizador enters '05:00 PM' into Hora de fin" width="1366"/>
+                <img src="16087c2a91634f6c76e2bb4f227b8452586887891c8321640af6412e41344397.png" title=" Automatizador enters 'Servicio de prueba' into Observaci&oacute;n" width="1366"/>
+                <img src="16087c2a91634f6c76e2bb4f227b8452586887891c8321640af6412e41344397.png" title=" Y se ingresan los siguientes datos del servicio
+| Codigo del servicio | Clase servicio | Tipo Servicio | Prioridad | Hora inicio | Hora fin | Zonas | Observacion |
+| 01 | Domicilio | Mantenimiento | Alta | 07:00 AM | 05:00 PM | X | Servicio de prueba | (completed)" width="1366"/>
+                <img src="781a41bac7b390a68d381a146ebbfdfe0c1fc15162a5ded3fcf7091c87f774a3.png" title=" Y se ingresan los siguientes datos del producto
+| Serial | Productos | Falla |
+| 4800356789212 | Ascensor de Carga 1000Kg | Desnivelaci&oacute;n |" width="1366"/>
+                <img src="781a41bac7b390a68d381a146ebbfdfe0c1fc15162a5ded3fcf7091c87f774a3.png" title=" Automatizador enters '4800356789212' into Campo Serial" width="1366"/>
+                <img src="8e26a5775232e0970f0432adcb9fe17090a5072fb5440aacee7f5e046fc84d36.png" title=" Automatizador clicks on Lista Campo Serial" width="1366"/>
+                <img src="757d85a72611f620c1e9acc72661f70b2922faebfff74d92cae68b49cd7e52f9.png" title=" Automatizador enters 'Desnivelaci&oacute;n' into Campo Falla" width="1366"/>
+                <img src="1365730a474acfd809e91d84aca076336020787a8ce2ebb5454fa35ba3ba1290.png" title=" Automatizador clicks on Lista Campo Falla" width="1366"/>
+                <img src="1f4d11c8c4ed9ab7c04977566090bdab226ff0ce90e651249f48529648219e2e.png" title=" Automatizador clicks on Bot&oacute;n para guardar el servicio" width="1366"/>
+                <img src="ef6ad38cb114e72499e1092ca4427524335a8fe0f56e21e479a3d6b55b698253.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
+                <img src="40b749bf770d3301137990964279ccb732bee185bb5273fe108a81764a65d58e.png" title=" Automatizador is cerrar sesion" width="1366"/>
+                <img src="40b749bf770d3301137990964279ccb732bee185bb5273fe108a81764a65d58e.png" title=" Automatizador clicks on icono para ver el perfil de cierre de la sesi&oacute;n" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Automatizador clicks on Modulo para realizar el cierre de la sesi&oacute;n" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Automatizador is cerrar sesion (completed)" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Y se ingresan los siguientes datos del producto
+| Serial | Productos | Falla |
+| 4800356789212 | Ascensor de Carga 1000Kg | Desnivelaci&oacute;n | (completed)" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Cuando se crea la orden de servicio" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Entonces se verifica que la orden de servicio se ha creado correctamente" width="1366"/>
+                <img src="ba78f5abe9a745b8321442b2f75b1abf461ca3acc6d806063c3438dea5ff1420.png" title=" Example: {TipoID=C&eacute;dula de ciudadan&iacute;a, Identificacion=2169835993, CodigoCliente=CC-125, Nombre=R. Automotion 3, Email=jhon.quinones@infotrack.com.co, Celular=1234567893, CodigoServicio=01, ClaseServicio=Domicilio, TipoServicio=Mantenimiento, Prioridad=Alta, HoraInicio=07:00 AM, HoraFin=05:00 PM, Zonas=X, Observacion=Servicio de prueba, Serial=4800356789212, Productos=Ascensor de Carga 1000Kg, Falla=Desnivelaci&oacute;n, Ubicacion=Cl. 120 #21-54, Complemento=Complemento} (completed)" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Example: {TipoID=C&eacute;dula de ciudadan&iacute;a, Identificacion=2169835994, CodigoCliente=CC-126, Nombre=R. Automotion 4, Email=jhon.quinones@infotrack.com.co, Celular=1234567894, CodigoServicio=01, ClaseServicio=Domicilio, TipoServicio=Mantenimiento, Prioridad=Alta, HoraInicio=07:00 AM, HoraFin=05:00 PM, Zonas=X, Observacion=Servicio de prueba, Serial=4800356789212, Productos=Ascensor de Carga 1000Kg, Falla=Desnivelaci&oacute;n, Ubicacion=Cl. 121 #22-55, Complemento=Complemento}" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
+| Tipo Identificacion | Identificacion | Codigo cliente | Nombre | Correo electronico | Celular | Ubicacion | Complemento |
+| C&eacute;dula de ciudadan&iacute;a | 2169835994 | CC-126 | R. Automotion 4 | jhon.quinones@infotrack.com.co | 1234567894 | Cl. 121 #22-55 | Complemento |" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Automatizador ts crear servicio01" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Automatizador is abrir pagina" width="1366"/>
+                <img src="e23c82d62692b2e840c0d6e49a1f1239a8d04c6f377308e0d21aefd71b358542.png" title=" Automatizador opens the Object abrir pagina" width="1366"/>
+                <img src="42f86bd2dd6441362e63d54d9dfcac5f86953fbea2dc722825e02094491c6cfe.png" title=" Automatizador is abrir pagina (completed)" width="1366"/>
+                <img src="e3a25dc1a5c5cb63268c8637c331b08618e97a49360467be0c4dad271b8b3e81.png" title=" Automatizador is login" width="1366"/>
+                <img src="e3a25dc1a5c5cb63268c8637c331b08618e97a49360467be0c4dad271b8b3e81.png" title=" Automatizador enters 'Automatizador' into Ingrese su usuario" width="1366"/>
+                <img src="3b2c0d2095acb442a4e21467deac8145eaa8dcb6803edf0df4ede89892c26642.png" title=" Automatizador enters 'Demo123*' into Ingrese su contrasenia" width="1366"/>
+                <img src="dcc21f3cbe3bc291333be7fcf53ef034ddc1572ffca4be12b859db6efd77fb9c.png" title=" Automatizador clicks on Iniciar Sesi&oacute;n" width="1366"/>
+                <img src="7a7596d8dcf8dd4e167987065f450e1884303e23bd66b2c06e779e23802657f9.png" title=" Then qs login should be a value equal to '1.5.7'" width="1366"/>
+                <img src="7a7596d8dcf8dd4e167987065f450e1884303e23bd66b2c06e779e23802657f9.png" title=" Automatizador is login (completed)" width="1366"/>
+                <img src="ca2e0912f69f2f2e2ad0daf6a1e250e0f7e7bc8bdfe8e5ffd87001b71f07a29b.png" title=" Automatizador clicks on Modulo principal de Smartwork" width="1366"/>
+                <img src="cbef0bd357f122ea42d0459ca5c163bbad58622f70b9cfe7c5ae5f470535958e.png" title=" Automatizador clicks on Sub-Modulo principal de Gesti&oacute;n de servicios" width="1366"/>
+                <img src="70eacd45473e2634289a1b0bf1c59eaa1805859e81732da39c5af7686d783867.png" title=" Automatizador clicks on Bot&oacute;n +  de crear el servicio" width="1366"/>
+                <img src="77fbbecde7a7d4524d12658b882685e96066fdcb8f1738775a8101db9273a619.png" title=" Automatizador clicks on Campo Tipo de Identificaci&oacute;n" width="1366"/>
+                <img src="50dc906d6766a90e46207dacddcf228314429a4d798ba24dcee2e572a7bba445.png" title=" Automatizador clicks on Lista cedula de ciudadania" width="1366"/>
+                <img src="8213e40c42f0c864568d10093823735490b08662d663a0ffb90ade45c2f926cc.png" title=" Automatizador enters '2169835994' into Campo Identificaci&oacute;n" width="1366"/>
+                <img src="8675253cb48a96aff727b440c62581a285939092b34d7bdc69d9fd2b52ff8935.png" title=" Automatizador clicks on Campo de buscar el cliente" width="1366"/>
+                <img src="2c990c0f4f659192217d6dcece1d12906c789f0abfaf96eb64539caa9f310d15.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
+                <img src="d04e4373e7d3ee46f7e689aac7ccbd5b1a2f23e5a988fb268fa2d42598552dd7.png" title=" Automatizador enters 'CC-126' into Campo C&oacute;digo de Cliente" width="1366"/>
+                <img src="550f78e05a7d1c45f5557e5686b68e11caa16c27fea86e62d982b681b4f80e8c.png" title=" Automatizador enters 'R. Automotion 4' into Campo Nombre" width="1366"/>
+                <img src="77bc5f66bb71972c3e7e1196b6fe3d6040f880086ff0bdf76755e69dcc509ec3.png" title=" Automatizador enters 'jhon.quinones@infotrack.com.co' into Campo Correo Electr&oacute;nico" width="1366"/>
+                <img src="be96266e00efc57cd0bd4e4ef5eec89f94d874909c54233fa30b2ca54e127df8.png" title=" Automatizador enters '1234567894' into Campo Celular" width="1366"/>
+                <img src="c3f0db78a8f836e78a7670eb28e6a0534302ebf15eb7b2f87c740f62b2cc2d6d.png" title=" Automatizador clicks on Campo Check Notificacion Correo" width="1366"/>
+                <img src="b0693ed2fe14e35a54322818a2171382c8ee20d02e444d1564a4000b36329d2a.png" title=" Automatizador clicks on Campo Check Notificacion Mensaje" width="1366"/>
+                <img src="18113220dfe2dbe526d53640fe4e096956ecd33bd5e5f25e0af72e1019d100af.png" title=" Automatizador clicks on Guardar datos del cliente" width="1366"/>
+                <img src="4b006b017bf7ab9f95dc544000b22ffa4003ed751ef2f256d9a245e5aa0f875c.png" title=" Automatizador clicks on Alerta para continuar con la creaci&oacute;n del cliente" width="1366"/>
+                <img src="32f71be4eff421cadb9e4e9c056889deecac22a68f2bd08f45391178a3a981e2.png" title=" Automatizador clicks on Boto + de agregar ubicaciones" width="1366"/>
+                <img src="452c744c8b893427afec8e5e2d3fed1673a42b6b4c150399b370894105b0b5cc.png" title=" Example: {TipoID=C&eacute;dula de ciudadan&iacute;a, Identificacion=2169835995, CodigoCliente=CC-127, Nombre=R. Automotion 5, Email=jhon.quinones@infotrack.com.co, Celular=1234567895, CodigoServicio=01, ClaseServicio=Domicilio, TipoServicio=Mantenimiento, Prioridad=Alta, HoraInicio=07:00 AM, HoraFin=05:00 PM, Zonas=X, Observacion=Servicio de prueba, Serial=4800356789212, Productos=Ascensor de Carga 1000Kg, Falla=Desnivelaci&oacute;n, Ubicacion=Cl. 122 #23-56, Complemento=Complemento}" width="1366"/>
+                <img src="452c744c8b893427afec8e5e2d3fed1673a42b6b4c150399b370894105b0b5cc.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
+| Tipo Identificacion | Identificacion | Codigo cliente | Nombre | Correo electronico | Celular | Ubicacion | Complemento |
+| C&eacute;dula de ciudadan&iacute;a | 2169835995 | CC-127 | R. Automotion 5 | jhon.quinones@infotrack.com.co | 1234567895 | Cl. 122 #23-56 | Complemento |" width="1366"/>
+                <img src="452c744c8b893427afec8e5e2d3fed1673a42b6b4c150399b370894105b0b5cc.png" title=" Automatizador ts crear servicio01" width="1366"/>
+                <img src="452c744c8b893427afec8e5e2d3fed1673a42b6b4c150399b370894105b0b5cc.png" title=" Automatizador is abrir pagina" width="1366"/>
+                <img src="452c744c8b893427afec8e5e2d3fed1673a42b6b4c150399b370894105b0b5cc.png" title=" Automatizador opens the Object abrir pagina" width="1366"/>
+                <img src="452c744c8b893427afec8e5e2d3fed1673a42b6b4c150399b370894105b0b5cc.png" title=" Automatizador is abrir pagina (completed)" width="1366"/>
+                <img src="452c744c8b893427afec8e5e2d3fed1673a42b6b4c150399b370894105b0b5cc.png" title=" Automatizador is login" width="1366"/>
+                <img src="7f238e5cc6c5ca148ed859980e8a206b4a34213c192c2ab1bdaa7bf771d6e4ca.png" title=" Example: {TipoID=C&eacute;dula de ciudadan&iacute;a, Identificacion=2169835996, CodigoCliente=CC-128, Nombre=R. Automotion 6, Email=jhon.quinones@infotrack.com.co, Celular=1234567896, CodigoServicio=01, ClaseServicio=Domicilio, TipoServicio=Mantenimiento, Prioridad=Alta, HoraInicio=07:00 AM, HoraFin=05:00 PM, Zonas=X, Observacion=Servicio de prueba, Serial=4800356789212, Productos=Ascensor de Carga 1000Kg, Falla=Desnivelaci&oacute;n, Ubicacion=Cl. 123 #24-57, Complemento=Complemento}" width="1366"/>
+                <img src="7f238e5cc6c5ca148ed859980e8a206b4a34213c192c2ab1bdaa7bf771d6e4ca.png" title=" Dado que en el call center se desea crear una orden de servicio con los siguientes datos
+| Tipo Identificacion | Identificacion | Codigo cliente | Nombre | Correo electronico | Celular | Ubicacion | Complemento |
+| C&eacute;dula de ciudadan&iacute;a | 2169835996 | CC-128 | R. Automotion 6 | jhon.quinones@infotrack.com.co | 1234567896 | Cl. 123 #24-57 | Complemento |" width="1366"/>
+                <img src="7f238e5cc6c5ca148ed859980e8a206b4a34213c192c2ab1bdaa7bf771d6e4ca.png" title=" Automatizador ts crear servicio01" width="1366"/>
+                <img src="7f238e5cc6c5ca148ed859980e8a206b4a34213c192c2ab1bdaa7bf771d6e4ca.png" title=" Automatizador is abrir pagina" width="1366"/>
+                <img src="7f238e5cc6c5ca148ed859980e8a206b4a34213c192c2ab1bdaa7bf771d6e4ca.png" title=" Automatizador opens the Object abrir pagina" width="1366"/>
+                <img src="452c744c8b893427afec8e5e2d3fed1673a42b6b4c150399b370894105b0b5cc.png" title=" Automatizador is abrir pagina (completed)" width="1366"/>
+                <img src="452c744c8b893427afec8e5e2d3fed1673a42b6b4c150399b370894105b0b5cc.png" title=" Automatizador is login: <span class='error-color'>ERROR</span>" width="1366"/>
             </div>
         </div>
 
