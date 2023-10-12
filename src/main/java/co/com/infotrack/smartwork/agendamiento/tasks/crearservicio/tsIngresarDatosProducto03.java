@@ -26,8 +26,8 @@ public class tsIngresarDatosProducto03 implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Enter.theValue(ordenDeServicio.getSerial()).into(ObjectDatosProducto.Serial),
-                Click.on(ObjectDatosProducto.ListaSerial),
+                Enter.theValue(ordenDeServicio.getProductos()).into(ObjectDatosProducto.Productos),
+                Click.on(ObjectDatosProducto.ListaProductos),
                 Enter.theValue(ordenDeServicio.getFalla()).into(ObjectDatosProducto.Falla),
                 Click.on(ObjectDatosProducto.ListaFalla),
                 Click.on(ObjectDatosProducto.GuardarServicio),
