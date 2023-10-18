@@ -85,173 +85,12 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@10993713
-REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@7be58f16
+<pre>REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@75c9e76b
+REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@3a62c01e
 
-?[31mFailed scenarios:?[0m
-?[31msrc/test/resources/features/01_Crear_OrdenServicio.feature:26 ?[0m# Crear una orden de servicio desde el call center
-?[31msrc/test/resources/features/01_Crear_OrdenServicio.feature:27 ?[0m# Crear una orden de servicio desde el call center
-?[31msrc/test/resources/features/01_Crear_OrdenServicio.feature:28 ?[0m# Crear una orden de servicio desde el call center
-
-7 Scenarios (?[31m3 failed?[0m, ?[32m4 passed?[0m)
-35 Steps (?[31m3 failed?[0m, ?[36m12 skipped?[0m, ?[32m20 passed?[0m)
-6m3,025s
-
-org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=118.0.5993.71)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LTBG60836', ip: '10.20.20.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\JHON~1.QUI\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49919}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f47752fb10501b0204188bda0b6819e
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1231)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$Ut3UrzZ8.performAs$accessor$HTNcpxZI(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$Ut3UrzZ8.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at co.com.infotrack.smartwork.agendamiento.interactions.crearservicio.AgregarUbicaciones.performAs(AgregarUbicaciones.java:35)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:198)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:169)
-	at co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio01.performAs(tsCrearServicio01.java:109)
-	at co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio01$ByteBuddy$NMW4IJBD.performAs$accessor$OR3pBtAy(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio01$ByteBuddy$NMW4IJBD.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:158)
-	at co.com.infotrack.smartwork.agendamiento.definition.MyStepdefs.queEnElCallCenterSeDeseaCrearUnaOrdenDeServicioConLosSiguientesDatos(MyStepdefs.java:49)
-	at ?.que en el call center se desea crear una orden de servicio con los siguientes datos(src/test/resources/features/01_Crear_OrdenServicio.feature:8)
-
-java.lang.AssertionError: 
-Expected: an element that is visible
-     but: no matching element found by xpath: //input[@name='Login']
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
-	at net.serenitybdd.screenplay.waits.Wait.performAs(Wait.java:29)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:194)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:167)
-	at co.com.infotrack.smartwork.agendamiento.interactions.autenticacion.isLogin.performAs(isLogin.java:40)
-	at co.com.infotrack.smartwork.agendamiento.interactions.autenticacion.isLogin$ByteBuddy$xshBv2Hc.performAs$accessor$J85d2eFy(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.infotrack.smartwork.agendamiento.interactions.autenticacion.isLogin$ByteBuddy$xshBv2Hc.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio01.performAs(tsCrearServicio01.java:39)
-	at co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio01$ByteBuddy$8oXngsSm.performAs$accessor$vTJ3RWLx(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio01$ByteBuddy$8oXngsSm.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:158)
-	at co.com.infotrack.smartwork.agendamiento.definition.MyStepdefs.queEnElCallCenterSeDeseaCrearUnaOrdenDeServicioConLosSiguientesDatos(MyStepdefs.java:49)
-	at ?.que en el call center se desea crear una orden de servicio con los siguientes datos(src/test/resources/features/01_Crear_OrdenServicio.feature:8)
-
-java.lang.AssertionError: 
-Expected: an element that is visible
-     but: no matching element found by xpath: //input[@name='Login']
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
-	at net.serenitybdd.screenplay.waits.Wait.performAs(Wait.java:29)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:194)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:167)
-	at co.com.infotrack.smartwork.agendamiento.interactions.autenticacion.isLogin.performAs(isLogin.java:40)
-	at co.com.infotrack.smartwork.agendamiento.interactions.autenticacion.isLogin$ByteBuddy$fGpHf6Od.performAs$accessor$oOQVA6Nj(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.infotrack.smartwork.agendamiento.interactions.autenticacion.isLogin$ByteBuddy$fGpHf6Od.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio01.performAs(tsCrearServicio01.java:39)
-	at co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio01$ByteBuddy$DLRATnZF.performAs$accessor$WsVDfwkb(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio01$ByteBuddy$DLRATnZF.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:158)
-	at co.com.infotrack.smartwork.agendamiento.definition.MyStepdefs.queEnElCallCenterSeDeseaCrearUnaOrdenDeServicioConLosSiguientesDatos(MyStepdefs.java:49)
-	at ?.que en el call center se desea crear una orden de servicio con los siguientes datos(src/test/resources/features/01_Crear_OrdenServicio.feature:8)
+1 Scenarios (?[32m1 passed?[0m)
+5 Steps (?[32m5 passed?[0m)
+1m14,539s
 
 </pre>
 </span>
@@ -289,13 +128,7 @@ Expected: an element that is visible
 
 TEST STARTED: Crear una orden de servicio desde el call center
 -------------------------------------------------------------------(proceso-de-agendamiento-de-servicios;crear-una-orden-de-servicio-desde-el-call-center)
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@60d8c0dc
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@12209826
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2bf4fa1
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@27ac3b6d
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@760ac834
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@359b4846
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@294aaa6
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@34645867
 [pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
 </pre>
 </span>
@@ -308,7 +141,7 @@ TEST STARTED: Crear una orden de servicio desde el call center
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 10/10/2023 08:39:01 PM</p>
+<a href="http://www.gradle.org">Gradle 8.3</a> at 18/10/2023 09:35:35 AM</p>
 </div>
 </div>
 </body>

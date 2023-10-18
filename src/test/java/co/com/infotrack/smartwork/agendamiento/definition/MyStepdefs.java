@@ -2,6 +2,7 @@ package co.com.infotrack.smartwork.agendamiento.definition;
 
 import co.com.infotrack.smartwork.agendamiento.interactions.autenticacion.isCerrarSesion;
 import co.com.infotrack.smartwork.agendamiento.models.OrdenDeServicio;
+import co.com.infotrack.smartwork.agendamiento.questions.crearservicio.QsCrearServicio;
 import co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio01;
 import co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsIngresarDatosProducto03;
 import co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsIngresarDatosServicio02;
@@ -12,8 +13,10 @@ import cucumber.api.java.ast.Y;
 import cucumber.api.java.es.Dado;
 import cucumber.api.java.es.Entonces;
 import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import org.hamcrest.Matchers;
 
 import java.util.List;
 import java.util.Map;
@@ -45,7 +48,7 @@ public class MyStepdefs {
         ordenDeServicio.setComplemento(data.get(0).get("Complemento"));
 
         // Pasar los datos a la tarea tsCrearServicio01
-        OnStage.theActorCalled("Automatizador")
+        OnStage.theActorCalled(actor.getName())
                 .wasAbleTo(tsCrearServicio01.conEstosDatos(ordenDeServicio));
     }
 
@@ -62,7 +65,7 @@ public class MyStepdefs {
         ordenDeServicio.setObservacion(data.get(0).get("Observacion"));
 
         // Pasar los datos a la tarea tsIngresarDatosServicio
-        OnStage.theActorCalled("Automatizador")
+        OnStage.theActorCalled(actor.getName())
                 .wasAbleTo(tsIngresarDatosServicio02.conEstosDatos2(ordenDeServicio));
     }
 
@@ -74,17 +77,20 @@ public class MyStepdefs {
         ordenDeServicio.setFalla(data.get(0).get("Falla"));
 
         // Pasar los datos a la tarea tsIngresarDatosProducto
-        OnStage.theActorCalled("Automatizador")
+        OnStage.theActorCalled(actor.getName())
                 .wasAbleTo(tsIngresarDatosProducto03.conEstosDatos3(ordenDeServicio));
     }
 
     @Cuando("^se crea la orden de servicio$")
     public void seCreaLaOrdenDeServicio() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(QsCrearServicio.one(),
+                Matchers.comparesEqualTo(ordenDeServicio.getNumeroOrdenServicio())));
     }
 
     @Entonces("^se verifica que la orden de servicio se ha creado correctamente$")
     public void seVerificaQueLaOrdenDeServicioSeHaCreadoCorrectamente() {
         // Aquí puedes implementar la lógica para verificar que la orden de servicio se ha creado correctamente
+        OnStage.theActorCalled(actor.getName()).wasAbleTo(isCerrarSesion.one());
     }
 
 

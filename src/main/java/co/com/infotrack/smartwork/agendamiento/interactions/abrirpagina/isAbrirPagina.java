@@ -20,12 +20,14 @@ public class isAbrirPagina implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
 
+
+        actor.attemptsTo(Open.browserOn(objectAbrirpagina));
         /**
          * Proceso de limpiado para el sitio.
          * */
         getDriver().manage().deleteAllCookies(); // Eliminar la cookie del sitio
         getDriver().navigate().refresh(); // Refrescar el sitio
-        actor.attemptsTo(Open.browserOn(objectAbrirpagina));
+        System.out.println("limpiado del navegador con éxito.");
 
         try {
             Thread.sleep(3000);

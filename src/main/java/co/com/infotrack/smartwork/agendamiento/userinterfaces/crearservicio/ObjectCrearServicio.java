@@ -65,4 +65,7 @@ public class ObjectCrearServicio extends PageObject {
     public static Target Guardar = Target.the("Guardar datos del cliente")
             .located(By.xpath("//span[contains(text(),'Guardar')]"));
 
+    public static Target OrdenServicioCreado = Target.the("campo para obtener el numero de la orden de servicio creada")
+            .located(By.xpath("//td[2]"));
+
 }

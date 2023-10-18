@@ -69,7 +69,11 @@ public class tsCrearServicio01 implements Task {
         }
 
         //Ingresa la información de tipo de identificación e identificación y formulario del cliente
-        actor.attemptsTo(Click.on(ObjectCrearServicio.TipoIdentificacion));
+        actor.attemptsTo(Wait.until(
+                        WebElementQuestion.the(ObjectCrearServicio.TipoIdentificacion),
+                        WebElementStateMatchers.isVisible()
+                ).forNoLongerThan(10).seconds(),
+                Click.on(ObjectCrearServicio.TipoIdentificacion));
         try {
             switch (ordenDeServicio.getTipoIdentificacion()) {
                 case "Cédula de ciudadanía":
