@@ -1,5 +1,6 @@
 package co.com.infotrack.smartwork.agendamiento.tasks.agendarservicio;
 
+import co.com.infotrack.smartwork.agendamiento.abilities.ApiAbility;
 import co.com.infotrack.smartwork.agendamiento.models.agendarservicio.AgendarServicio;
 import co.com.infotrack.smartwork.agendamiento.models.agendarservicio.UsuarioAplicacion;
 import co.com.infotrack.smartwork.agendamiento.utils.ConfiguracionToken;
@@ -9,7 +10,6 @@ import io.restassured.RestAssured;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
-import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 import net.serenitybdd.screenplay.rest.interactions.Post;
 
 import java.io.IOException;
@@ -41,7 +41,7 @@ public class tsAgendarServicio implements Task {
         }
 
 
-        UsuarioAplicacion usuarioApp = new UsuarioAplicacion("224727e8-256e-4c6c-8ec5-add0905d8c36", "47d707fa-9442-4eb3-a6cc-0ddad89f4c2d");
+        UsuarioAplicacion usuarioApp = new UsuarioAplicacion("224727e8-256e-4c6c-8ec5-add0905d8c36", "c1ec589d-655e-427a-81b5-87e38189468e");
         UsuarioAplicacion.Solicitud solicitud = new UsuarioAplicacion.Solicitud(agendarServicio, usuarioApp);
         String jsonBody = JsonUtil.toJson(solicitud);
         String token = ConfiguracionToken.properties.getProperty("AUTH_TOKEN");
@@ -52,24 +52,30 @@ public class tsAgendarServicio implements Task {
         /**
          * Habilidad para poder manipular las Apis.
          * */
-        actor.can(CallAnApi.at(baseUrl));
+            //actor.can(CallAnApi.at(baseUrl));
+        ApiAbility.giveApiAbilityTo(actor, baseUrl);
 
+        System.out.println("BASE_URL: " + RestService.BASE_URL);
+        System.out.println("AGENDAR_SERVICIOS: " + RestService.AGENDAR_SERVICIOS);
+        System.out.println("Token: " + token);
+        System.out.println("jsonBody: " + jsonBody);
+        System.out.println("baseUrl: "+baseUrl);
 
-//        System.out.println("BASE_URL: " + RestService.BASE_URL);
-//        System.out.println("AGENDAR_SERVICIOS: " + RestService.AGENDAR_SERVICIOS);
-//        System.out.println("Token: " + token);
-//        System.out.println("jsonBody: " + jsonBody);
-//        System.out.println("baseUrl: "+baseUrl);
+        if (!baseUrl.toLowerCase().startsWith("https://")) {
+            throw new RuntimeException("The request is not secure. Please use HTTPS.");
+        }
 
         actor.attemptsTo(
-                    Post.to(baseUrl)
-                            .with(request -> request
-                                    .header("Authorization", "Bearer " + token)
-                                    .contentType("application/json")
-                                    .body(jsonBody)
-                                    .log().all()
-                            )
-            );
+                Post.to(baseUrl)
+                        .with(request -> request
+                                .header("Authorization", "Bearer " + token)
+                                .header("Content-Type", "application/json; charset=utf-8")
+                                .body(jsonBody)
+                                .log().all()
+                        )
+        );
+
+
 
     }
 }

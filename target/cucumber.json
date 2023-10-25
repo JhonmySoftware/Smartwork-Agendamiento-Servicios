@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 145588900,
+              "duration": 144657200,
               "status": "passed"
             },
             "line": 8,
@@ -27,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 57381200,
+              "duration": 69807900,
               "status": "passed"
             },
             "match": {
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 1653400,
+              "duration": 1568500,
               "status": "passed"
             },
             "match": {
@@ -53,7 +53,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5812334800,
+              "duration": 6180340000,
               "status": "passed"
             },
             "line": 11,
@@ -76,12 +76,12 @@
               {
                 "cells": [
                   "0",
-                  "1995",
+                  "1997",
                   "94",
                   "105",
                   "1",
-                  "2023-10-25 12:30",
-                  "2023-10-25 13:00"
+                  "2023-10-25 16:00",
+                  "2023-10-25 16:30"
                 ]
               }
             ],
@@ -89,8 +89,9 @@
           },
           {
             "result": {
-              "duration": 4525900,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: \nExpected: \u003c200\u003e\n     but: was \u003c404\u003e\r\n\tat net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)\r\n\tat net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)\r\n\tat net.serenitybdd.screenplay.Actor.should(Actor.java:301)\r\n\tat co.com.infotrack.smartwork.agendamiento.definition.agendarservicio.StepAgendarServicio.laOrdenDeServicioDebeSerAgendadaCorrectamente(StepAgendarServicio.java:52)\r\n\tat ✽.la orden de servicio debe ser agendada correctamente(src/test/resources/features/02_Agendar_Servicio.feature:14)\r\n",
+              "duration": 441560100,
+              "status": "failed"
             },
             "line": 14,
             "name": "la orden de servicio debe ser agendada correctamente",

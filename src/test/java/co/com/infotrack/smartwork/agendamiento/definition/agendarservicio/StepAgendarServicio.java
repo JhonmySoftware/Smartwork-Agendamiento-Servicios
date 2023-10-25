@@ -1,6 +1,7 @@
 package co.com.infotrack.smartwork.agendamiento.definition.agendarservicio;
 
 import co.com.infotrack.smartwork.agendamiento.models.agendarservicio.AgendarServicio;
+import co.com.infotrack.smartwork.agendamiento.questions.agendarservicio.ResponseQuestion;
 import co.com.infotrack.smartwork.agendamiento.tasks.agendarservicio.tsAgendarServicio;
 import cucumber.api.DataTable;
 import cucumber.api.java.Before;
@@ -8,8 +9,10 @@ import cucumber.api.java.es.Cuando;
 import cucumber.api.java.es.Dado;
 import cucumber.api.java.es.Entonces;
 import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import org.hamcrest.Matchers;
 
 import java.util.List;
 import java.util.Map;
@@ -46,7 +49,7 @@ public class StepAgendarServicio {
 
     @Entonces("^la orden de servicio debe ser agendada correctamente$")
     public void laOrdenDeServicioDebeSerAgendadaCorrectamente() {
-    }
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ResponseQuestion.statusCode(), Matchers.equalTo(200)));    }
 
 
 }

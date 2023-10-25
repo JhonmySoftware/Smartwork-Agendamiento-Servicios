@@ -1,0 +1,15 @@
+{
+  "Agenda": {
+    "Id": 0,
+    "IdServicio": 1997,
+    "IdZona": 94,
+    "IdCuadrilla": 105,
+    "IdEstado": 1,
+    "FechaInicio": "2023-10-25 16:00",
+    "FechaFin": "2023-10-25 16:30"
+  },
+  "UsuarioAplicacion": {
+    "IdAplicacion": "224727e8-256e-4c6c-8ec5-add0905d8c36",
+    "IdUsuario": "c1ec589d-655e-427a-81b5-87e38189468e"
+  }
+}

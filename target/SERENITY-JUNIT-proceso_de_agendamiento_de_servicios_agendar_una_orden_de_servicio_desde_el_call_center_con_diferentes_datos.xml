@@ -1,1 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Proceso de agendamiento de servicios" skipped="0" tests="1" time="6.23" timestamp="2023-10-24 08:14:10"><testcase name="Agendar una orden de servicio desde el call center con diferentes datos"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Proceso de agendamiento de servicios" skipped="0" tests="1" time="7.15" timestamp="2023-10-25 06:47:05"><testcase name="Agendar una orden de servicio desde el call center con diferentes datos"><failure message="&#10;Expected: &lt;200&gt;&#10;     but: was &lt;404&gt;" type="java.lang.AssertionError">
+Expected: &lt;200&gt;
+     but: was &lt;404&gt;</failure><system-err>
+Expected: &lt;200&gt;
+     but: was &lt;404&gt;&#13;
+co.com.infotrack.smartwork.agendamiento.definition.agendarservicio.StepAgendarServicio.laOrdenDeServicioDebeSerAgendadaCorrectamente(StepAgendarServicio.java:52)&#13;
+✽.la orden de servicio debe ser agendada correctamente(src/test/resources/features/02_Agendar_Servicio.feature:14)&#13;
+</system-err></testcase></testsuite>

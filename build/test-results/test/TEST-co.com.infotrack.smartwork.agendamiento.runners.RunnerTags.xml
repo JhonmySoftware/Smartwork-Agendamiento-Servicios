@@ -14,9 +14,21 @@ Característica: Proceso de agendamiento de servicios
 
   Antecedentes:                                                  ?[90m# src/test/resources/features/02_Agendar_Servicio.feature:7?[0m
 
-1 Scenarios (?[32m1 passed?[0m)
-3 Steps (?[32m3 passed?[0m)
-0m6,578s
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/02_Agendar_Servicio.feature:18 ?[0m# Agendar una orden de servicio desde el call center con diferentes datos
+
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
+0m7,828s
+
+java.lang.AssertionError: 
+Expected: <200>
+     but: was <404>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at co.com.infotrack.smartwork.agendamiento.definition.agendarservicio.StepAgendarServicio.laOrdenDeServicioDebeSerAgendadaCorrectamente(StepAgendarServicio.java:52)
+	at ?.la orden de servicio debe ser agendada correctamente(src/test/resources/features/02_Agendar_Servicio.feature:14)
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
