@@ -1,6 +1,6 @@
 package co.com.infotrack.smartwork.agendamiento.tasks.crearservicio;
 
-import co.com.infotrack.smartwork.agendamiento.models.OrdenDeServicio;
+import co.com.infotrack.smartwork.agendamiento.models.crearservicio.OrdenDeServicio;
 import co.com.infotrack.smartwork.agendamiento.userinterfaces.crearservicio.ObjectCrearServicio;
 import co.com.infotrack.smartwork.agendamiento.userinterfaces.crearservicio.ObjectDatosProducto;
 import net.serenitybdd.screenplay.Actor;

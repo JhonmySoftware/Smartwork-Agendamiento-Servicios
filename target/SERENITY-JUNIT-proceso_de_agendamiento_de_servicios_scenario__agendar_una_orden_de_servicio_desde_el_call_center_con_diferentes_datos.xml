@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Proceso de agendamiento de servicios" skipped="0" tests="1" time="3.91" timestamp="2023-10-23 10:30:30"><testcase name="Scenario"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+co.com.infotrack.smartwork.agendamiento.tasks.agendarservicio.tsAgendarServicio.performAs(tsAgendarServicio.java:34)&#13;
+co.com.infotrack.smartwork.agendamiento.definition.agendarservicio.StepAgendarServicio.elUsuarioRealizaUnaSolicitudDeAgendamientoConIdIdServicioIdZonaIdCuadrillaIdEstadoFechaInicioYFechaFin(StepAgendarServicio.java:35)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>

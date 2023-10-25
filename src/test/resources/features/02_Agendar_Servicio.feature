@@ -4,10 +4,21 @@
 @CP002_Agendamiento_Servicio
 Característica: Proceso de agendamiento de servicios
 
-  Escenario: Agendar una orden de servicio desde el call center
-    Dado que en el call center se desea agendar una orden de servicio
-    Cuando se agenda la orden de servicio
-    Entonces se verifica que la orden de servicio se ha agendado correctamente
+  Antecedentes:
+    Dado que el usuario tiene acceso al servicio de agendamiento
+
+  Esquema del escenario: Agendar una orden de servicio desde el call center con diferentes datos
+    Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
+      | Id   | IdServicio   | IdZona   | IdCuadrilla   | IdEstado   | FechaInicio   | FechaFin   |
+      | <Id> | <IdServicio> | <IdZona> | <IdCuadrilla> | <IdEstado> | <FechaInicio> | <FechaFin> |
+    Entonces la orden de servicio debe ser agendada correctamente
+
+    Ejemplos:
+      | Id | IdServicio | IdZona | IdCuadrilla | IdEstado | FechaInicio      | FechaFin         |
+      | 0  | 1995       | 94     | 105         | 1        | 2023-10-25 12:30 | 2023-10-25 13:00 |
+
+
+
 
 
 

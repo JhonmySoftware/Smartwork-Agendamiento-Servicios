@@ -1,6 +1,6 @@
 package co.com.infotrack.smartwork.agendamiento.interactions.crearservicio;
 
-import co.com.infotrack.smartwork.agendamiento.models.OrdenDeServicio;
+import co.com.infotrack.smartwork.agendamiento.models.crearservicio.OrdenDeServicio;
 import co.com.infotrack.smartwork.agendamiento.userinterfaces.crearservicio.ObjectAgregarUbicaciones;
 import co.com.infotrack.smartwork.agendamiento.userinterfaces.crearservicio.ObjectCrearServicio;
 import net.serenitybdd.core.steps.Instrumented;

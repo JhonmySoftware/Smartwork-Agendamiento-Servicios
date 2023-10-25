@@ -3,7 +3,7 @@ package co.com.infotrack.smartwork.agendamiento.tasks.crearservicio;
 import co.com.infotrack.smartwork.agendamiento.interactions.abrirpagina.isAbrirPagina;
 import co.com.infotrack.smartwork.agendamiento.interactions.autenticacion.isLogin;
 import co.com.infotrack.smartwork.agendamiento.interactions.crearservicio.AgregarUbicaciones;
-import co.com.infotrack.smartwork.agendamiento.models.OrdenDeServicio;
+import co.com.infotrack.smartwork.agendamiento.models.crearservicio.OrdenDeServicio;
 import co.com.infotrack.smartwork.agendamiento.userinterfaces.crearservicio.ObjectCrearServicio;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;

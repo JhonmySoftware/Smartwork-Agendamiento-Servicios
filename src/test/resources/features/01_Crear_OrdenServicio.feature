@@ -19,4 +19,4 @@ Característica: Proceso de agendamiento de servicios
 
     Ejemplos:
       | TipoID               | Identificacion | CodigoCliente | Nombre          | Email                          | Celular    | CodigoServicio | ClaseServicio | TipoServicio  | Prioridad | HoraInicio | HoraFin  | Zonas | Observacion        | Serial        | Productos                | Falla         | Ubicacion      | Complemento |
-      | Cédula de ciudadanía | 32165489651    | CC-123        | R. Automotion 1 | jhon.quinones@infotrack.com.co | 1234567890 | 01             | Domicilio     | Mantenimiento | Alta      | 07:00 AM   | 05:00 PM | X     | Servicio de prueba | 4800356789212 | Ascensor de Carga 1000Kg | Desnivelación | Cl. 118 #19-52 | Complemento |
+      | Cédula de ciudadanía | 6467098765     | CC-123        | R. Automotion 1 | jhon.quinones@infotrack.com.co | 1234567890 | 01             | Domicilio     | Mantenimiento | Alta      | 07:00 AM   | 05:00 PM | X     | Servicio de prueba | 4800356789212 | Ascensor de Carga 1000Kg | Desnivelación | Cl. 118 #19-52 | Complemento |

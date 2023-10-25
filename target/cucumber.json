@@ -1,0 +1,126 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 146069700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "que el usuario tiene acceso al servicio de agendamiento",
+            "match": {
+              "location": "StepAgendarServicio.queElUsuarioTieneAccesoAlServicioDeAgendamiento()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 54875300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepCrearServicio.IniciarEscenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2200200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepAgendarServicio.IniciarEscenario()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Agendar una orden de servicio desde el call center con diferentes datos",
+        "description": "",
+        "id": "proceso-de-agendamiento-de-servicios;agendar-una-orden-de-servicio-desde-el-call-center-con-diferentes-datos;;2",
+        "type": "scenario",
+        "keyword": "Esquema del escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6722365300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "el usuario realiza una solicitud de agendamiento con los siguientes datos",
+            "match": {
+              "location": "StepAgendarServicio.elUsuarioRealizaUnaSolicitudDeAgendamientoConLosSiguientesDatos(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Id",
+                  "IdServicio",
+                  "IdZona",
+                  "IdCuadrilla",
+                  "IdEstado",
+                  "FechaInicio",
+                  "FechaFin"
+                ]
+              },
+              {
+                "cells": [
+                  "0",
+                  "1995",
+                  "94",
+                  "105",
+                  "1",
+                  "2023-10-25 12:30",
+                  "2023-10-25 13:00"
+                ]
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 3620600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "la orden de servicio debe ser agendada correctamente",
+            "match": {
+              "location": "StepAgendarServicio.laOrdenDeServicioDebeSerAgendadaCorrectamente()"
+            },
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CP002_Agendamiento_Servicio"
+          }
+        ]
+      }
+    ],
+    "name": "Proceso de agendamiento de servicios",
+    "description": "",
+    "id": "proceso-de-agendamiento-de-servicios",
+    "keyword": "Característica",
+    "uri": "src/test/resources/features/02_Agendar_Servicio.feature",
+    "tags": [
+      {
+        "name": "@CP002_Agendamiento_Servicio",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

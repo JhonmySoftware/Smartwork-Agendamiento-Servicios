@@ -7,9 +7,18 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
+        plugin = {
+                "pretty",
+                "html:target/cucumber-html-report.html",
+                "json:target/cucumber.json",
+                "junit:target/cucumber.xml",
+                "rerun:target/rerun.txt"
+        },
         features = "src/test/resources/features"
         , snippets = SnippetType.CAMELCASE
-        , tags = "@CP001_Creacion_OrdenServicio"
+        , tags = "@CP002_Agendamiento_Servicio"
+        //CP001_Creacion_OrdenServicio
+        //CP002_Agendamiento_Servicio
         , glue = "co.com.infotrack.smartwork.agendamiento.definition")
 
 public class RunnerTags {
