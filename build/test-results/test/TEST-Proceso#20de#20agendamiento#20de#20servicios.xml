@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Proceso de agendamiento de servicios" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-25T01:09:16" hostname="LTBG60836" time="6.97">
+<testsuite name="Proceso de agendamiento de servicios" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-25T01:14:10" hostname="LTBG60836" time="6.061">
   <properties/>
-  <testcase name="Agendar una orden de servicio desde el call center con diferentes datos" classname="Proceso de agendamiento de servicios" time="6.97"/>
+  <testcase name="Agendar una orden de servicio desde el call center con diferentes datos" classname="Proceso de agendamiento de servicios" time="6.061"/>
   <system-out><![CDATA[    ?[32mDado ?[0m?[32mque el usuario tiene acceso al servicio de agendamiento?[0m ?[90m# StepAgendarServicio.queElUsuarioTieneAccesoAlServicioDeAgendamiento()?[0m
 
   @CP002_Agendamiento_Servicio
   Esquema del escenario: Agendar una orden de servicio desde el call center con diferentes datos ?[90m# src/test/resources/features/02_Agendar_Servicio.feature:18?[0m
-BASE_URL: https://work.infotracktest.com
-AGENDAR_SERVICIOS: /Servicios/api/Agenda/GuardarAgenda
-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkF1dG9tYXRpemFkb3IiLCJJZFVzdWFyaW8iOiJjMWVjNTg5ZC02NTVlLTQyN2EtODFiNS04N2UzODE4OTQ2OGUiLCJuYmYiOjE2OTc3Mjk0MTAsImV4cCI6MTY5NzczMzAxMCwiaWF0IjoxNjk3NzI5NDEwLCJpc3MiOiJodHRwOi8vc2Vydmlkb3IuY29tIiwiYXVkIjoiaHR0cDovL2NsaWVudGUuY29tIn0.ra49k_uLK_ZxdRKq_kSFnS5jHtJc6ooyft10i05o44s
-jsonBody: {"Agenda":{"Id":0,"IdServicio":1995,"IdZona":94,"IdCuadrilla":105,"IdEstado":1,"FechaInicio":"2023-10-25 12:30","FechaFin":"2023-10-25 13:00"},"UsuarioAplicacion":{"IdAplicacion":"224727e8-256e-4c6c-8ec5-add0905d8c36","IdUsuario":"47d707fa-9442-4eb3-a6cc-0ddad89f4c2d"}}
-baseUrl: https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda
 Request method:	POST
 Request URI:	https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgendahttps%3A%2F%2Fwork.infotracktest.com/Servicios/api/Agenda/GuardarAgenda
 Proxy:			<none>

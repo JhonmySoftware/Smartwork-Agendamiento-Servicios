@@ -48,14 +48,18 @@ public class tsAgendarServicio implements Task {
 
 
         String baseUrl = RestService.BASE_URL.toString() + RestService.AGENDAR_SERVICIOS.toString();
+
+        /**
+         * Habilidad para poder manipular las Apis.
+         * */
         actor.can(CallAnApi.at(baseUrl));
 
 
-        System.out.println("BASE_URL: " + RestService.BASE_URL);
-        System.out.println("AGENDAR_SERVICIOS: " + RestService.AGENDAR_SERVICIOS);
-        System.out.println("Token: " + token);
-        System.out.println("jsonBody: " + jsonBody);
-        System.out.println("baseUrl: "+baseUrl);
+//        System.out.println("BASE_URL: " + RestService.BASE_URL);
+//        System.out.println("AGENDAR_SERVICIOS: " + RestService.AGENDAR_SERVICIOS);
+//        System.out.println("Token: " + token);
+//        System.out.println("jsonBody: " + jsonBody);
+//        System.out.println("baseUrl: "+baseUrl);
 
         actor.attemptsTo(
                     Post.to(baseUrl)
