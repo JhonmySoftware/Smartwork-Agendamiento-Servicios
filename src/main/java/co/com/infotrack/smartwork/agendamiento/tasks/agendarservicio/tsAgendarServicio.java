@@ -47,26 +47,20 @@ public class tsAgendarServicio implements Task {
         String token = ConfiguracionToken.properties.getProperty("AUTH_TOKEN");
 
 
-        String baseUrl = RestService.BASE_URL.toString() + RestService.AGENDAR_SERVICIOS.toString();
+        String baseUrl = RestService.getFullAgendarServiciosUrl();
 
         /**
          * Habilidad para poder manipular las Apis.
-         * */
-            //actor.can(CallAnApi.at(baseUrl));
+         */
+        // actor.can(CallAnApi.at(baseUrl));
         ApiAbility.giveApiAbilityTo(actor, baseUrl);
 
-        System.out.println("BASE_URL: " + RestService.BASE_URL);
-        System.out.println("AGENDAR_SERVICIOS: " + RestService.AGENDAR_SERVICIOS);
         System.out.println("Token: " + token);
         System.out.println("jsonBody: " + jsonBody);
-        System.out.println("baseUrl: "+baseUrl);
-
-        if (!baseUrl.toLowerCase().startsWith("https://")) {
-            throw new RuntimeException("The request is not secure. Please use HTTPS.");
-        }
+        System.out.println("baseUrl: " + baseUrl);
 
         actor.attemptsTo(
-                Post.to(baseUrl)
+                Post.to("")
                         .with(request -> request
                                 .header("Authorization", "Bearer " + token)
                                 .header("Content-Type", "application/json; charset=utf-8")
@@ -74,8 +68,6 @@ public class tsAgendarServicio implements Task {
                                 .log().all()
                         )
         );
-
-
 
     }
 }

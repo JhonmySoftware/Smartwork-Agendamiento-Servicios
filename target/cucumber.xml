@@ -1,18 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="7.120346">
-<testcase classname="Proceso de agendamiento de servicios" name="Agendar una orden de servicio desde el call center con diferentes datos" time="7.120346">
-<failure message="java.lang.AssertionError: &#10;Expected: &lt;200&gt;&#10;     but: was &lt;404&gt;&#13;&#10;&#9;at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)&#13;&#10;&#9;at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)&#13;&#10;&#9;at net.serenitybdd.screenplay.Actor.should(Actor.java:301)&#13;&#10;&#9;at co.com.infotrack.smartwork.agendamiento.definition.agendarservicio.StepAgendarServicio.laOrdenDeServicioDebeSerAgendadaCorrectamente(StepAgendarServicio.java:52)&#13;&#10;&#9;at ✽.la orden de servicio debe ser agendada correctamente(src/test/resources/features/02_Agendar_Servicio.feature:14)&#13;&#10;"><![CDATA[Dado que el usuario tiene acceso al servicio de agendamiento................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="8.903086">
+<testcase classname="Proceso de agendamiento de servicios" name="Agendar una orden de servicio desde el call center con diferentes datos" time="8.903086">
+<system-out><![CDATA[Dado que el usuario tiene acceso al servicio de agendamiento................passed
 Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos.passed
-Entonces la orden de servicio debe ser agendada correctamente...............failed
-
-StackTrace:
-java.lang.AssertionError: 
-Expected: <200>
-     but: was <404>
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
-	at co.com.infotrack.smartwork.agendamiento.definition.agendarservicio.StepAgendarServicio.laOrdenDeServicioDebeSerAgendadaCorrectamente(StepAgendarServicio.java:52)
-	at ✽.la orden de servicio debe ser agendada correctamente(src/test/resources/features/02_Agendar_Servicio.feature:14)
-]]></failure>
+Entonces la orden de servicio debe ser agendada correctamente...............passed
+]]></system-out>
 </testcase>
 </testsuite>
