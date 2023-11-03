@@ -173,7 +173,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-10-2023 09:34</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-11-2023 09:34</span>
     <br style="clear:left"/>
 </div>
 
@@ -198,7 +198,7 @@
                                                     <span class="badge tag-badge" style="background:default;">
                                                         <i class="fa fa-tag"></i>&nbsp;<a class="tagLink"
                                                                                           style="background:default;"
-                                                                                          href="tag_cp001_creacion_ordenservicio.html">Cp001 Creacion Ordenservicio
+                                                                                          href="tag_cp002_agendamiento_servicio.html">Cp002 Agendamiento Servicio
                                                         (tag)</a>
                                                     </span>
                                                 </p>
@@ -243,7 +243,7 @@
                                                 <table class="table" id="toc-table">
                                                         <tr>
                                                             <td style="width:95%;" class="toc-title">
-                                                                <a href="#bea7508e6185adc008b15788ed8f94ec462bad5467fab6a9c8c5537ab41edd46" title="View scenario details" >Crear una orden de servicio desde el call center</a>
+                                                                <a href="#5d93c8cc0a85dcbfedce454864bd162efcf121be1fbdbcd000b6ea79d83e1342" title="View scenario details" >Agendar una orden de servicio desde el call center con diferentes datos</a>
                                                                      (1 example)
 
                                                             </td>
@@ -252,7 +252,7 @@
                                                                     <tr>
                                                                         <td>
                                                                             <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                               href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center.html"
+                                                                               href="proceso_de_agendamiento_de_servicios_agendar_una_orden_de_servicio_desde_el_call_center_con_diferentes_datos.html"
                                                                                title="View test results">
                                                                             <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                                                             </a>
@@ -261,7 +261,7 @@
                                                                         </td>
                                                                         <td>
                                                                             <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                               href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center.html"
+                                                                               href="proceso_de_agendamiento_de_servicios_agendar_una_orden_de_servicio_desde_el_call_center_con_diferentes_datos.html"
                                                                                title="View test results">
                                                                                 <i class="fas fa-search-plus"></i>
                                                                             </a>
@@ -276,11 +276,11 @@
 
                                             <h3>Scenario details</h3>
 
-                                                <div class="scenario-docs card" id="bea7508e6185adc008b15788ed8f94ec462bad5467fab6a9c8c5537ab41edd46">
+                                                <div class="scenario-docs card" id="5d93c8cc0a85dcbfedce454864bd162efcf121be1fbdbcd000b6ea79d83e1342">
                                                     <div class="scenario-docs card-header success" style="min-height:1.5em;">
                                                         <div>
                                                             <span class="scenario-heading">
-                                                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center.html" title="View test results">Crear una orden de servicio desde el call center</a>
+                                                                <a href="proceso_de_agendamiento_de_servicios_agendar_una_orden_de_servicio_desde_el_call_center_con_diferentes_datos.html" title="View test results">Agendar una orden de servicio desde el call center con diferentes datos</a>
                                                             </span>
                                                             <span class="scenario-result-icon">
                                                                 
@@ -290,45 +290,24 @@
                                                         </div>
                                                     </div>
                                                     <div class="scenario-docs card-body">
-                                                            <p><p>Dado que en el call center se desea crear una orden de servicio con los siguientes datos</p>
+                                                            <p><p>Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos</p>
 <table>
 <thead>
-<tr><th>Tipo Identificacion</th><th>Identificacion</th><th>Codigo cliente</th><th>Nombre</th><th>Correo electronico</th><th>Celular</th><th>Ubicacion</th><th>Complemento</th></tr>
+<tr><th>Id</th><th>IdServicio</th><th>IdZona</th><th>IdCuadrilla</th><th>IdEstado</th><th>FechaInicio</th><th>FechaFin</th></tr>
 </thead>
 <tbody>
-<tr><td>{TipoID}</td><td>{Identificacion}</td><td>{CodigoCliente}</td><td>{Nombre}</td><td>{Email}</td><td>{Celular}</td><td>{Ubicacion}</td><td>{Complemento}</td></tr>
+<tr><td>{Id}</td><td>{IdServicio}</td><td>{IdZona}</td><td>{IdCuadrilla}</td><td>{IdEstado}</td><td>{FechaInicio}</td><td>{FechaFin}</td></tr>
 </tbody>
 </table>
 </p>
-                                                            <p><p>Y se ingresan los siguientes datos del servicio</p>
-<table>
-<thead>
-<tr><th>Codigo del servicio</th><th>Clase servicio</th><th>Tipo Servicio</th><th>Prioridad</th><th>Hora inicio</th><th>Hora fin</th><th>Zonas</th><th>Observacion</th></tr>
-</thead>
-<tbody>
-<tr><td>{CodigoServicio}</td><td>{ClaseServicio}</td><td>{TipoServicio}</td><td>{Prioridad}</td><td>{HoraInicio}</td><td>{HoraFin}</td><td>{Zonas}</td><td>{Observacion}</td></tr>
-</tbody>
-</table>
-</p>
-                                                            <p><p>Y se ingresan los siguientes datos del producto</p>
-<table>
-<thead>
-<tr><th>Serial</th><th>Productos</th><th>Falla</th></tr>
-</thead>
-<tbody>
-<tr><td>{Serial}</td><td>{Productos}</td><td>{Falla}</td></tr>
-</tbody>
-</table>
-</p>
-                                                            <p>Cuando se crea la orden de servicio</p>
-                                                            <p>Entonces se verifica que la orden de servicio se ha creado correctamente</p>
+                                                            <p>Entonces la orden de servicio debe ser agendada correctamente</p>
                                                         <div class="examples">
                                                             <p><div class='example-table-in-scenario'><table>
 <thead>
-<tr><th>TipoID</th><th>Identificacion</th><th>CodigoCliente</th><th>Nombre</th><th>Email</th><th>Celular</th><th>CodigoServicio</th><th>ClaseServicio</th><th>TipoServicio</th><th>Prioridad</th><th>HoraInicio</th><th>HoraFin</th><th>Zonas</th><th>Observacion</th><th>Serial</th><th>Productos</th><th>Falla</th><th>Ubicacion</th><th>Complemento</th></tr>
+<tr><th>Id</th><th>IdServicio</th><th>IdZona</th><th>IdCuadrilla</th><th>IdEstado</th><th>FechaInicio</th><th>FechaFin</th></tr>
 </thead>
 <tbody>
-<tr><td>Cédula de ciudadanía</td><td>32165489651</td><td>CC-123</td><td>R. Automotion 1</td><td>jhon.quinones@infotrack.com.co</td><td>1234567890</td><td>01</td><td>Domicilio</td><td>Mantenimiento</td><td>Alta</td><td>07:00 AM</td><td>05:00 PM</td><td>X</td><td>Servicio de prueba</td><td>4800356789212</td><td>Ascensor de Carga 1000Kg</td><td>Desnivelación</td><td>Cl. 118 #19-52</td><td>Complemento</td></tr>
+<tr><td>0</td><td>2050</td><td>94</td><td>105</td><td>1</td><td>2023-11-02 16:00</td><td>2023-11-02 16:30</td></tr>
 </tbody>
 </table></div>
 </p>
@@ -472,11 +451,11 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td> 1m 14s</td>
-                                                        <td>74ms</td>
-                                                        <td> 1m 13s</td>
-                                                        <td> 1m 13s</td>
-                                                        <td> 1m 14s</td>
+                                                        <td>7s</td>
+                                                        <td>7ms</td>
+                                                        <td>7s</td>
+                                                        <td>7s</td>
+                                                        <td>7s</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -501,12 +480,12 @@
                                                 <tbody>
                                                 <tr class="scenario-result SUCCESS">
                                                     <td>
-                                                            <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center.html">Crear una orden de servicio desde el call center</a>
+                                                            <a href="proceso_de_agendamiento_de_servicios_agendar_una_orden_de_servicio_desde_el_call_center_con_diferentes_datos.html">Agendar una orden de servicio desde el call center con diferentes datos</a>
                                                                (1 example)
                                                     </td>
-                                                    <td>5</td>
-                                                    <td>09:34:13</td>
-                                                    <td>01:14</td>
+                                                    <td>2</td>
+                                                    <td>09:34:32</td>
+                                                    <td>00:07</td>
                                                     <td>
                                                             <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
                                                                 style="display:none">SUCCESS</span>

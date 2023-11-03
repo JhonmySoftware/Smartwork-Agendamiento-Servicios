@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">8.610s</div>
+<div class="counter">7.328s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,7 +82,7 @@
 </thead>
 <tr>
 <td class="success">Agendar una orden de servicio desde el call center con diferentes datos</td>
-<td class="success">8.610s</td>
+<td class="success">7.328s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -94,9 +94,6 @@
 
   @CP002_Agendamiento_Servicio
   Esquema del escenario: Agendar una orden de servicio desde el call center con diferentes datos ?[90m# src/test/resources/features/02_Agendar_Servicio.feature:18?[0m
-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkF1dG9tYXRpemFkb3IiLCJJZFVzdWFyaW8iOiJjMWVjNTg5ZC02NTVlLTQyN2EtODFiNS04N2UzODE4OTQ2OGUiLCJuYmYiOjE2OTc3Mjk0MTAsImV4cCI6MTY5NzczMzAxMCwiaWF0IjoxNjk3NzI5NDEwLCJpc3MiOiJodHRwOi8vc2Vydmlkb3IuY29tIiwiYXVkIjoiaHR0cDovL2NsaWVudGUuY29tIn0.ra49k_uLK_ZxdRKq_kSFnS5jHtJc6ooyft10i05o44s
-jsonBody: {&quot;Agenda&quot;:{&quot;Id&quot;:0,&quot;IdServicio&quot;:1997,&quot;IdZona&quot;:94,&quot;IdCuadrilla&quot;:105,&quot;IdEstado&quot;:1,&quot;FechaInicio&quot;:&quot;2023-10-26 15:00&quot;,&quot;FechaFin&quot;:&quot;2023-10-26 15:30&quot;},&quot;UsuarioAplicacion&quot;:{&quot;IdAplicacion&quot;:&quot;224727e8-256e-4c6c-8ec5-add0905d8c36&quot;,&quot;IdUsuario&quot;:&quot;c1ec589d-655e-427a-81b5-87e38189468e&quot;}}
-baseUrl: https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda
 Request method:	POST
 Request URI:	https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda
 Proxy:			&lt;none&gt;
@@ -113,12 +110,12 @@ Body:
 {
     &quot;Agenda&quot;: {
         &quot;Id&quot;: 0,
-        &quot;IdServicio&quot;: 1997,
+        &quot;IdServicio&quot;: 2050,
         &quot;IdZona&quot;: 94,
         &quot;IdCuadrilla&quot;: 105,
         &quot;IdEstado&quot;: 1,
-        &quot;FechaInicio&quot;: &quot;2023-10-26 15:00&quot;,
-        &quot;FechaFin&quot;: &quot;2023-10-26 15:30&quot;
+        &quot;FechaInicio&quot;: &quot;2023-11-02 16:00&quot;,
+        &quot;FechaFin&quot;: &quot;2023-11-02 16:30&quot;
     },
     &quot;UsuarioAplicacion&quot;: {
         &quot;IdAplicacion&quot;: &quot;224727e8-256e-4c6c-8ec5-add0905d8c36&quot;,
@@ -133,44 +130,48 @@ Body:
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@14bb2297
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=1997, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-10-26 15:00, FechaFin=2023-10-26 15:30} [Dado que el usuario tiene acceso al servicio de agendamiento]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@61f2c3f0
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1305c126
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1a96d94c
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@459003a0
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=1997, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-10-26 15:00, FechaFin=2023-10-26 15:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
+<pre>[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3e587920
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=2050, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-11-02 16:00, FechaFin=2023-11-02 16:30} [Dado que el usuario tiene acceso al servicio de agendamiento]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2375b321
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@56dfab87
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1947596f
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2401856
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=2050, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-11-02 16:00, FechaFin=2023-11-02 16:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
 | Id | IdServicio | IdZona | IdCuadrilla | IdEstado | FechaInicio | FechaFin |
-| 0 | 1997 | 94 | 105 | 1 | 2023-10-26 15:00 | 2023-10-26 15:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda]]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=1997, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-10-26 15:00, FechaFin=2023-10-26 15:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
+| 0 | 2050 | 94 | 105 | 1 | 2023-11-02 16:00 | 2023-11-02 16:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda]]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=2050, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-11-02 16:00, FechaFin=2023-11-02 16:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
 | Id | IdServicio | IdZona | IdCuadrilla | IdEstado | FechaInicio | FechaFin |
-| 0 | 1997 | 94 | 105 | 1 | 2023-10-26 15:00 | 2023-10-26 15:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda]]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=1997, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-10-26 15:00, FechaFin=2023-10-26 15:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
+| 0 | 2050 | 94 | 105 | 1 | 2023-11-02 16:00 | 2023-11-02 16:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda]]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@27960b1e
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=2050, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-11-02 16:00, FechaFin=2023-11-02 16:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
 | Id | IdServicio | IdZona | IdCuadrilla | IdEstado | FechaInicio | FechaFin |
-| 0 | 1997 | 94 | 105 | 1 | 2023-10-26 15:00 | 2023-10-26 15:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda]]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=1997, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-10-26 15:00, FechaFin=2023-10-26 15:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
+| 0 | 2050 | 94 | 105 | 1 | 2023-11-02 16:00 | 2023-11-02 16:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda], Validaci&amp;oacute;n codigo de respuesta]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=2050, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-11-02 16:00, FechaFin=2023-11-02 16:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
 | Id | IdServicio | IdZona | IdCuadrilla | IdEstado | FechaInicio | FechaFin |
-| 0 | 1997 | 94 | 105 | 1 | 2023-10-26 15:00 | 2023-10-26 15:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda]]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3f9b7fe1
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@26582ca
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=1997, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-10-26 15:00, FechaFin=2023-10-26 15:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
+| 0 | 2050 | 94 | 105 | 1 | 2023-11-02 16:00 | 2023-11-02 16:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda], Validaci&amp;oacute;n codigo de respuesta]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=2050, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-11-02 16:00, FechaFin=2023-11-02 16:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
 | Id | IdServicio | IdZona | IdCuadrilla | IdEstado | FechaInicio | FechaFin |
-| 0 | 1997 | 94 | 105 | 1 | 2023-10-26 15:00 | 2023-10-26 15:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda]]], Entonces la orden de servicio debe ser agendada correctamente [Then response question should be (200)]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=1997, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-10-26 15:00, FechaFin=2023-10-26 15:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
+| 0 | 2050 | 94 | 105 | 1 | 2023-11-02 16:00 | 2023-11-02 16:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda], Validaci&amp;oacute;n codigo de respuesta]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3820cfe
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@31ab1e67
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=2050, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-11-02 16:00, FechaFin=2023-11-02 16:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
 | Id | IdServicio | IdZona | IdCuadrilla | IdEstado | FechaInicio | FechaFin |
-| 0 | 1997 | 94 | 105 | 1 | 2023-10-26 15:00 | 2023-10-26 15:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda]]], Entonces la orden de servicio debe ser agendada correctamente [Then response question should be (200)]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=1997, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-10-26 15:00, FechaFin=2023-10-26 15:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
+| 0 | 2050 | 94 | 105 | 1 | 2023-11-02 16:00 | 2023-11-02 16:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda], Validaci&amp;oacute;n codigo de respuesta]], Entonces la orden de servicio debe ser agendada correctamente [Then response question should be (200)]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=2050, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-11-02 16:00, FechaFin=2023-11-02 16:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
 | Id | IdServicio | IdZona | IdCuadrilla | IdEstado | FechaInicio | FechaFin |
-| 0 | 1997 | 94 | 105 | 1 | 2023-10-26 15:00 | 2023-10-26 15:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda]]], Entonces la orden de servicio debe ser agendada correctamente [Then response question should be (200)]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=1997, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-10-26 15:00, FechaFin=2023-10-26 15:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
+| 0 | 2050 | 94 | 105 | 1 | 2023-11-02 16:00 | 2023-11-02 16:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda], Validaci&amp;oacute;n codigo de respuesta]], Entonces la orden de servicio debe ser agendada correctamente [Then response question should be (200)]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=2050, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-11-02 16:00, FechaFin=2023-11-02 16:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
 | Id | IdServicio | IdZona | IdCuadrilla | IdEstado | FechaInicio | FechaFin |
-| 0 | 1997 | 94 | 105 | 1 | 2023-10-26 15:00 | 2023-10-26 15:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda]]], Entonces la orden de servicio debe ser agendada correctamente [Then response question should be (200)]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=1997, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-10-26 15:00, FechaFin=2023-10-26 15:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
+| 0 | 2050 | 94 | 105 | 1 | 2023-11-02 16:00 | 2023-11-02 16:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda], Validaci&amp;oacute;n codigo de respuesta]], Entonces la orden de servicio debe ser agendada correctamente [Then response question should be (200)]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=2050, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-11-02 16:00, FechaFin=2023-11-02 16:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
 | Id | IdServicio | IdZona | IdCuadrilla | IdEstado | FechaInicio | FechaFin |
-| 0 | 1997 | 94 | 105 | 1 | 2023-10-26 15:00 | 2023-10-26 15:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda]]], Entonces la orden de servicio debe ser agendada correctamente [Then response question should be (200)]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=1997, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-10-26 15:00, FechaFin=2023-10-26 15:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
+| 0 | 2050 | 94 | 105 | 1 | 2023-11-02 16:00 | 2023-11-02 16:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda], Validaci&amp;oacute;n codigo de respuesta]], Entonces la orden de servicio debe ser agendada correctamente [Then response question should be (200)]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=2050, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-11-02 16:00, FechaFin=2023-11-02 16:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
 | Id | IdServicio | IdZona | IdCuadrilla | IdEstado | FechaInicio | FechaFin |
-| 0 | 1997 | 94 | 105 | 1 | 2023-10-26 15:00 | 2023-10-26 15:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda]]], Entonces la orden de servicio debe ser agendada correctamente [Then response question should be (200)]]]
+| 0 | 2050 | 94 | 105 | 1 | 2023-11-02 16:00 | 2023-11-02 16:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda], Validaci&amp;oacute;n codigo de respuesta]], Entonces la orden de servicio debe ser agendada correctamente [Then response question should be (200)]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Agendar una orden de servicio desde el call center con diferentes datos:Example: {Id=0, IdServicio=2050, IdZona=94, IdCuadrilla=105, IdEstado=1, FechaInicio=2023-11-02 16:00, FechaFin=2023-11-02 16:30} [Dado que el usuario tiene acceso al servicio de agendamiento, Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos
+| Id | IdServicio | IdZona | IdCuadrilla | IdEstado | FechaInicio | FechaFin |
+| 0 | 2050 | 94 | 105 | 1 | 2023-11-02 16:00 | 2023-11-02 16:30 | [Automatizador ts agendar servicio [Automatizador executes a POST on the resource  [POST https://work.infotracktest.com/Servicios/api/Agenda/GuardarAgenda], Validaci&amp;oacute;n codigo de respuesta]], Entonces la orden de servicio debe ser agendada correctamente [Then response question should be (200)]]]
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
@@ -192,7 +193,7 @@ TEST PASSED: Agendar una orden de servicio desde el call center con diferentes d
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 26/10/2023 10:53:28 AM</p>
+<a href="http://www.gradle.org">Gradle 8.3</a> at 3/11/2023 09:34:42 AM</p>
 </div>
 </div>
 </body>

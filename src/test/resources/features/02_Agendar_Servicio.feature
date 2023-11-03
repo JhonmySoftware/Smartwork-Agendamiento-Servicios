@@ -15,7 +15,7 @@ Característica: Proceso de agendamiento de servicios
 
     Ejemplos:
       | Id | IdServicio | IdZona | IdCuadrilla | IdEstado | FechaInicio      | FechaFin         |
-      | 0  | 1997       | 94     | 105         | 1        | 2023-10-26 15:00 | 2023-10-26 15:30 |
+      | 0  | 2050       | 94     | 105         | 1        | 2023-11-02 16:00 | 2023-11-02 16:30 |
 
 
 

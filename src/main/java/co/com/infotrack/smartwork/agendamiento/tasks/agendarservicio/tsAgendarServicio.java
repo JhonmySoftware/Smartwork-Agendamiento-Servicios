@@ -14,6 +14,9 @@ import net.serenitybdd.screenplay.rest.interactions.Post;
 
 import java.io.IOException;
 
+import static net.serenitybdd.screenplay.rest.questions.ResponseConsequence.seeThatResponse;
+import static org.hamcrest.Matchers.hasItems;
+
 public class tsAgendarServicio implements Task {
 
     static {
@@ -55,9 +58,9 @@ public class tsAgendarServicio implements Task {
         // actor.can(CallAnApi.at(baseUrl));
         ApiAbility.giveApiAbilityTo(actor, baseUrl);
 
-        System.out.println("Token: " + token);
-        System.out.println("jsonBody: " + jsonBody);
-        System.out.println("baseUrl: " + baseUrl);
+        //System.out.println("Token: " + token);
+        //System.out.println("jsonBody: " + jsonBody);
+        //System.out.println("baseUrl: " + baseUrl);
 
         actor.attemptsTo(
                 Post.to("")
@@ -68,6 +71,13 @@ public class tsAgendarServicio implements Task {
                                 .log().all()
                         )
         );
+
+        actor.should(
+                seeThatResponse("Validación codigo de respuesta",
+                        response -> response.statusCode(200)
+                                .body("Mensajes", hasItems("El servicio " + agendarServicio.getIdServicio() + " ha sido asignado con éxito.")))
+        );
+
 
     }
 }

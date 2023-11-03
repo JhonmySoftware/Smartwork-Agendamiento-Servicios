@@ -1,0 +1,29 @@
+pipeline{
+
+    // En que agente esto va a estar corriendo
+    agent any
+
+    //que herramientas vamos a estar instalando al principio
+    tools {
+        gradle 'gradle'
+    }
+
+    stages('Tarea de limpieza'){
+            steps{
+                 // agarrar el repositorio en el que esta el codigo que necesitamos correr
+                git 'https://github.com/JhonmySoftware/Smartwork-Agendamiento-Servicios.git'
+                // Ejecutar la tarea clean de gradle
+                sh 'gradle clean'
+            }
+    }
+
+
+     stages('Paso de prueba'){
+
+                steps{
+                    echo 'paso de prueba'
+                }
+
+    }
+
+}

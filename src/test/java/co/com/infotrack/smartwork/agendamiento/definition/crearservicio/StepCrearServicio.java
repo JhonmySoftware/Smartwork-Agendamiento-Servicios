@@ -1,6 +1,7 @@
 package co.com.infotrack.smartwork.agendamiento.definition.crearservicio;
 
 import co.com.infotrack.smartwork.agendamiento.interactions.autenticacion.isCerrarSesion;
+import co.com.infotrack.smartwork.agendamiento.models.crearservicio.CedulaRandom;
 import co.com.infotrack.smartwork.agendamiento.models.crearservicio.OrdenDeServicio;
 import co.com.infotrack.smartwork.agendamiento.questions.crearservicio.QsCrearServicio;
 import co.com.infotrack.smartwork.agendamiento.tasks.crearservicio.tsCrearServicio01;
@@ -38,8 +39,9 @@ public class StepCrearServicio {
     public void queEnElCallCenterSeDeseaCrearUnaOrdenDeServicioConLosSiguientesDatos(DataTable datos) {
         List<Map<String, String>> data = datos.asMaps(String.class, String.class);
         OrdenDeServicio ordenDeServicio = new OrdenDeServicio();
+        CedulaRandom cedulaRandom = new CedulaRandom();
         ordenDeServicio.setTipoIdentificacion(data.get(0).get("Tipo Identificacion"));
-        ordenDeServicio.setIdentificacion(data.get(0).get("Identificacion"));
+        ordenDeServicio.setIdentificacion(CedulaRandom.numaleatorio());
         ordenDeServicio.setCodigoCliente(data.get(0).get("Codigo cliente"));
         ordenDeServicio.setNombre(data.get(0).get("Nombre"));
         ordenDeServicio.setCorreoElectronico(data.get(0).get("Correo electronico"));
