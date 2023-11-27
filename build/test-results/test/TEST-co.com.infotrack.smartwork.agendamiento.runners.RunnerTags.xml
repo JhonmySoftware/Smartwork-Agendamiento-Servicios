@@ -20,7 +20,7 @@ Característica: Proceso de agendamiento de servicios
 
 1 Scenarios (?[32m1 passed?[0m)
 5 Steps (?[32m5 passed?[0m)
-1m16,745s
+1m15,685s
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
