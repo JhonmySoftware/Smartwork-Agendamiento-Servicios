@@ -42,6 +42,7 @@ public class StepCrearServicio {
         CedulaRandom cedulaRandom = new CedulaRandom();
         ordenDeServicio.setTipoIdentificacion(data.get(0).get("Tipo Identificacion"));
         ordenDeServicio.setIdentificacion(CedulaRandom.numaleatorio());
+        ordenDeServicio.setDv(data.get(0).get("Dv"));
         ordenDeServicio.setCodigoCliente(data.get(0).get("Codigo cliente"));
         ordenDeServicio.setNombre(data.get(0).get("Nombre"));
         ordenDeServicio.setCorreoElectronico(data.get(0).get("Correo electronico"));

@@ -22,6 +22,7 @@ formatter.step({
       "cells": [
         "Tipo Identificacion",
         "Identificacion",
+        "Dv",
         "Codigo cliente",
         "Nombre",
         "Correo electronico",
@@ -36,6 +37,7 @@ formatter.step({
       "cells": [
         "\u003cTipoID\u003e",
         "\u003cIdentificacion\u003e",
+        "\u003cDv\u003e",
         "\u003cCodigoCliente\u003e",
         "\u003cNombre\u003e",
         "\u003cEmail\u003e",
@@ -133,15 +135,16 @@ formatter.examples({
         "Ubicacion",
         "Complemento",
         "Ciudad",
-        "Departamento"
+        "Departamento",
+        "Dv"
       ]
     },
     {
       "cells": [
-        "Cédula de ciudadanía",
+        "NIT",
         "X",
         "CC-123",
-        "R. Automotion 1",
+        "R. Automotion 3",
         "jhon.quinones@infotrack.com.co",
         "1234567890",
         "01",
@@ -153,12 +156,13 @@ formatter.examples({
         "X",
         "Servicio de prueba",
         "4800356789212",
-        "Nevera",
-        "Piloto se apaga",
+        "Campana Extractora",
+        "BOTA AGUA",
         "Cl. 118 #19-52",
         "Complemento",
+        "bogota",
         "Bogota",
-        "Bogota"
+        "7"
       ]
     }
   ]
@@ -186,6 +190,7 @@ formatter.step({
       "cells": [
         "Tipo Identificacion",
         "Identificacion",
+        "Dv",
         "Codigo cliente",
         "Nombre",
         "Correo electronico",
@@ -198,15 +203,16 @@ formatter.step({
     },
     {
       "cells": [
-        "Cédula de ciudadanía",
+        "NIT",
         "X",
+        "7",
         "CC-123",
-        "R. Automotion 1",
+        "R. Automotion 3",
         "jhon.quinones@infotrack.com.co",
         "1234567890",
         "Cl. 118 #19-52",
         "Complemento",
-        "Bogota",
+        "bogota",
         "Bogota"
       ]
     }
@@ -268,8 +274,8 @@ formatter.step({
     {
       "cells": [
         "4800356789212",
-        "Nevera",
-        "Piloto se apaga"
+        "Campana Extractora",
+        "BOTA AGUA"
       ]
     }
   ],

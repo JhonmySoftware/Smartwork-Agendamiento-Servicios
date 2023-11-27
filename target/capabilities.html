@@ -104,7 +104,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Proceso de agendamiento de servicios","type":"feature","href":"feature_proceso_de_agendamiento_de_servicios.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-exclamation-triangle error-icon \u0027 title\u003d\u0027ERROR\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"Proceso de agendamiento de servicios","type":"feature","href":"feature_proceso_de_agendamiento_de_servicios.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-check-circle-o success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -171,7 +171,7 @@
             <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 14-11-2023 16:37</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-11-2023 13:38</span>
     <br style="clear:left"/>
 </div>
 
@@ -211,7 +211,7 @@
                                                         <tr>
                                                             <td style="width:95%;" class="toc-title">
                                                                 <a href="#bea7508e6185adc008b15788ed8f94ec462bad5467fab6a9c8c5537ab41edd46" title="View scenario details" >Crear una orden de servicio desde el call center</a>
-                                                                     (5 examples)
+                                                                     (1 example)
 
                                                             </td>
                                                             <td style="width:5%;">
@@ -221,7 +221,7 @@
                                                                             <a style="margin-left:0.5em;padding-right: 1.5em;"
                                                                                href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center.html"
                                                                                title="View test results">
-                                                                            <a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                                                             </a>
 
                                                                         
@@ -244,7 +244,7 @@
                                             <h3>Scenario details</h3>
 
                                                 <div class="scenario-docs card" id="bea7508e6185adc008b15788ed8f94ec462bad5467fab6a9c8c5537ab41edd46">
-                                                    <div class="scenario-docs card-header error" style="min-height:1.5em;">
+                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
                                                         <div>
                                                             <span class="scenario-heading">
                                                                 <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center.html" title="View test results">Crear una orden de servicio desde el call center</a>
@@ -252,7 +252,7 @@
                                                             <span class="scenario-result-icon">
                                                                 
 
-                                                                    <a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a>
+                                                                    <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -260,10 +260,10 @@
                                                             <p><p>Dado que en el call center se desea crear una orden de servicio con los siguientes datos</p>
 <table>
 <thead>
-<tr><th>Tipo Identificacion</th><th>Identificacion</th><th>Codigo cliente</th><th>Nombre</th><th>Correo electronico</th><th>Celular</th><th>Ubicacion</th><th>Complemento</th></tr>
+<tr><th>Tipo Identificacion</th><th>Identificacion</th><th>Dv</th><th>Codigo cliente</th><th>Nombre</th><th>Correo electronico</th><th>Celular</th><th>Ubicacion</th><th>Complemento</th><th>Ciudad</th><th>Departamento</th></tr>
 </thead>
 <tbody>
-<tr><td>{TipoID}</td><td>{Identificacion}</td><td>{CodigoCliente}</td><td>{Nombre}</td><td>{Email}</td><td>{Celular}</td><td>{Ubicacion}</td><td>{Complemento}</td></tr>
+<tr><td>{TipoID}</td><td>{Identificacion}</td><td>{Dv}</td><td>{CodigoCliente}</td><td>{Nombre}</td><td>{Email}</td><td>{Celular}</td><td>{Ubicacion}</td><td>{Complemento}</td><td>{Ciudad}</td><td>{Departamento}</td></tr>
 </tbody>
 </table>
 </p>
@@ -292,14 +292,10 @@
                                                         <div class="examples">
                                                             <p><div class='example-table-in-scenario'><table>
 <thead>
-<tr><th>TipoID</th><th>Identificacion</th><th>CodigoCliente</th><th>Nombre</th><th>Email</th><th>Celular</th><th>CodigoServicio</th><th>ClaseServicio</th><th>TipoServicio</th><th>Prioridad</th><th>HoraInicio</th><th>HoraFin</th><th>Zonas</th><th>Observacion</th><th>Serial</th><th>Productos</th><th>Falla</th><th>Ubicacion</th><th>Complemento</th></tr>
+<tr><th>TipoID</th><th>Identificacion</th><th>CodigoCliente</th><th>Nombre</th><th>Email</th><th>Celular</th><th>CodigoServicio</th><th>ClaseServicio</th><th>TipoServicio</th><th>Prioridad</th><th>HoraInicio</th><th>HoraFin</th><th>Zonas</th><th>Observacion</th><th>Serial</th><th>Productos</th><th>Falla</th><th>Ubicacion</th><th>Complemento</th><th>Ciudad</th><th>Departamento</th><th>Dv</th></tr>
 </thead>
 <tbody>
-<tr><td>Cédula de ciudadanía</td><td>X</td><td>CC-123</td><td>R. Automotion 1</td><td>jhon.quinones@infotrack.com.co</td><td>1234567890</td><td>01</td><td>Domicilio</td><td>Mantenimiento</td><td>Alta</td><td>07:00 AM</td><td>05:00 PM</td><td>X</td><td>Servicio de prueba</td><td>4800356789212</td><td>Nevera</td><td>Piloto se apaga</td><td>Cl. 118 #19-52</td><td>Complemento</td></tr>
-<tr><td>Cédula de ciudadanía</td><td>X</td><td>CC-123</td><td>R. Automotion 2</td><td>jhon.quinones@infotrack.com.co</td><td>1234567890</td><td>01</td><td>Domicilio</td><td>Mantenimiento</td><td>Alta</td><td>07:00 AM</td><td>05:00 PM</td><td>X</td><td>Servicio de prueba</td><td>4800356789212</td><td>Cafetera Eléctrica</td><td>BOTA AGUA</td><td>Cl. 118 #19-52</td><td>Complemento</td></tr>
-<tr><td>Cédula de ciudadanía</td><td>X</td><td>CC-123</td><td>R. Automotion 3</td><td>jhon.quinones@infotrack.com.co</td><td>1234567890</td><td>01</td><td>Domicilio</td><td>Mantenimiento</td><td>Alta</td><td>07:00 AM</td><td>05:00 PM</td><td>X</td><td>Servicio de prueba</td><td>4800356789212</td><td>Campana Extractora</td><td>BOTA AGUA</td><td>Cl. 118 #19-52</td><td>Complemento</td></tr>
-<tr><td>Cédula de ciudadanía</td><td>X</td><td>CC-123</td><td>R. Automotion 4</td><td>jhon.quinones@infotrack.com.co</td><td>1234567890</td><td>01</td><td>Domicilio</td><td>Mantenimiento</td><td>Alta</td><td>07:00 AM</td><td>05:00 PM</td><td>X</td><td>Servicio de prueba</td><td>4800356789212</td><td>Olla Arrocera</td><td>PILOTO SE APAGA</td><td>Cl. 118 #19-52</td><td>Complemento</td></tr>
-<tr><td>Cédula de ciudadanía</td><td>X</td><td>CC-123</td><td>R. Automotion 5</td><td>jhon.quinones@infotrack.com.co</td><td>1234567890</td><td>01</td><td>Domicilio</td><td>Mantenimiento</td><td>Alta</td><td>07:00 AM</td><td>05:00 PM</td><td>X</td><td>Servicio de prueba</td><td>4800356789212</td><td>Refrigeradora</td><td>Piloto se apaga</td><td>Cl. 118 #19-52</td><td>Complemento</td></tr>
+<tr><td>Cédula de ciudadanía</td><td>X</td><td>CC-123</td><td>R. Automotion 1</td><td>jhon.quinones@infotrack.com.co</td><td>1234567890</td><td>01</td><td>Domicilio</td><td>Mantenimiento</td><td>Alta</td><td>07:00 AM</td><td>05:00 PM</td><td>X</td><td>Servicio de prueba</td><td>4800356789212</td><td>Nevera</td><td>Piloto se apaga</td><td>Cl. 118 #19-52</td><td>Complemento</td><td>Bogota</td><td>Bogota</td><td>7</td></tr>
 </tbody>
 </table></div>
 </p>
@@ -322,10 +318,10 @@
                                             </div>
                                             <script>
 
-                                                var labels = ['60%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '20%', ' ', '20%', ' ', ' ', ' '];
+                                                var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
                                                 // Our series array that contains series objects or in this case series data arrays
 
-                                                var series = [{meta: 'Passing tests (automated)', value: 3}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 1}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 1}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                var series = [{meta: 'Passing tests (automated)', value: 1}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                 // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                 // as you saw in the previous example
@@ -366,8 +362,8 @@
                                                                         <a href="result_success.html"><i
                                                                                 class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
                                                                     </td>
-                                                <td class="automated-stats">3</td>
-                                                <td class="automated-stats">60%</td>
+                                                <td class="automated-stats">1</td>
+                                                <td class="automated-stats">100%</td>
                                             </tr>
                                             <tr>
                                                                     <td class="aggregate-result-count"><i
@@ -391,26 +387,26 @@
                                                 <td class="automated-stats"> </td>
                                             </tr>
                                             <tr>
-                                                                             <td colspan="3"><a href="result_broken.html"><i
-                                                                                    class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                            <td colspan="3"><i
+                                                                                class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
                                                                             </td>
 
                                             </tr>
 
                                             <tr>
-                                                                    <td class="aggregate-result-count indented-error-category">
-                                                                        <a href="result_failure.html"><i
-                                                                                class='fa fa-times-circle failure-icon'></i>&nbsp;Failed</a>
-                                                                    </td>
-                                                <td class="automated-stats">1</td>
-                                                <td class="automated-stats">20%</td>
+                                                                <td class="aggregate-result-count indented-error-category">
+                                                                    <i
+                                                                            class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
+                                                                </td>
+                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats"> </td>
                                             <tr>
-                                                                    <td class="aggregate-result-count indented-error-category">
-                                                                        <a href="result_error.html"><i
-                                                                                class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken</a>
-                                                                    </td>
-                                                <td class="automated-stats">1</td>
-                                                <td class="automated-stats">20%</td>
+                                                                <td class="aggregate-result-count indented-error-category">
+                                                                    <i
+                                                                            class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken
+                                                                </td>
+                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats"> </td>
                                             <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -421,7 +417,7 @@
                                             </tr>
                                             <tr class="summary-stats">
                                                 <td class="aggregate-result-count">Total</td>
-                                                <td class="automated-stats">5</td>
+                                                <td class="automated-stats">1</td>
                                                 <td class="automated-stats"></td>
                                             </tr>
                                             </tbody>
@@ -443,11 +439,11 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td> 4m 51s</td>
-                                                        <td>291ms</td>
-                                                        <td>3ms</td>
-                                                        <td> 1m 12s</td>
-                                                        <td> 4m 51s</td>
+                                                        <td> 1m 17s</td>
+                                                        <td>77ms</td>
+                                                        <td> 1m 16s</td>
+                                                        <td> 1m 16s</td>
+                                                        <td> 1m 17s</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -486,11 +482,11 @@
             <td> 
                 
             </td>
-            <td>5</td>
+            <td>1</td>
             <td>0</td>
             <td>
-                <span class="status_icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a></span>
-                <span style="display:none">4</span>
+                <span class="status_icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                <span style="display:none">1</span>
             </td>
 
             <td width="165px" style="padding:0px;">
@@ -499,19 +495,19 @@
 <table>
     <tr>
         <td width="40px" style="padding-top:4px;">
-            <div class="small" style="text-align:right;">60%</div>
+            <div class="small" style="text-align:right;">100%</div>
         </td>
         <td style="min-width:12.5em;">
             <div class="progress">
                 <div class="progress-bar" role="progressbar"
-                     style="width: 60%; background-color:#30cb23;"
-                     aria-valuenow="3"
+                     style="width: 100%; background-color:#30cb23;"
+                     aria-valuenow="1"
                      aria-valuemin="0"
-                     aria-valuemax="5"
-                     title="  - Total tests: 5
-  - Passing tests: 3 (60%)
-  - Failing tests: 1 (20%)
-  - Tests with errors: 1 (20%)
+                     aria-valuemax="1"
+                     title="  - Total tests: 1
+  - Passing tests: 1 (100%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
@@ -520,11 +516,11 @@
                      style="width: 0%; background-color:#A2C4EC;"
                      aria-valuenow="0"
                      aria-valuemin="0"
-                     aria-valuemax="5"
-                     title="  - Total tests: 5
-  - Passing tests: 3 (60%)
-  - Failing tests: 1 (20%)
-  - Tests with errors: 1 (20%)
+                     aria-valuemax="1"
+                     title="  - Total tests: 1
+  - Passing tests: 1 (100%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
@@ -533,11 +529,11 @@
                      style="width: 0%; background-color:darkgrey;"
                      aria-valuenow="0"
                      aria-valuemin="0"
-                     aria-valuemax="5"
-                     title="  - Total tests: 5
-  - Passing tests: 3 (60%)
-  - Failing tests: 1 (20%)
-  - Tests with errors: 1 (20%)
+                     aria-valuemax="1"
+                     title="  - Total tests: 1
+  - Passing tests: 1 (100%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
@@ -546,37 +542,37 @@
                      style="width: 0%; background-color:#EEE098;"
                      aria-valuenow="0"
                      aria-valuemin="0"
-                     aria-valuemax="5"
-                     title="  - Total tests: 5
-  - Passing tests: 3 (60%)
-  - Failing tests: 1 (20%)
-  - Tests with errors: 1 (20%)
+                     aria-valuemax="1"
+                     title="  - Total tests: 1
+  - Passing tests: 1 (100%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
                 </div>
                 <div class="progress-bar" role="progressbar"
-                     style="width: 20%; background-color:#f8001f;"
-                     aria-valuenow="1"
+                     style="width: 0%; background-color:#f8001f;"
+                     aria-valuenow="0"
                      aria-valuemin="0"
-                     aria-valuemax="5"
-                     title="  - Total tests: 5
-  - Passing tests: 3 (60%)
-  - Failing tests: 1 (20%)
-  - Tests with errors: 1 (20%)
+                     aria-valuemax="1"
+                     title="  - Total tests: 1
+  - Passing tests: 1 (100%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
                 </div>
                 <div class="progress-bar" role="progressbar"
-                     style="width: 20%; background-color:darkorange;"
-                     aria-valuenow="1"
+                     style="width: 0%; background-color:darkorange;"
+                     aria-valuenow="0"
                      aria-valuemin="0"
-                     aria-valuemax="5"
-                     title="  - Total tests: 5
-  - Passing tests: 3 (60%)
-  - Failing tests: 1 (20%)
-  - Tests with errors: 1 (20%)
+                     aria-valuemax="1"
+                     title="  - Total tests: 1
+  - Passing tests: 1 (100%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
@@ -585,11 +581,11 @@
                      style="width: 0%; background-color:fuchsia;"
                      aria-valuenow="0"
                      aria-valuemin="0"
-                     aria-valuemax="5"
-                     title="  - Total tests: 5
-  - Passing tests: 3 (60%)
-  - Failing tests: 1 (20%)
-  - Tests with errors: 1 (20%)
+                     aria-valuemax="1"
+                     title="  - Total tests: 1
+  - Passing tests: 1 (100%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
@@ -624,17 +620,17 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                <tr class="scenario-result ERROR">
+                                                <tr class="scenario-result SUCCESS">
                                                     <td>
                                                             <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center.html">Crear una orden de servicio desde el call center</a>
-                                                               (5 examples)
+                                                               (1 example)
                                                     </td>
                                                     <td>5</td>
-                                                    <td>16:37:22</td>
-                                                    <td>04:51</td>
+                                                    <td>13:38:45</td>
+                                                    <td>01:17</td>
                                                     <td>
-                                                            <a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a> <span
-                                                                style="display:none">ERROR</span>
+                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                style="display:none">SUCCESS</span>
                                                     </td>
                                                 </tr>
                                                 </tbody>

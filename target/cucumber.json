@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 80643100,
+              "duration": 58561500,
               "status": "passed"
             },
             "match": {
@@ -15,7 +15,7 @@
           },
           {
             "result": {
-              "duration": 3183100,
+              "duration": 2292400,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
             }
           }
         ],
-        "line": 22,
+        "line": 23,
         "name": "Crear una orden de servicio desde el call center",
         "description": "",
         "id": "proceso-de-agendamiento-de-servicios;crear-una-orden-de-servicio-desde-el-call-center;;2",
@@ -32,7 +32,7 @@
         "steps": [
           {
             "result": {
-              "duration": 62918517900,
+              "duration": 55481308000,
               "status": "passed"
             },
             "line": 8,
@@ -45,6 +45,7 @@
                 "cells": [
                   "Tipo Identificacion",
                   "Identificacion",
+                  "Dv",
                   "Codigo cliente",
                   "Nombre",
                   "Correo electronico",
@@ -57,15 +58,16 @@
               },
               {
                 "cells": [
-                  "Cédula de ciudadanía",
+                  "NIT",
                   "X",
+                  "7",
                   "CC-123",
-                  "R. Automotion 1",
+                  "R. Automotion 3",
                   "jhon.quinones@infotrack.com.co",
                   "1234567890",
                   "Cl. 118 #19-52",
                   "Complemento",
-                  "Bogota",
+                  "bogota",
                   "Bogota"
                 ]
               }
@@ -74,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 8324746700,
+              "duration": 7327705300,
               "status": "passed"
             },
             "line": 11,
@@ -112,7 +114,7 @@
           },
           {
             "result": {
-              "duration": 12384411500,
+              "duration": 11601147400,
               "status": "passed"
             },
             "line": 14,
@@ -131,8 +133,8 @@
               {
                 "cells": [
                   "4800356789212",
-                  "Nevera",
-                  "Piloto se apaga"
+                  "Campana Extractora",
+                  "BOTA AGUA"
                 ]
               }
             ],
@@ -140,7 +142,7 @@
           },
           {
             "result": {
-              "duration": 285835600,
+              "duration": 194370500,
               "status": "passed"
             },
             "line": 17,
@@ -152,7 +154,7 @@
           },
           {
             "result": {
-              "duration": 1431378700,
+              "duration": 1153245800,
               "status": "passed"
             },
             "line": 18,

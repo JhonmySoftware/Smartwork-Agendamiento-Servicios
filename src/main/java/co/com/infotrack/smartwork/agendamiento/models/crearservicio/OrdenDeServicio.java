@@ -30,6 +30,8 @@ public class OrdenDeServicio {
     private String Ciudad;
     private String Departamento;
 
+    private String Dv;
+
     // variable donde guardaré la orden de servicio creada
     private String NumeroOrdenServicio;
 

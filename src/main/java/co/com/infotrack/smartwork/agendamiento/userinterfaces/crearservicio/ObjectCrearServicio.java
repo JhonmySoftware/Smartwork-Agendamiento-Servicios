@@ -31,6 +31,9 @@ public class ObjectCrearServicio extends PageObject {
     public static Target NIT = Target.the("Lista NIT")
             .located(By.xpath("//li[normalize-space()='NIT']"));
 
+    public static Target DigitoVerificacion = Target.the("Digito de verificación")
+            .located(By.id("-DigitoVerificacion"));
+
     public static Target CedulaExtranjeria = Target.the("Lista Cedula de extrajeria")
             .located(By.xpath("//li[normalize-space()='Cédula de extranjería']"));
 

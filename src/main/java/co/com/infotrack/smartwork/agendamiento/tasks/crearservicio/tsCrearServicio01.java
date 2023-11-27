@@ -83,7 +83,8 @@ public class tsCrearServicio01 implements Task {
                     actor.attemptsTo(Click.on(ObjectCrearServicio.CedulaExtranjeria));
                     break;
                 case "NIT":
-                    actor.attemptsTo(Click.on(ObjectCrearServicio.NIT));
+                    actor.attemptsTo(Click.on(ObjectCrearServicio.NIT),
+                            Enter.theValue(ordenDeServicio.getDv()).into(ObjectCrearServicio.DigitoVerificacion));
                     break;
                 default:
                     System.out.println("Tipo de identificación inválido");
