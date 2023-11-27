@@ -3,106 +3,169 @@
     "line": 5,
     "elements": [
       {
-        "line": 7,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Antecedentes",
-        "steps": [
-          {
-            "result": {
-              "duration": 136096500,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "que el usuario tiene acceso al servicio de agendamiento",
-            "match": {
-              "location": "StepAgendarServicio.queElUsuarioTieneAccesoAlServicioDeAgendamiento()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
         "before": [
           {
             "result": {
-              "duration": 51750800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepAgendarServicio.IniciarEscenario()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5990600,
+              "duration": 80643100,
               "status": "passed"
             },
             "match": {
               "location": "StepCrearServicio.IniciarEscenario()"
             }
+          },
+          {
+            "result": {
+              "duration": 3183100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepAgendarServicio.IniciarEscenario()"
+            }
           }
         ],
-        "line": 18,
-        "name": "Agendar una orden de servicio desde el call center con diferentes datos",
+        "line": 22,
+        "name": "Crear una orden de servicio desde el call center",
         "description": "",
-        "id": "proceso-de-agendamiento-de-servicios;agendar-una-orden-de-servicio-desde-el-call-center-con-diferentes-datos;;2",
+        "id": "proceso-de-agendamiento-de-servicios;crear-una-orden-de-servicio-desde-el-call-center;;2",
         "type": "scenario",
         "keyword": "Esquema del escenario",
         "steps": [
           {
             "result": {
-              "duration": 7041769200,
+              "duration": 62918517900,
               "status": "passed"
             },
-            "line": 11,
-            "name": "el usuario realiza una solicitud de agendamiento con los siguientes datos",
+            "line": 8,
+            "name": "que en el call center se desea crear una orden de servicio con los siguientes datos",
             "match": {
-              "location": "StepAgendarServicio.elUsuarioRealizaUnaSolicitudDeAgendamientoConLosSiguientesDatos(DataTable)"
+              "location": "StepCrearServicio.queEnElCallCenterSeDeseaCrearUnaOrdenDeServicioConLosSiguientesDatos(DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "Id",
-                  "IdServicio",
-                  "IdZona",
-                  "IdCuadrilla",
-                  "IdEstado",
-                  "FechaInicio",
-                  "FechaFin"
+                  "Tipo Identificacion",
+                  "Identificacion",
+                  "Codigo cliente",
+                  "Nombre",
+                  "Correo electronico",
+                  "Celular",
+                  "Ubicacion",
+                  "Complemento",
+                  "Ciudad",
+                  "Departamento"
                 ]
               },
               {
                 "cells": [
-                  "0",
-                  "2050",
-                  "94",
-                  "105",
-                  "1",
-                  "2023-11-02 16:00",
-                  "2023-11-02 16:30"
+                  "Cédula de ciudadanía",
+                  "X",
+                  "CC-123",
+                  "R. Automotion 1",
+                  "jhon.quinones@infotrack.com.co",
+                  "1234567890",
+                  "Cl. 118 #19-52",
+                  "Complemento",
+                  "Bogota",
+                  "Bogota"
                 ]
               }
             ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 8324746700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "se ingresan los siguientes datos del servicio",
+            "match": {
+              "location": "StepCrearServicio.seIngresanLosSiguientesDatosDelServicio(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Codigo del servicio",
+                  "Clase servicio",
+                  "Tipo Servicio",
+                  "Prioridad",
+                  "Hora inicio",
+                  "Hora fin",
+                  "Zonas",
+                  "Observacion"
+                ]
+              },
+              {
+                "cells": [
+                  "01",
+                  "Domicilio",
+                  "Mantenimiento",
+                  "Alta",
+                  "07:00 AM",
+                  "05:00 PM",
+                  "X",
+                  "Servicio de prueba"
+                ]
+              }
+            ],
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 12384411500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "se ingresan los siguientes datos del producto",
+            "match": {
+              "location": "StepCrearServicio.seIngresanLosSiguientesDatosDelProducto(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Serial",
+                  "Productos",
+                  "Falla"
+                ]
+              },
+              {
+                "cells": [
+                  "4800356789212",
+                  "Nevera",
+                  "Piloto se apaga"
+                ]
+              }
+            ],
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 285835600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "se crea la orden de servicio",
+            "match": {
+              "location": "StepCrearServicio.seCreaLaOrdenDeServicio()"
+            },
             "keyword": "Cuando "
           },
           {
             "result": {
-              "duration": 56967000,
+              "duration": 1431378700,
               "status": "passed"
             },
-            "line": 14,
-            "name": "la orden de servicio debe ser agendada correctamente",
+            "line": 18,
+            "name": "se verifica que la orden de servicio se ha creado correctamente",
             "match": {
-              "location": "StepAgendarServicio.laOrdenDeServicioDebeSerAgendadaCorrectamente()"
+              "location": "StepCrearServicio.seVerificaQueLaOrdenDeServicioSeHaCreadoCorrectamente()"
             },
             "keyword": "Entonces "
           }
         ],
         "tags": [
           {
-            "name": "@CP002_Agendamiento_Servicio"
+            "name": "@CP001_Creacion_OrdenServicio"
           }
         ]
       }
@@ -111,10 +174,10 @@
     "description": "",
     "id": "proceso-de-agendamiento-de-servicios",
     "keyword": "Característica",
-    "uri": "src/test/resources/features/02_Agendar_Servicio.feature",
+    "uri": "src/test/resources/features/01_Crear_OrdenServicio.feature",
     "tags": [
       {
-        "name": "@CP002_Agendamiento_Servicio",
+        "name": "@CP001_Creacion_OrdenServicio",
         "type": "Tag",
         "location": {
           "line": 4,

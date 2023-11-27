@@ -45,6 +45,10 @@ public class AgregarUbicaciones implements Interaction {
                 ).forNoLongerThan(10).seconds(),
                 Enter.theValue(ordenDeServicio.getUbicacion()).into(ObjectAgregarUbicaciones.Direccion),
                 Enter.theValue(ordenDeServicio.getComplemento()).into(ObjectAgregarUbicaciones.Complemento),
+                Enter.theValue(ordenDeServicio.getDepartamento()).into(ObjectAgregarUbicaciones.Departamento),
+                Click.on(ObjectAgregarUbicaciones.ListaDepartamento),
+                Enter.theValue(ordenDeServicio.getCiudad()).into(ObjectAgregarUbicaciones.Ciudad),
+                Click.on(ObjectAgregarUbicaciones.ListaCiudad),
                 Click.on(ObjectAgregarUbicaciones.GuardarDireccion),
                 Click.on(ObjectAgregarUbicaciones.ContinuarDireccion),
                 Wait.until(

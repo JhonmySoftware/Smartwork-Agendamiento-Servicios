@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="co.com.infotrack.smartwork.agendamiento.runners.RunnerTags" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LTBG60836" time="0.0">
   <properties/>
-  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@21d8bcbe
-REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@2cf92cc7
-@CP002_Agendamiento_Servicio
+  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@24bdb479
+REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@235f4c10
+@CP001_Creacion_OrdenServicio
 Característica: Proceso de agendamiento de servicios
 
-  Esquema del escenario: Agendar una orden de servicio desde el call center con diferentes datos ?[90m# src/test/resources/features/02_Agendar_Servicio.feature:10?[0m
-    ?[36mCuando el usuario realiza una solicitud de agendamiento con los siguientes datos?[0m
-    ?[36mEntonces la orden de servicio debe ser agendada correctamente?[0m
+  Esquema del escenario: Crear una orden de servicio desde el call center ?[90m# src/test/resources/features/01_Crear_OrdenServicio.feature:7?[0m
+    ?[36mDado que en el call center se desea crear una orden de servicio con los siguientes datos?[0m
+    ?[36mY se ingresan los siguientes datos del servicio?[0m
+    ?[36mY se ingresan los siguientes datos del producto?[0m
+    ?[36mCuando se crea la orden de servicio?[0m
+    ?[36mEntonces se verifica que la orden de servicio se ha creado correctamente?[0m
 
     Ejemplos: 
 
-  Antecedentes:                                                  ?[90m# src/test/resources/features/02_Agendar_Servicio.feature:7?[0m
+  @CP001_Creacion_OrdenServicio
+  Esquema del escenario: Crear una orden de servicio desde el call center                    ?[90m# src/test/resources/features/01_Crear_OrdenServicio.feature:22?[0m
 
 1 Scenarios (?[32m1 passed?[0m)
-3 Steps (?[32m3 passed?[0m)
-0m7,882s
+5 Steps (?[32m5 passed?[0m)
+1m27,171s
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
@@ -38,7 +42,7 @@ Característica: Proceso de agendamiento de servicios
 
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Proceso de agendamiento de servicios
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Proceso de agendamiento de servicios
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testStarted: Agendar una orden de servicio desde el call center con diferentes datos/proceso-de-agendamiento-de-servicios;agendar-una-orden-de-servicio-desde-el-call-center-con-diferentes-datos
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testStarted: Crear una orden de servicio desde el call center/proceso-de-agendamiento-de-servicios;crear-una-orden-de-servicio-desde-el-call-center
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
@@ -47,9 +51,9 @@ Característica: Proceso de agendamiento de servicios
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
                                                                   
 
-TEST STARTED: Agendar una orden de servicio desde el call center con diferentes datos
--------------------------------------------------------------------(proceso-de-agendamiento-de-servicios;agendar-una-orden-de-servicio-desde-el-call-center-con-diferentes-datos)
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4eeea57d
+TEST STARTED: Crear una orden de servicio desde el call center
+-------------------------------------------------------------------(proceso-de-agendamiento-de-servicios;crear-una-orden-de-servicio-desde-el-call-center)
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@740abb5
 [pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
 ]]></system-err>
 </testsuite>

@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features"
         , snippets = SnippetType.CAMELCASE
-        , tags = "@CP002_Agendamiento_Servicio"
+        , tags = "@CP001_Creacion_OrdenServicio"
         //CP001_Creacion_OrdenServicio
         //CP002_Agendamiento_Servicio
         , glue = "co.com.infotrack.smartwork.agendamiento.definition")

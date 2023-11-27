@@ -2,7 +2,7 @@ package co.com.infotrack.smartwork.agendamiento.interactions.autenticacion;
 
 import co.com.infotrack.smartwork.agendamiento.questions.autenticacion.qsLogin;
 import co.com.infotrack.smartwork.agendamiento.userinterfaces.autenticacion.ObjetcLogin;
-import co.com.infotrack.smartwork.agendamiento.utils.Credenciales;
+import co.com.infotrack.smartwork.agendamiento.utils.LecturaArchivosProperties;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.Interaction;
@@ -29,7 +29,7 @@ public class isLogin implements Interaction {
     public <T extends Actor> void performAs(T actor) {
 
         try {
-            Credenciales.Credenciales();
+            LecturaArchivosProperties.Credenciales();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -41,14 +41,21 @@ public class isLogin implements Interaction {
                         WebElementQuestion.the(ObjetcLogin.InputLogin),
                         WebElementStateMatchers.isVisible()
                 ).forNoLongerThan(20).seconds(),
-                Enter.theValue(Credenciales.properties.getProperty("Usuario")).into(ObjetcLogin.InputLogin),
-                Enter.theValue(Credenciales.properties.getProperty("Contrasenia")).into(ObjetcLogin.InputPassword),
+                Enter.theValue(LecturaArchivosProperties.properties.getProperty("Usuario")).into(ObjetcLogin.InputLogin),
+                Enter.theValue(LecturaArchivosProperties.properties.getProperty("Contrasenia")).into(ObjetcLogin.InputPassword),
                 Click.on(ObjetcLogin.ButtonIniciarSesion));
 
         /**
          * Validar inicion de sesión y versionamiento del sitio
          * */
+
+        try {
+            LecturaArchivosProperties.VersionSitio();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(qsLogin.one(),
-                Matchers.comparesEqualTo("1.5.9")));
+                Matchers.comparesEqualTo(LecturaArchivosProperties.properties.getProperty("Version"))));
     }
 }

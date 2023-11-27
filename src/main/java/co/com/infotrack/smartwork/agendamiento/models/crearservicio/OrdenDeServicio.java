@@ -27,6 +27,8 @@ public class OrdenDeServicio {
     private String falla;
     private String Ubicacion;
     private String Complemento;
+    private String Ciudad;
+    private String Departamento;
 
     // variable donde guardaré la orden de servicio creada
     private String NumeroOrdenServicio;

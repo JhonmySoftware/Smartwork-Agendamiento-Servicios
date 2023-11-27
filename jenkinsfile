@@ -1,29 +1,45 @@
-pipeline{
+import java.text.SimpleDateFormat
+import java.util.Date
 
-    // En que agente esto va a estar corriendo
+def dateFormat = new SimpleDateFormat("yyyyMMddHHmm")
+def date = new Date()
+def timestamp = dateFormat.format(date).toString()
+def correo = "jhon.quinones@infotrack.com.co"
+
+pipeline {
     agent any
-
-    //que herramientas vamos a estar instalando al principio
-    tools {
-        gradle 'gradle'
-    }
-
-    stages('Tarea de limpieza'){
-            steps{
-                 // agarrar el repositorio en el que esta el codigo que necesitamos correr
-                git 'https://github.com/JhonmySoftware/Smartwork-Agendamiento-Servicios.git'
-                // Ejecutar la tarea clean de gradle
-                sh 'gradle clean'
-            }
-    }
-
-
-     stages('Paso de prueba'){
-
-                steps{
-                    echo 'paso de prueba'
+    stages {
+        stage('Ejecución de pruebas') {
+            steps {
+                script {
+                    // Utiliza la ruta completa de Gradle aquí, y utiliza "bat" para ejecutar comandos de Windows
+                    bat 'C:\\Gradle\\gradle-8.3\\bin\\gradle.bat clean test aggregate --warning-mode all'
+                    echo 'Test Ejecutados Exitosamente'
                 }
-
+            }
+        }
+        stage('Generar el Reporte') {
+            steps {
+                script {
+                    bat "rename \"${WORKSPACE}\\target\" serenity_${timestamp}"
+                    echo 'Backup de evidencias realizado con exito'
+                }
+            }
+            post {
+                always {
+                    // Utilizar el plugin HTML Publisher para publicar los informes HTML
+                    publishHTML([
+                        allowMissing: false,
+                        alwaysLinkToLastBuild: true,
+                        keepAll: true,
+                        reportDir: "${WORKSPACE}\\serenity_${timestamp}",
+                        reportFiles: 'index.html',
+                        reportName: 'Reporte Modulo de autogestion',
+                        reportTitles: 'Modulo de Autogestion'
+                    ])
+                    echo 'Reporte Html realizado con exito'
+                }
+            }
+        }
     }
-
 }

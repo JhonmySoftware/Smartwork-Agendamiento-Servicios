@@ -1,0 +1,2328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Crear una orden de servicio desde el call center</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<!-- ImgPreview -->
+<script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
+</head>
+
+
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Automatización Modulo de Autogestión</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs">Home</a>
+
+            > <a href="feature_proceso_de_agendamiento_de_servicios.html">Proceso De Agendamiento De Servicios</a>
+        > Crear una orden de servicio desde el call center
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-11-2023 12:10</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                                <div>
+                                    <h3 class="discreet-story-header">
+                                        <i class="fa fa-2x fa-comments-o"></i>
+                                        <span class="story-header-title">Proceso De Agendamiento De Servicios </span>
+                                    </h3>
+
+                                </div>
+
+                        </td>
+                        <td valign="top">
+                                <p class="tag">
+                                    <span class="badge tag-badge" style="background:default;">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;"
+                                                                      href="tag_cp001_creacion_ordenservicio.html">CP001 Creacion Ordenservicio
+                                    (tag)</a>
+                                </span>
+                                </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">
+                                    Crear una orden de servicio desde el call center
+                                        <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+                <!-- CAST MEMBERS -->
+                <div>&nbsp;</div>
+                <div class="story-title">
+                    <table class="outcome-header">
+                        <tr>
+                            <td>
+                                <div>
+                                    <h3 class="discreet-story-header">
+                                        <i class="fa fa-2x fa-users"></i>
+                                        <span class="story-header-title">
+                                            <a class="btn btn-primary" data-toggle="collapse" href="#castDetails"
+                                               role="button" aria-expanded="true" aria-controls="castDetails">Cast</a>
+                                        </span>
+                                    </h3>
+
+                                    <div class="cast-member collapse" id="castDetails">
+                                        <table class="cast">
+                                            <tr>
+                                                    <td width="100%">
+                                                        <h4>
+                                                            <i class="fa fa-2x fa-user-o"></i>&nbsp;<span>Automatizador</span>
+                                                            <h4>
+                                                                <p></p>
+                                                                <ul>
+                                                                        <li><strong>Automatizador can:</strong>
+                                                                            <ul>
+                                                                                    <li>browse the web</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                </ul>
+                                                    </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- END CAST MEMBERS -->
+
+
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+        <div class="story-title">
+            <h3 class="story-header">Scenario Outline</h3>
+
+            <div class="scenario">Dado que en el call center se desea crear una orden de servicio con los siguientes datos<br><table class='embedded'><thead><th>Tipo Identificacion</th><th>Identificacion</th><th>Codigo cliente</th><th>Nombre</th><th>Correo electronico</th><th>Celular</th><th>Ubicacion</th><th>Complemento</th><th>Ciudad</th><th>Departamento</th></thead><tbody><tr><td>&lt;TipoID&gt;</td><td>&lt;Identificacion&gt;</td><td>&lt;CodigoCliente&gt;</td><td>&lt;Nombre&gt;</td><td>&lt;Email&gt;</td><td>&lt;Celular&gt;</td><td>&lt;Ubicacion&gt;</td><td>&lt;Complemento&gt;</td><td>&lt;Ciudad&gt;</td><td>&lt;Departamento&gt;</td></tr></tbody></table><br>Y se ingresan los siguientes datos del servicio<br><table class='embedded'><thead><th>Codigo del servicio</th><th>Clase servicio</th><th>Tipo Servicio</th><th>Prioridad</th><th>Hora inicio</th><th>Hora fin</th><th>Zonas</th><th>Observacion</th></thead><tbody><tr><td>&lt;CodigoServicio&gt;</td><td>&lt;ClaseServicio&gt;</td><td>&lt;TipoServicio&gt;</td><td>&lt;Prioridad&gt;</td><td>&lt;HoraInicio&gt;</td><td>&lt;HoraFin&gt;</td><td>&lt;Zonas&gt;</td><td>&lt;Observacion&gt;</td></tr></tbody></table><br>Y se ingresan los siguientes datos del producto<br><table class='embedded'><thead><th>Serial</th><th>Productos</th><th>Falla</th></thead><tbody><tr><td>&lt;Serial&gt;</td><td>&lt;Productos&gt;</td><td>&lt;Falla&gt;</td></tr></tbody></table><br>Cuando se crea la orden de servicio<br>Entonces se verifica que la orden de servicio se ha creado correctamente</div>
+
+        </div>
+
+    <div id="beforetable"></div>
+
+
+            <h3 class="story-header">Examples:&nbsp;</h3>
+
+
+                <p class="example-tag">
+                </p>
+
+            <div class="example-table test-report">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                            <th>TipoID</th>
+                            <th>Identificacion</th>
+                            <th>Codigo Cliente</th>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Celular</th>
+                            <th>Codigo Servicio</th>
+                            <th>Clase Servicio</th>
+                            <th>Tipo Servicio</th>
+                            <th>Prioridad</th>
+                            <th>Hora Inicio</th>
+                            <th>Hora Fin</th>
+                            <th>Zonas</th>
+                            <th>Observacion</th>
+                            <th>Serial</th>
+                            <th>Productos</th>
+                            <th>Falla</th>
+                            <th>Ubicacion</th>
+                            <th>Complemento</th>
+                            <th>Ciudad</th>
+                            <th>Departamento</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="test-SUCCESS"><a href="#0">1</a></td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">C&eacute;dula de ciudadan&iacute;a</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">X</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">CC-123</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">R. Automotion 1</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">jhon.quinones@infotrack.com.co</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">1234567890</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">01</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Domicilio</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Mantenimiento</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Alta</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">07:00 AM</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">05:00 PM</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">X</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Servicio de prueba</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">4800356789212</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Nevera</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Piloto se apaga</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Cl. 118 #19-52</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Complemento</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Bogota</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Bogota</a>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+    <div id="tablecontents">
+        <div>
+            <table class="step-table">
+                <tr class="step-titles">
+                    <th width="65">                        &nbsp;
+                    </th>
+
+                        <th width="%" class="step-description-column greentext">
+                            Steps
+                        </th>
+                        <th width="150" class="greentext">Screenshots</th>
+                    <th width="130" class="greentext">Outcome</th>
+                    <th width="80" class="greentext"><i title="Duration" class="far fa-clock"></i></th>
+                </tr>
+                <tr class="step-table-separator">
+                    <td colspan="5"></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                Example: {TipoID=Cédula de ciudadanía, Identificacion=X, CodigoCliente=CC-123, Nombre=R. Automotion 1, Email=jhon.quinones@infotrack.com.co, Celular=1234567890, CodigoServicio=01, ClaseServicio=Domicilio, TipoServicio=Mantenimiento, Prioridad=Alta, HoraInicio=07:00 AM, HoraFin=05:00 PM, Zonas=X, Observacion=Servicio de prueba, Serial=4800356789212, Productos=Nevera, Falla=Piloto se apaga, Ubicacion=Cl. 118 #19-52, Complemento=Complemento, Ciudad=Bogota, Departamento=Bogota}
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=0">
+                                    <img src="7dc770218c4560920a5502ed74830a28102ef6712473ac2d81f1d105a62c816d.png"
+                                         href="7dc770218c4560920a5502ed74830a28102ef6712473ac2d81f1d105a62c816d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=73">
+                                    <img src="1179159135dfe2ec8a98686a6b6782cdff3d72f17c038bfba89487250507b4d8.png"
+                                         href="1179159135dfe2ec8a98686a6b6782cdff3d72f17c038bfba89487250507b4d8.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">86.53s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-0 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                Dado que en el call center se desea crear una orden de servicio con los siguientes datos<br><table class='embedded'><thead><th>Tipo Identificacion</th><th>Identificacion</th><th>Codigo cliente</th><th>Nombre</th><th>Correo electronico</th><th>Celular</th><th>Ubicacion</th><th>Complemento</th><th>Ciudad</th><th>Departamento</th></thead><tbody><tr><td>Cédula de ciudadanía</td><td>X</td><td>CC-123</td><td>R. Automotion 1</td><td>jhon.quinones@infotrack.com.co</td><td>1234567890</td><td>Cl. 118 #19-52</td><td>Complemento</td><td>Bogota</td><td>Bogota</td></tr></tbody></table>
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=1">
+                                    <img src="7dc770218c4560920a5502ed74830a28102ef6712473ac2d81f1d105a62c816d.png"
+                                         href="7dc770218c4560920a5502ed74830a28102ef6712473ac2d81f1d105a62c816d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=43">
+                                    <img src="9895e68b1b7024972e3753ce5e3f2cc0fbb94549a925c1ac79300b32cef7576e.png"
+                                         href="9895e68b1b7024972e3753ce5e3f2cc0fbb94549a925c1ac79300b32cef7576e.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">63.27s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0-0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-0-0 success-icon"
+                                   style="margin-left: 60px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                Automatizador ts crear servicio01
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=2">
+                                    <img src="7dc770218c4560920a5502ed74830a28102ef6712473ac2d81f1d105a62c816d.png"
+                                         href="7dc770218c4560920a5502ed74830a28102ef6712473ac2d81f1d105a62c816d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=42">
+                                    <img src="0eda00ef5c808fbae227a41534003e301e78ba987cc0f43d95e408bb27e54672.png"
+                                         href="0eda00ef5c808fbae227a41534003e301e78ba987cc0f43d95e408bb27e54672.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">62.04s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-0-0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0-0-0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-0-0-0 success-icon"
+                                   style="margin-left: 80px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0-0-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                Automatizador is abrir pagina
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=3">
+                                    <img src="7dc770218c4560920a5502ed74830a28102ef6712473ac2d81f1d105a62c816d.png"
+                                         href="7dc770218c4560920a5502ed74830a28102ef6712473ac2d81f1d105a62c816d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=5">
+                                    <img src="51fc792ba223589fe9eeda0ac7f5984bfa767f3c155232da8967439a6ad60905.png"
+                                         href="51fc792ba223589fe9eeda0ac7f5984bfa767f3c155232da8967439a6ad60905.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">13.3s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-0-0-0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-0-0"/>
+                            <span style="margin-left: 100px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador opens the Object abrir pagina
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=4">
+                                    <img src="7dc770218c4560920a5502ed74830a28102ef6712473ac2d81f1d105a62c816d.png"
+                                         href="7dc770218c4560920a5502ed74830a28102ef6712473ac2d81f1d105a62c816d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">9.11s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-1"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0-0-1')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-0-0-1 success-icon"
+                                   style="margin-left: 80px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0-0-1')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                Automatizador is login
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=6">
+                                    <img src="1eba1b390f3c0e617ff4af9b1b7dd2290a2fdf68f5d599361748405f8541c2cd.png"
+                                         href="1eba1b390f3c0e617ff4af9b1b7dd2290a2fdf68f5d599361748405f8541c2cd.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=11">
+                                    <img src="eeb29f6de60b54a29bd10a98d0a6536b26f3c0813a63dbd0dce0ff9057ed5c71.png"
+                                         href="eeb29f6de60b54a29bd10a98d0a6536b26f3c0813a63dbd0dce0ff9057ed5c71.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">7.28s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-0-0-1" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-1-0"/>
+                            <span style="margin-left: 100px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters 'Automatizador' into Ingrese su usuario
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=7">
+                                    <img src="1eba1b390f3c0e617ff4af9b1b7dd2290a2fdf68f5d599361748405f8541c2cd.png"
+                                         href="1eba1b390f3c0e617ff4af9b1b7dd2290a2fdf68f5d599361748405f8541c2cd.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.32s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-1-1"/>
+                            <span style="margin-left: 100px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters 'Demo123*' into Ingrese su contrasenia
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=8">
+                                    <img src="b3e444111dacff8241f0580c61914708e7312f953bb568635218dc2e7d20672e.png"
+                                         href="b3e444111dacff8241f0580c61914708e7312f953bb568635218dc2e7d20672e.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.51s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-1-2"/>
+                            <span style="margin-left: 100px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Iniciar Sesión
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=9">
+                                    <img src="59d4e2dfb8e9572c4f7fa8d0091e4fde81e76b1ea268343bce9907f296b29108.png"
+                                         href="59d4e2dfb8e9572c4f7fa8d0091e4fde81e76b1ea268343bce9907f296b29108.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.34s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-1-3"/>
+                            <span style="margin-left: 100px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Then qs login should be a value equal to '1.6.3'
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=10">
+                                    <img src="eeb29f6de60b54a29bd10a98d0a6536b26f3c0813a63dbd0dce0ff9057ed5c71.png"
+                                         href="eeb29f6de60b54a29bd10a98d0a6536b26f3c0813a63dbd0dce0ff9057ed5c71.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.32s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-2"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Modulo principal de Smartwork
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=12">
+                                    <img src="25269c163be17a56f027979451c41a7d29618082398ae6f051e4c2d5970e0cb4.png"
+                                         href="25269c163be17a56f027979451c41a7d29618082398ae6f051e4c2d5970e0cb4.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.44s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-3"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Sub-Modulo principal de Gestión de servicios
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=13">
+                                    <img src="5012f0fbb8c1527fced7ec03d505333078315e00722a2551c635b57d08b8e978.png"
+                                         href="5012f0fbb8c1527fced7ec03d505333078315e00722a2551c635b57d08b8e978.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.76s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-4"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Botón +  de crear el servicio
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=14">
+                                    <img src="963d7f277f384a4c33d7be99b41b323f8bb0dc597552b43cba8e49ef3cecb2b7.png"
+                                         href="963d7f277f384a4c33d7be99b41b323f8bb0dc597552b43cba8e49ef3cecb2b7.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.86s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-5"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Campo Tipo de Identificación
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=15">
+                                    <img src="32efb0228f3b94c519edaacb7be77a83fa116e0fc596db42862f08aac41d12dd.png"
+                                         href="32efb0228f3b94c519edaacb7be77a83fa116e0fc596db42862f08aac41d12dd.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.65s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-6"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Lista cedula de ciudadania
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=16">
+                                    <img src="70b7e4497441d2c88abd6ab746f6fd29c16a75c4d72078dd77c3077611c629fa.png"
+                                         href="70b7e4497441d2c88abd6ab746f6fd29c16a75c4d72078dd77c3077611c629fa.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.65s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-7"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters '760979680' into Campo Identificación
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=17">
+                                    <img src="4b43a455d4c77596fd1fb4828507e90e5b9e7b0e6666c200080841085990e3bf.png"
+                                         href="4b43a455d4c77596fd1fb4828507e90e5b9e7b0e6666c200080841085990e3bf.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.96s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-8"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Campo de buscar el cliente
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=18">
+                                    <img src="5d051c102f92b3e42dee00c22849e67454423053bd905b279d57b9d40ec35ee1.png"
+                                         href="5d051c102f92b3e42dee00c22849e67454423053bd905b279d57b9d40ec35ee1.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.71s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-9"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Alerta para continuar con la creación del cliente
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=19">
+                                    <img src="71338331aabc21da0eb33438c1cb2f9acbf179df264443332d8a003ac2fa8b75.png"
+                                         href="71338331aabc21da0eb33438c1cb2f9acbf179df264443332d8a003ac2fa8b75.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.91s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-10"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters 'CC-123' into Campo Código de Cliente
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=20">
+                                    <img src="0a02b4c206d3aeec9c2ea706421f99ecb64d1d80db53b7771f17520c53dfab91.png"
+                                         href="0a02b4c206d3aeec9c2ea706421f99ecb64d1d80db53b7771f17520c53dfab91.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-11"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters 'R. Automotion 1' into Campo Nombre
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=21">
+                                    <img src="05634a4d4a8f93f99d114a616796df7d1c3b30a8df598560ec9eec9e02579dfc.png"
+                                         href="05634a4d4a8f93f99d114a616796df7d1c3b30a8df598560ec9eec9e02579dfc.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.26s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-12"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters 'jhon.quinones@infotrack.com.co' into Campo Correo Electrónico
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=22">
+                                    <img src="4fa7b6f70da2c9a53a1af9e6255ba4309994fb33037126d875cfa33bf818d94c.png"
+                                         href="4fa7b6f70da2c9a53a1af9e6255ba4309994fb33037126d875cfa33bf818d94c.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.98s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-13"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters '1234567890' into Campo Celular
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=23">
+                                    <img src="572a32bff17233a02ea5131e58761cd166edf419850377e4e4ddf1f7fb7d63ae.png"
+                                         href="572a32bff17233a02ea5131e58761cd166edf419850377e4e4ddf1f7fb7d63ae.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.17s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-14"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Campo Check Notificacion Correo
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=24">
+                                    <img src="1f9ab845915c3d77b2340572e1315671e9a03e3f5471414367c0be7d648daae9.png"
+                                         href="1f9ab845915c3d77b2340572e1315671e9a03e3f5471414367c0be7d648daae9.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.62s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-15"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Campo Check Notificacion Mensaje
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=25">
+                                    <img src="26fb7356cc98f60579fec81e3393c991796374abcfae80866a1bba17c99e537a.png"
+                                         href="26fb7356cc98f60579fec81e3393c991796374abcfae80866a1bba17c99e537a.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.68s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-16"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Guardar datos del cliente
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=26">
+                                    <img src="fe795fca80b2bd25b99f83e820b58432a11938e08a8170fb466ab63d6ad625ad.png"
+                                         href="fe795fca80b2bd25b99f83e820b58432a11938e08a8170fb466ab63d6ad625ad.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.56s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-17"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Alerta para continuar con la creación del cliente
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=27">
+                                    <img src="c93be564c5df102d17cb7748abcc453b043563ec8bd0579c7f80fedae77e6a02.png"
+                                         href="c93be564c5df102d17cb7748abcc453b043563ec8bd0579c7f80fedae77e6a02.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.62s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-18"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Boto + de agregar ubicaciones
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=28">
+                                    <img src="6a24cd3b60b8516f3d69ba6eb8b8c191be6c19d984d3c251b5241e136f3caa10.png"
+                                         href="6a24cd3b60b8516f3d69ba6eb8b8c191be6c19d984d3c251b5241e136f3caa10.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.74s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-19"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on COnfirmar los mismo datos del usuario registrado
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=29">
+                                    <img src="e0c7ad44be818e309d44aad2a57682e683f3bef390f4e823f10a7a6c3c5fc888.png"
+                                         href="e0c7ad44be818e309d44aad2a57682e683f3bef390f4e823f10a7a6c3c5fc888.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.67s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-20"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters 'Cl. 118 #19-52' into btón de Ubicación del cliente
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=30">
+                                    <img src="8f2ce35d2160f93a08336a3bcd79beade34ea130c1ba036d0531d9a4757f9011.png"
+                                         href="8f2ce35d2160f93a08336a3bcd79beade34ea130c1ba036d0531d9a4757f9011.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.03s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-21"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters 'Complemento' into btón de complemento del cliente
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=31">
+                                    <img src="1741078da9f8dbae19f2c0c54ca3049d38185ee964a516a4e5c3976c4b19db58.png"
+                                         href="1741078da9f8dbae19f2c0c54ca3049d38185ee964a516a4e5c3976c4b19db58.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.24s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-22"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters 'Bogota' into Departamento
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=32">
+                                    <img src="789ecdca581268cb693ccdd33a14b54600de8e48e49f1daf3a2f61a759285c92.png"
+                                         href="789ecdca581268cb693ccdd33a14b54600de8e48e49f1daf3a2f61a759285c92.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.78s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-23"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Lista Departamento
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=33">
+                                    <img src="3a7c3e292b8c3edd63e9914bd391e0591e9258de0726fdf3dbf4699c29cb1e84.png"
+                                         href="3a7c3e292b8c3edd63e9914bd391e0591e9258de0726fdf3dbf4699c29cb1e84.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.58s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-24"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters 'Bogota' into Ciudad
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=34">
+                                    <img src="2eb002c537c11243a6c83f20278c0bb8b76fd233acbe164ffa17fc9550247e00.png"
+                                         href="2eb002c537c11243a6c83f20278c0bb8b76fd233acbe164ffa17fc9550247e00.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.8s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-25"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Lista Ciudad
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=35">
+                                    <img src="ef8040598e1c81f7556cbd47b31c247aa3df8a8c4ad3a4936ee30bc6c95ec6d0.png"
+                                         href="ef8040598e1c81f7556cbd47b31c247aa3df8a8c4ad3a4936ee30bc6c95ec6d0.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.47s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-26"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on btón de Guardar direccion del cliente
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=36">
+                                    <img src="79e78c3e14bbb2362528a8919b3428c07cd8c04119cf1ee7c97ed95440d5fcd7.png"
+                                         href="79e78c3e14bbb2362528a8919b3428c07cd8c04119cf1ee7c97ed95440d5fcd7.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.55s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-27"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on btón de Continuar con la  direccion del cliente
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=37">
+                                    <img src="88af33cc93f94a1e232287034644ae29f08d3353d6ade7f7a205ce7fc2ddbafa.png"
+                                         href="88af33cc93f94a1e232287034644ae29f08d3353d6ade7f7a205ce7fc2ddbafa.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.66s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-28"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on btón de Volver al formulario del servicio con la  direccion del cliente
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=38">
+                                    <img src="a8aeca83df17e5f55ba900877f646786097d69723450fd0aad7d20ec71da9d1d.png"
+                                         href="a8aeca83df17e5f55ba900877f646786097d69723450fd0aad7d20ec71da9d1d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.83s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-29"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Campo de buscar el cliente
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=39">
+                                    <img src="39d6d97fc175bf5cc626188d339c48dbc209ca44ab2168a0a1f39b0821caee5a.png"
+                                         href="39d6d97fc175bf5cc626188d339c48dbc209ca44ab2168a0a1f39b0821caee5a.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.63s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-30"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Ubicaciones del cliente despues de haber agregado la dirección
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=40">
+                                    <img src="47a7f691fff03124203c8de4aef936c516a90e2fb69d6fd38983f9a6cd17c094.png"
+                                         href="47a7f691fff03124203c8de4aef936c516a90e2fb69d6fd38983f9a6cd17c094.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.61s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-31"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Lista Ubicaciones del cliente despues de haber agregado la dirección
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=41">
+                                    <img src="0eda00ef5c808fbae227a41534003e301e78ba987cc0f43d95e408bb27e54672.png"
+                                         href="0eda00ef5c808fbae227a41534003e301e78ba987cc0f43d95e408bb27e54672.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.53s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-1"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-1 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                Y se ingresan los siguientes datos del servicio<br><table class='embedded'><thead><th>Codigo del servicio</th><th>Clase servicio</th><th>Tipo Servicio</th><th>Prioridad</th><th>Hora inicio</th><th>Hora fin</th><th>Zonas</th><th>Observacion</th></thead><tbody><tr><td>01</td><td>Domicilio</td><td>Mantenimiento</td><td>Alta</td><td>07:00 AM</td><td>05:00 PM</td><td>X</td><td>Servicio de prueba</td></tr></tbody></table>
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=44">
+                                    <img src="871fb675b5eccf7b8b71083c17525fe133d17e44f8454a67a412be699f1e8d4e.png"
+                                         href="871fb675b5eccf7b8b71083c17525fe133d17e44f8454a67a412be699f1e8d4e.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=55">
+                                    <img src="7ef5c794bfe5ff6d78b2b48ceb534c9b1d22e4a9f8872b5f8d252571fc840e0b.png"
+                                         href="7ef5c794bfe5ff6d78b2b48ceb534c9b1d22e4a9f8872b5f8d252571fc840e0b.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">8.35s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-1" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-1-0"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters '01' into Código Servicio
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=45">
+                                    <img src="871fb675b5eccf7b8b71083c17525fe133d17e44f8454a67a412be699f1e8d4e.png"
+                                         href="871fb675b5eccf7b8b71083c17525fe133d17e44f8454a67a412be699f1e8d4e.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.72s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-1-1"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters 'Domicilio' into Clase Servicio
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=46">
+                                    <img src="75e08f44ba83072ab2c45c358e971f94400b46a5ced5c7b6808330ad098a92eb.png"
+                                         href="75e08f44ba83072ab2c45c358e971f94400b46a5ced5c7b6808330ad098a92eb.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.83s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-1-2"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Lista Clase Servicio
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=47">
+                                    <img src="2a538b8f9bf4d7a0ef0b90b50f43878f0d80193ef3acdc31db8616c42a196832.png"
+                                         href="2a538b8f9bf4d7a0ef0b90b50f43878f0d80193ef3acdc31db8616c42a196832.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.53s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-1-3"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters 'Mantenimiento' into Tipo Servicio
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=48">
+                                    <img src="deae04d0b8805c2ecfdb2bbec0185620f2c4e5a5845e749fb04da7bce1457eb8.png"
+                                         href="deae04d0b8805c2ecfdb2bbec0185620f2c4e5a5845e749fb04da7bce1457eb8.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.95s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-1-4"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Lista Tipo Servicio
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=49">
+                                    <img src="bf5e6198346bb0e040bcb35448f3cd71044b25058175404580b25219bf086dc8.png"
+                                         href="bf5e6198346bb0e040bcb35448f3cd71044b25058175404580b25219bf086dc8.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.52s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-1-5"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters 'Alta' into Selecscionar Prioridad del  Servicio
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=50">
+                                    <img src="f512b3084f178dea132b8a46099be2a84b75683e1cf64079c13c51364756da99.png"
+                                         href="f512b3084f178dea132b8a46099be2a84b75683e1cf64079c13c51364756da99.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.81s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-1-6"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Lista Selecscionar Prioridad del  Servicio
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=51">
+                                    <img src="9d1c98b0839902b93282600646c0b3bfec94c5dbe183962f71fb8b0491dcc4fd.png"
+                                         href="9d1c98b0839902b93282600646c0b3bfec94c5dbe183962f71fb8b0491dcc4fd.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.48s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-1-7"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters '07:00 AM' into Hora de Inicio
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=52">
+                                    <img src="04190a1bff1e61719dcfd3ee4b6728b40885c0449f966ee3c36457c92aaf2485.png"
+                                         href="04190a1bff1e61719dcfd3ee4b6728b40885c0449f966ee3c36457c92aaf2485.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.88s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-1-8"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters '05:00 PM' into Hora de fin
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=53">
+                                    <img src="ff597457e84875a9595d6035ac283807f9bf9dba5ab034c451bdc7623f521069.png"
+                                         href="ff597457e84875a9595d6035ac283807f9bf9dba5ab034c451bdc7623f521069.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.88s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-1-9"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters 'Servicio de prueba' into Observación
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=54">
+                                    <img src="7ef5c794bfe5ff6d78b2b48ceb534c9b1d22e4a9f8872b5f8d252571fc840e0b.png"
+                                         href="7ef5c794bfe5ff6d78b2b48ceb534c9b1d22e4a9f8872b5f8d252571fc840e0b.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.12s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-2"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-2')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-2 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-2')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                Y se ingresan los siguientes datos del producto<br><table class='embedded'><thead><th>Serial</th><th>Productos</th><th>Falla</th></thead><tbody><tr><td>4800356789212</td><td>Nevera</td><td>Piloto se apaga</td></tr></tbody></table>
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=56">
+                                    <img src="8025dd8cb51bbbfe4122d523c0b4cbaa0b20527d75ac521f45dd25751650d684.png"
+                                         href="8025dd8cb51bbbfe4122d523c0b4cbaa0b20527d75ac521f45dd25751650d684.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=63">
+                                    <img src="b9c3f7f0f10b3a188e9729a1526f2946b1e93c0fbf19fb1dfc1ec7ca9dde80d3.png"
+                                         href="b9c3f7f0f10b3a188e9729a1526f2946b1e93c0fbf19fb1dfc1ec7ca9dde80d3.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">12.6s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-2" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-2-0"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters 'Nevera' into Campo Productos
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=57">
+                                    <img src="8025dd8cb51bbbfe4122d523c0b4cbaa0b20527d75ac521f45dd25751650d684.png"
+                                         href="8025dd8cb51bbbfe4122d523c0b4cbaa0b20527d75ac521f45dd25751650d684.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.77s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-2-1"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Lista Campo Productos
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=58">
+                                    <img src="0caa08354c21fef2f741340d402f69cb6322a5a8157aa18e3881fbf1b489ee11.png"
+                                         href="0caa08354c21fef2f741340d402f69cb6322a5a8157aa18e3881fbf1b489ee11.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.64s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-2-2"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador enters 'Piloto se apaga' into Campo Falla
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=59">
+                                    <img src="0109442d525a3f4e7700f5db481ca86688fa925d2dcb3232e22a30f0c1c2579a.png"
+                                         href="0109442d525a3f4e7700f5db481ca86688fa925d2dcb3232e22a30f0c1c2579a.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.06s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-2-3"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Lista Campo Falla
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=60">
+                                    <img src="d14759b1bf2983624f50d36776e28657c9766ce546fe7899ed00c19f01da4902.png"
+                                         href="d14759b1bf2983624f50d36776e28657c9766ce546fe7899ed00c19f01da4902.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.55s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-2-4"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Botón para guardar el servicio
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=61">
+                                    <img src="48d2b4be106218a10e2cda506e573223d844e386078bf3b1a2f73b0f6dcb68d0.png"
+                                         href="48d2b4be106218a10e2cda506e573223d844e386078bf3b1a2f73b0f6dcb68d0.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.66s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-2-5"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Alerta para continuar con la creación del cliente
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=62">
+                                    <img src="fff090148011d46da7139f2fd19e420d36c5c7186e3297a2b550dcc4f110bed3.png"
+                                         href="fff090148011d46da7139f2fd19e420d36c5c7186e3297a2b550dcc4f110bed3.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.55s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-3"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-3')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-3 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-3')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                Cuando se crea la orden de servicio
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=66">
+                                    <img src="b9c3f7f0f10b3a188e9729a1526f2946b1e93c0fbf19fb1dfc1ec7ca9dde80d3.png"
+                                         href="b9c3f7f0f10b3a188e9729a1526f2946b1e93c0fbf19fb1dfc1ec7ca9dde80d3.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.3s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-3" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-3-0"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Then qs crear servicio should be a value equal to '2117'
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=65">
+                                    <img src="b9c3f7f0f10b3a188e9729a1526f2946b1e93c0fbf19fb1dfc1ec7ca9dde80d3.png"
+                                         href="b9c3f7f0f10b3a188e9729a1526f2946b1e93c0fbf19fb1dfc1ec7ca9dde80d3.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.28s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-4"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-4')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-4 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-4')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                Entonces se verifica que la orden de servicio se ha creado correctamente
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=67">
+                                    <img src="6043768c9a0becea44a379fe903fd3e4dce1c2a844ed4c72736e7edb83675513.png"
+                                         href="6043768c9a0becea44a379fe903fd3e4dce1c2a844ed4c72736e7edb83675513.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=72">
+                                    <img src="d2dced4e4e8078fc9934e2a6c9683380c932d531fe6ed31123faadf97f807abf.png"
+                                         href="d2dced4e4e8078fc9934e2a6c9683380c932d531fe6ed31123faadf97f807abf.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.45s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-4" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-4-0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-4-0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-4-0 success-icon"
+                                   style="margin-left: 60px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-4-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                Automatizador is cerrar sesion
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=68">
+                                    <img src="6043768c9a0becea44a379fe903fd3e4dce1c2a844ed4c72736e7edb83675513.png"
+                                         href="6043768c9a0becea44a379fe903fd3e4dce1c2a844ed4c72736e7edb83675513.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=71">
+                                    <img src="d2dced4e4e8078fc9934e2a6c9683380c932d531fe6ed31123faadf97f807abf.png"
+                                         href="d2dced4e4e8078fc9934e2a6c9683380c932d531fe6ed31123faadf97f807abf.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.42s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-4-0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-4-0-0"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on icono para ver el perfil de cierre de la sesión
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=69">
+                                    <img src="6043768c9a0becea44a379fe903fd3e4dce1c2a844ed4c72736e7edb83675513.png"
+                                         href="6043768c9a0becea44a379fe903fd3e4dce1c2a844ed4c72736e7edb83675513.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.42s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-4-0-1"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Automatizador clicks on Modulo para realizar el cierre de la sesión
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="proceso_de_agendamiento_de_servicios_crear_una_orden_de_servicio_desde_el_call_center_screenshots.html#screenshots?screenshot=70">
+                                    <img src="d2dced4e4e8078fc9934e2a6c9683380c932d531fe6ed31123faadf97f807abf.png"
+                                         href="d2dced4e4e8078fc9934e2a6c9683380c932d531fe6ed31123faadf97f807abf.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.81s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+
+                        </table>
+                    </td>
+                <tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                        <td colspan="3"></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>86.7s</em></span></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div id="beforefooter"></div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <span class="version">Serenity BDD version 2.0.90</span>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function toggleDiv(divId) {
+            $("#" + divId).toggle();
+            var imgsrc = $(".img" + divId).attr('src');
+            if (imgsrc == 'images/plus.png') {
+                $(".img" + divId).attr("src", function () {
+                    return "images/minus.png";
+                });
+
+            } else {
+                $(".img" + divId).attr("src", function () {
+                    return "images/plus.png";
+                });
+            }
+        }
+    </script>
+
+
+    <script type="text/javascript">
+        //<![CDATA[
+
+        $(document).ready(function () {
+            $('img.screenshot').imgPreview({
+                imgCSS: {
+                    width: '500px'
+                },
+                distanceFromCursor: {top: 10, left: -200}
+            });
+        });
+
+        //]]>
+    </script>
+    <div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+                src="" style="display: none; "></div>
+    <div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+        <img style="width: 200px; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+        <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+    <div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+
+    </body>
+</html>

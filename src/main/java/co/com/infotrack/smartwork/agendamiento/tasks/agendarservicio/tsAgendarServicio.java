@@ -47,7 +47,7 @@ public class tsAgendarServicio implements Task {
         UsuarioAplicacion usuarioApp = new UsuarioAplicacion("224727e8-256e-4c6c-8ec5-add0905d8c36", "c1ec589d-655e-427a-81b5-87e38189468e");
         UsuarioAplicacion.Solicitud solicitud = new UsuarioAplicacion.Solicitud(agendarServicio, usuarioApp);
         String jsonBody = JsonUtil.toJson(solicitud);
-        String token = ConfiguracionToken.properties.getProperty("AUTH_TOKEN");
+        final String  token = ConfiguracionToken.properties.getProperty("AUTH_TOKEN");
 
 
         String baseUrl = RestService.getFullAgendarServiciosUrl();
@@ -73,7 +73,7 @@ public class tsAgendarServicio implements Task {
         );
 
         actor.should(
-                seeThatResponse("Validación codigo de respuesta",
+                seeThatResponse("Validación codigo de respuesta y creación del servicio :" + agendarServicio.getIdServicio(),
                         response -> response.statusCode(200)
                                 .body("Mensajes", hasItems("El servicio " + agendarServicio.getIdServicio() + " ha sido asignado con éxito.")))
         );

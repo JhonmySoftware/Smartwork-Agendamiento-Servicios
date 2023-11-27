@@ -18,6 +18,21 @@ public class ObjectAgregarUbicaciones extends PageObject {
     public static final Target Complemento = Target.the("btón de complemento del cliente")
             .located(By.name("Lugar"));
 
+    public static final Target Departamento = Target.the("Departamento")
+            .located(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Departamento'])[1]/following::input[1]"));
+
+    public static final Target ListaDepartamento = Target.the("Lista Departamento")
+            .located(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Departamento'])[1]/following::li[1]"));
+
+    public static final Target Ciudad = Target.the("Ciudad")
+            .located(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ciudad'])[1]/following::input[1]"));
+
+    public static final Target ListaCiudad = Target.the("Lista Ciudad")
+            .located(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ciudad'])[1]/following::li[1]"));
+
+
+
+
     public static final Target GuardarDireccion = Target.the("btón de Guardar direccion del cliente")
             .located(By.xpath("(//span[@class='MuiTypography-root MuiTypography-colorInherit'][normalize-space()='Guardar'])[2]"));
 
@@ -32,9 +47,6 @@ public class ObjectAgregarUbicaciones extends PageObject {
 
     public static final Target ListaUbicacionesCliente = Target.the("Lista Ubicaciones del cliente despues de haber agregado la dirección")
             .located(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicaciones Cliente'])[1]/following::li[1]"));
-
-    public static final Target LimpiarFormulario = Target.the("Limpiar Formulario")
-            .located(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Limpiar'])[2]/following::span[1]/.."));
 
 
 }

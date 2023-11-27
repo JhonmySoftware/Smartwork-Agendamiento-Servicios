@@ -48,6 +48,8 @@ public class StepCrearServicio {
         ordenDeServicio.setCelular(data.get(0).get("Celular"));
         ordenDeServicio.setUbicacion(data.get(0).get("Ubicacion"));
         ordenDeServicio.setComplemento(data.get(0).get("Complemento"));
+        ordenDeServicio.setCiudad(data.get(0).get("Ciudad"));
+        ordenDeServicio.setDepartamento(data.get(0).get("Departamento"));
 
         // Pasar los datos a la tarea tsCrearServicio01
         OnStage.theActorCalled(actor.getName())

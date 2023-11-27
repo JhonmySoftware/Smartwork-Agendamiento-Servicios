@@ -4,6 +4,7 @@ import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
+
 public class ObjetcLogin extends PageObject {
 
     public static final Target InputLogin = Target.the("Ingrese su usuario")
@@ -15,6 +16,6 @@ public class ObjetcLogin extends PageObject {
             .located(By.xpath("//span[contains(text(),'Iniciar Sesión')]"));
 
     public static final Target VersionSitio = Target.the("Validar la versión del sitio")
-            .located(By.xpath("//span[contains(text(), '1.5.9')]"));
+            .located(By.xpath("//span[contains(text(), '1.6.3')]"));
 
 }

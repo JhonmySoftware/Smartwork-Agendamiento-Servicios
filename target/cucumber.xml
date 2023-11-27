@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="7.527693">
-<testcase classname="Proceso de agendamiento de servicios" name="Agendar una orden de servicio desde el call center con diferentes datos" time="7.527693">
-<system-out><![CDATA[Dado que el usuario tiene acceso al servicio de agendamiento................passed
-Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos.passed
-Entonces la orden de servicio debe ser agendada correctamente...............passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="86.29356">
+<testcase classname="Proceso de agendamiento de servicios" name="Crear una orden de servicio desde el call center" time="86.29356">
+<system-out><![CDATA[Dado que en el call center se desea crear una orden de servicio con los siguientes datos.passed
+Y se ingresan los siguientes datos del servicio.............................passed
+Y se ingresan los siguientes datos del producto.............................passed
+Cuando se crea la orden de servicio.........................................passed
+Entonces se verifica que la orden de servicio se ha creado correctamente....passed
 ]]></system-out>
 </testcase>
 </testsuite>
