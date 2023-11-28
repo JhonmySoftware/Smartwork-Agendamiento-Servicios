@@ -5,6 +5,7 @@ import co.com.infotrack.smartwork.agendamiento.models.agendarservicio.AgendarSer
 import co.com.infotrack.smartwork.agendamiento.models.agendarservicio.UsuarioAplicacion;
 import co.com.infotrack.smartwork.agendamiento.utils.ConfiguracionToken;
 import co.com.infotrack.smartwork.agendamiento.utils.JsonUtil;
+import co.com.infotrack.smartwork.agendamiento.utils.LecturaArchivosProperties;
 import co.com.infotrack.smartwork.agendamiento.utils.RestService;
 import io.restassured.RestAssured;
 import net.serenitybdd.screenplay.Actor;
@@ -43,11 +44,18 @@ public class tsAgendarServicio implements Task {
             throw new RuntimeException(e);
         }
 
+        try {
+            LecturaArchivosProperties.VersionSitio();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
-        UsuarioAplicacion usuarioApp = new UsuarioAplicacion("224727e8-256e-4c6c-8ec5-add0905d8c36", "c1ec589d-655e-427a-81b5-87e38189468e");
+
+        UsuarioAplicacion usuarioApp = new UsuarioAplicacion(LecturaArchivosProperties.properties.getProperty("IdAplicacion"),
+                LecturaArchivosProperties.properties.getProperty("IdUsuario"));
         UsuarioAplicacion.Solicitud solicitud = new UsuarioAplicacion.Solicitud(agendarServicio, usuarioApp);
         String jsonBody = JsonUtil.toJson(solicitud);
-        final String  token = ConfiguracionToken.properties.getProperty("AUTH_TOKEN");
+        final String token = ConfiguracionToken.properties.getProperty("AUTH_TOKEN");
 
 
         String baseUrl = RestService.getFullAgendarServiciosUrl();

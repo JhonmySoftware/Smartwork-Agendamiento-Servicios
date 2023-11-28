@@ -63,7 +63,7 @@ public class tsCrearServicio01 implements Task {
                 Click.on(ObjectCrearServicio.CrearServicio));
 
         try {
-            Thread.sleep(6000);
+            Thread.sleep(8000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
