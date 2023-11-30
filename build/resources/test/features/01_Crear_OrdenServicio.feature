@@ -18,9 +18,9 @@ Característica: Proceso de agendamiento de servicios
     Entonces se verifica que la orden de servicio se ha creado correctamente
 
     Ejemplos:
-      | TipoID               | Identificacion | CodigoCliente | Nombre          | Email                          | Celular    | CodigoServicio | ClaseServicio | TipoServicio  | Prioridad | HoraInicio | HoraFin  | Zonas | Observacion        | Serial        | Productos                | Falla | Ubicacion            | Complemento | Ciudad | Departamento | Dv |
-   #  | Cédula de ciudadanía | X              | CC-123        | R. Automotion 2 | jhon.quinones@infotrack.com.co | 1234567890 | 01             | Domicilio     | Mantenimiento | Alta      | 07:00 AM   | 05:00 PM | X     | Servicio de prueba | 4800356789212 | Cafetera Eléctrica | BOTA AGUA       | Cl. 118 #19-52 | Complemento |||
-      | Cédula de ciudadanía | X              | CC-123        | R. Automotion 3 | jhon.quinones@infotrack.com.co | 1234567890 | 01             | Domicilio     | Mantenimiento | Alta      | 07:00 AM   | 05:00 PM | X     | Servicio de prueba | 4800356789212 | NEVERA CR249BR  TITANIUM | RUIDO | Carrera 18C # 118-42 | Parking     | bogota | Bogota       | 7  |
+      | TipoID               | Identificacion | CodigoCliente | Nombre          | Email                          | Celular    | CodigoServicio | ClaseServicio | TipoServicio  | Prioridad | HoraInicio | HoraFin  | Zonas       | Observacion        | Serial        | Productos          | Falla             | Ubicacion            | Complemento | Ciudad | Departamento | Dv |
+      | Cédula de ciudadanía | X              | CC-123        | R. Automotion 2 | jhon.quinones@infotrack.com.co | 1234567890 | 01             | Domicilio     | Mantenimiento | Alta      | 07:00 AM   | 05:00 PM | Zona Bogotá | Servicio de prueba | 4800356789212 | Cafetera Eléctrica | BOTA AGUA         | Cl. 118 #19-52       | Norte       | Bogota | Bogota       | 6  |
+#      | Cédula de ciudadanía | X              | CC-123        | R. Automotion 3 | jhon.quinones@infotrack.com.co | 1234567890 | 01             | Domicilio     | Mantenimiento | Alta      | 07:00 AM   | 05:00 PM | Zona Bogotá | Servicio de prueba | 4800356789212 | Campana Extractora | Fallo de Contacto | Carrera 18C # 118-42 | Parking     | bogota | Bogota       | 7  |
 
   #Actualmente el proceso de creación de servicios esta cambiando por ajustes de Challenger
   #Motivo por el cual toca refactorizar este proyecto.

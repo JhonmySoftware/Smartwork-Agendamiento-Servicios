@@ -47,8 +47,8 @@ public class tsIngresarDatosServicio02 implements Task {
         // Seleccionar Hora inicio y Hora Fin del servicio
         actor.attemptsTo(Enter.theValue(ordenDeServicio.getHoraInicio()).into(ObjectDatosServicio.HoraInicio),
                 Enter.theValue(ordenDeServicio.getHoraFin()).into(ObjectDatosServicio.HoraFin),
-//                Enter.theValue(ordenDeServicio.getZonas()).into(ObjectDatosServicio.Zonas),
-//                Click.on(ObjectDatosServicio.ListaZonas),
+                Enter.theValue(ordenDeServicio.getZonas()).into(ObjectDatosServicio.Zonas),
+                Click.on(ObjectDatosServicio.ListaZonas),
                 Enter.theValue(ordenDeServicio.getObservacion()).into(ObjectDatosServicio.Observacion));
     }
 }

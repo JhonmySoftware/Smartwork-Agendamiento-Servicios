@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="9.56">
-<testcase classname="Proceso de agendamiento de servicios" name="Agendar una orden de servicio desde el call center con diferentes datos" time="9.56">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="17.667802">
+<testcase classname="Proceso de agendamiento de servicios" name="Agendar una orden de servicio desde el call center con diferentes datos" time="17.667802">
 <system-out><![CDATA[Dado que el usuario tiene acceso al servicio de agendamiento................passed
 Cuando el usuario realiza una solicitud de agendamiento con los siguientes datos.passed
 Entonces la orden de servicio debe ser agendada correctamente...............passed
